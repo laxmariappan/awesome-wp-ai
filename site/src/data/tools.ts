@@ -1,0 +1,599 @@
+export type Pricing = 'Free' | 'Freemium' | 'Paid' | 'Open Source';
+
+export interface Category {
+  slug: string;
+  label: string;
+  emoji: string;
+  color: string;      // Tailwind bg color (light)
+  darkColor: string;  // Tailwind bg color (dark)
+  textColor: string;  // Tailwind text color
+}
+
+export interface Tool {
+  name: string;
+  description: string;
+  url: string;
+  github?: string;
+  category: string;  // matches Category.slug
+  tags: string[];
+  pricing: Pricing;
+  featured?: boolean;
+}
+
+export const categories: Category[] = [
+  { slug: 'infrastructure', label: 'Official Infrastructure', emoji: '🏗️', color: 'bg-violet-100', darkColor: 'dark:bg-violet-900/30', textColor: 'text-violet-700 dark:text-violet-300' },
+  { slug: 'multi-purpose',  label: 'Multi-Purpose',          emoji: '⚡', color: 'bg-purple-100', darkColor: 'dark:bg-purple-900/30', textColor: 'text-purple-700 dark:text-purple-300' },
+  { slug: 'content',        label: 'Content Generation',     emoji: '✍️', color: 'bg-emerald-100', darkColor: 'dark:bg-emerald-900/30', textColor: 'text-emerald-700 dark:text-emerald-300' },
+  { slug: 'seo',            label: 'SEO & Metadata',         emoji: '🔍', color: 'bg-amber-100', darkColor: 'dark:bg-amber-900/30', textColor: 'text-amber-700 dark:text-amber-300' },
+  { slug: 'image',          label: 'Image Generation',       emoji: '🎨', color: 'bg-pink-100', darkColor: 'dark:bg-pink-900/30', textColor: 'text-pink-700 dark:text-pink-300' },
+  { slug: 'chatbots',       label: 'Chatbots & Conversational AI', emoji: '💬', color: 'bg-cyan-100', darkColor: 'dark:bg-cyan-900/30', textColor: 'text-cyan-700 dark:text-cyan-300' },
+  { slug: 'woocommerce',    label: 'WooCommerce & E-Commerce', emoji: '🛒', color: 'bg-indigo-100', darkColor: 'dark:bg-indigo-900/30', textColor: 'text-indigo-700 dark:text-indigo-300' },
+  { slug: 'forms',          label: 'Forms & Automation',     emoji: '📋', color: 'bg-orange-100', darkColor: 'dark:bg-orange-900/30', textColor: 'text-orange-700 dark:text-orange-300' },
+  { slug: 'translation',    label: 'Translation & Multilingual', emoji: '🌍', color: 'bg-red-100', darkColor: 'dark:bg-red-900/30', textColor: 'text-red-700 dark:text-red-300' },
+  { slug: 'video',          label: 'Video & Transcription',  emoji: '🎬', color: 'bg-teal-100', darkColor: 'dark:bg-teal-900/30', textColor: 'text-teal-700 dark:text-teal-300' },
+  { slug: 'page-builders',  label: 'Page Builders',          emoji: '🧱', color: 'bg-blue-100', darkColor: 'dark:bg-blue-900/30', textColor: 'text-blue-700 dark:text-blue-300' },
+  { slug: 'themes',         label: 'Themes',                 emoji: '🎭', color: 'bg-rose-100', darkColor: 'dark:bg-rose-900/30', textColor: 'text-rose-700 dark:text-rose-300' },
+  { slug: 'mcp',            label: 'MCP Integration',        emoji: '🤖', color: 'bg-slate-100', darkColor: 'dark:bg-slate-700/30', textColor: 'text-slate-700 dark:text-slate-300' },
+  { slug: 'hosting',        label: 'Hosting & Site Builders', emoji: '☁️', color: 'bg-green-100', darkColor: 'dark:bg-green-900/30', textColor: 'text-green-700 dark:text-green-300' },
+  { slug: 'open-source',    label: 'Open Source',            emoji: '🔓', color: 'bg-yellow-100', darkColor: 'dark:bg-yellow-900/30', textColor: 'text-yellow-700 dark:text-yellow-300' },
+  { slug: 'learning',       label: 'Learning Resources',     emoji: '📚', color: 'bg-sky-100', darkColor: 'dark:bg-sky-900/30', textColor: 'text-sky-700 dark:text-sky-300' },
+];
+
+export const tools: Tool[] = [
+  // ─── Official Infrastructure ──────────────────────────────────────────────
+  {
+    name: 'WordPress/ai',
+    description: 'Official modular framework for testing AI capabilities in WP core with opt-in features including alt text generation and content summarization.',
+    url: 'https://github.com/WordPress/ai',
+    github: 'https://github.com/WordPress/ai',
+    category: 'infrastructure',
+    tags: ['core', 'framework', 'official'],
+    pricing: 'Free',
+    featured: true,
+  },
+  {
+    name: 'AI Services',
+    description: 'Makes AI centrally available in WordPress via PHP, REST API, JavaScript, and WP-CLI for any AI provider — by Felix Arntz.',
+    url: 'https://github.com/felixarntz/ai-services',
+    github: 'https://github.com/felixarntz/ai-services',
+    category: 'infrastructure',
+    tags: ['sdk', 'api', 'php', 'rest'],
+    pricing: 'Open Source',
+    featured: true,
+  },
+  {
+    name: 'WordPress MCP Adapter',
+    description: 'Bridges the WordPress Abilities API to the Model Context Protocol, enabling AI agents to discover and invoke WP abilities programmatically.',
+    url: 'https://github.com/WordPress/mcp-adapter',
+    github: 'https://github.com/WordPress/mcp-adapter',
+    category: 'infrastructure',
+    tags: ['mcp', 'agents', 'official', 'protocol'],
+    pricing: 'Free',
+    featured: true,
+  },
+  {
+    name: 'AI Provider – Anthropic Claude',
+    description: 'Official WP plugin registering Anthropic Claude with the PHP AI Client SDK for text generation and function calling.',
+    url: 'https://wordpress.org/plugins/',
+    category: 'infrastructure',
+    tags: ['claude', 'anthropic', 'provider', 'official'],
+    pricing: 'Free',
+  },
+  {
+    name: 'AI Provider – Google Gemini',
+    description: 'Official WP plugin integrating Google Gemini models with support for text generation, image generation, and function calling.',
+    url: 'https://wordpress.org/plugins/',
+    category: 'infrastructure',
+    tags: ['gemini', 'google', 'provider', 'official'],
+    pricing: 'Free',
+  },
+  {
+    name: 'AI Provider – OpenAI',
+    description: 'Official WP plugin supporting GPT models, DALL·E image generation, GPT-4 Vision, and text-to-speech.',
+    url: 'https://wordpress.org/plugins/',
+    category: 'infrastructure',
+    tags: ['openai', 'gpt', 'provider', 'official'],
+    pricing: 'Free',
+  },
+
+  // ─── Multi-Purpose ─────────────────────────────────────────────────────────
+  {
+    name: 'AI Engine',
+    description: 'The most widely-used WP AI plugin (80K+ installs) with chatbots, content generation, AI forms, image generation, and MCP integration.',
+    url: 'https://wordpress.org/plugins/ai-engine/',
+    github: 'https://github.com/jordymeow/ai-engine',
+    category: 'multi-purpose',
+    tags: ['chatbot', 'content', 'forms', 'mcp', 'openai'],
+    pricing: 'Freemium',
+    featured: true,
+  },
+  {
+    name: 'AI Power (AI Puffer)',
+    description: 'Complete AI engine with chatbot, content generation, image creation, automation, fine-tuning, and training on custom data.',
+    url: 'https://wordpress.org/plugins/gpt3-ai-content-generator/',
+    category: 'multi-purpose',
+    tags: ['chatbot', 'content', 'image', 'fine-tuning'],
+    pricing: 'Freemium',
+    featured: true,
+  },
+  {
+    name: 'MxChat',
+    description: 'Free AI chatbot and content generation supporting ChatGPT, Claude, Gemini, Grok, DeepSeek, and 100+ AI models with bulk page generation.',
+    url: 'https://wordpress.org/plugins/mxchat-basic/',
+    category: 'multi-purpose',
+    tags: ['chatbot', 'multi-model', 'claude', 'gemini', 'deepseek'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'AI Copilot – Content Generator',
+    description: 'AI automation platform combining workflow automation, chatbots, content generation, AI forms, and full MCP integration.',
+    url: 'https://wordpress.org/plugins/ai-copilot-content-generator/',
+    category: 'multi-purpose',
+    tags: ['automation', 'chatbot', 'forms', 'mcp'],
+    pricing: 'Freemium',
+  },
+
+  // ─── Content Generation ────────────────────────────────────────────────────
+  {
+    name: 'WP AI CoPilot',
+    description: 'AI content writer using GPT-3/4 with 40+ templates, supports 33+ languages for blog posts, articles, and product descriptions.',
+    url: 'https://wordpress.org/plugins/ai-co-pilot-for-wp/',
+    category: 'content',
+    tags: ['writing', 'gpt-4', 'templates', 'multilingual'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'AI Copilot',
+    description: 'Rewrite, expand, shorten, and translate text in the WP editor with support for OpenAI, Claude, Gemini, Perplexity, and DeepSeek.',
+    url: 'https://wordpress.org/plugins/ai-copilot/',
+    category: 'content',
+    tags: ['editor', 'rewrite', 'translate', 'multi-model'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Jetpack AI Assistant',
+    description: 'AI-powered content generation directly in the WordPress block editor via Jetpack infrastructure — powered by OpenAI.',
+    url: 'https://jetpack.com/',
+    category: 'content',
+    tags: ['block-editor', 'gutenberg', 'jetpack', 'automattic'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Bertha AI',
+    description: 'Specialized AI copywriting and content generation plugin for WordPress, with templates for ads, headlines, and long-form posts.',
+    url: 'https://bertha.ai/',
+    category: 'content',
+    tags: ['copywriting', 'templates', 'ads'],
+    pricing: 'Paid',
+  },
+
+  // ─── SEO & Metadata ────────────────────────────────────────────────────────
+  {
+    name: 'Rank Math SEO',
+    description: 'AI-powered SEO plugin (3M+ installs) with Content AI for keyword suggestions, meta titles, descriptions, and content scoring.',
+    url: 'https://wordpress.org/plugins/seo-by-rank-math/',
+    category: 'seo',
+    tags: ['seo', 'keywords', 'meta', 'content-score'],
+    pricing: 'Freemium',
+    featured: true,
+  },
+  {
+    name: 'Yoast SEO',
+    description: 'Long-established SEO plugin with an AI-powered title and meta description generator introduced in v21.0.',
+    url: 'https://wordpress.org/plugins/wordpress-seo/',
+    category: 'seo',
+    tags: ['seo', 'meta', 'readability'],
+    pricing: 'Freemium',
+    featured: true,
+  },
+  {
+    name: 'SOOZ – AI for SEO',
+    description: 'Bulk alt text and metadata generator with SEO Autopilot. Syncs directly with Yoast, Rank Math, and SEOPress.',
+    url: 'https://wordpress.org/plugins/ai-for-seo/',
+    category: 'seo',
+    tags: ['alt-text', 'metadata', 'bulk', 'autopilot'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Alt Text AI',
+    description: 'Automatically generates image alt text for SEO and accessibility, integrates with all major SEO plugins and the media library.',
+    url: 'https://wordpress.org/plugins/alttext-ai/',
+    category: 'seo',
+    tags: ['alt-text', 'accessibility', 'images', 'seo'],
+    pricing: 'Freemium',
+  },
+
+  // ─── Image Generation ──────────────────────────────────────────────────────
+  {
+    name: 'AI Featured Image',
+    description: 'One-click AI image generation using OpenAI DALL·E with a free tier and Pro features for Gemini and bulk generation.',
+    url: 'https://wordpress.org/plugins/ai-featured-image-generator/',
+    category: 'image',
+    tags: ['dall-e', 'featured-image', 'bulk', 'openai'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Genie Image',
+    description: 'AI-powered image generation plugin for WordPress — create stunning visuals from text prompts directly in your media library.',
+    url: 'https://wordpress.com/plugins/genie-image-ai',
+    category: 'image',
+    tags: ['text-to-image', 'media-library'],
+    pricing: 'Freemium',
+  },
+
+  // ─── Chatbots ──────────────────────────────────────────────────────────────
+  {
+    name: 'WPBot',
+    description: 'AI & OpenAI ChatGPT integration with RAG Vector Database, OpenAI Content Writer, and DALL·E image generation.',
+    url: 'https://wordpress.org/plugins/chatbot/',
+    category: 'chatbots',
+    tags: ['chatgpt', 'rag', 'vector', 'lead-gen'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Tidio AI Chatbot',
+    description: 'Conversational chatbot for live support and lead generation with AI-powered escalation and multi-channel integration.',
+    url: 'https://www.tidio.com/',
+    category: 'chatbots',
+    tags: ['live-chat', 'lead-gen', 'support', 'multi-channel'],
+    pricing: 'Freemium',
+  },
+
+  // ─── WooCommerce ───────────────────────────────────────────────────────────
+  {
+    name: 'AI Product Tools',
+    description: 'Bulk product content generator with a store-aware AI Shop Assistant for WooCommerce descriptions, titles, and taxonomies.',
+    url: 'https://wordpress.org/plugins/ai-product-tools/',
+    category: 'woocommerce',
+    tags: ['woocommerce', 'product-descriptions', 'bulk', 'taxonomies'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Kestrel AI',
+    description: 'Content assistant for WooCommerce generating product descriptions and review responses directly in the dashboard.',
+    url: 'https://woocommerce.com/products/kestrel-ai/',
+    category: 'woocommerce',
+    tags: ['woocommerce', 'descriptions', 'reviews'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'StoreAgent',
+    description: 'WooCommerce AI plugin for generating product reviews, descriptions, and answering customer questions automatically.',
+    url: 'https://wordpress.org/plugins/storeagent-ai-for-woocommerce/',
+    category: 'woocommerce',
+    tags: ['woocommerce', 'reviews', 'customer-support'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'WriteText.ai for WooCommerce',
+    description: 'Uses store data and image analysis to produce SEO-optimized product content with full automation support.',
+    url: 'https://writetext.ai/woocommerce',
+    category: 'woocommerce',
+    tags: ['woocommerce', 'seo', 'automation', 'image-analysis'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'AI Addons for WooCommerce',
+    description: 'Generates product descriptions, images, and review replies directly inside the WooCommerce product editor.',
+    url: 'https://woocommerce.com/products/ai-addons/',
+    category: 'woocommerce',
+    tags: ['woocommerce', 'descriptions', 'images', 'reviews'],
+    pricing: 'Paid',
+  },
+
+  // ─── Forms & Automation ────────────────────────────────────────────────────
+  {
+    name: 'FormGent',
+    description: 'Modern AI-powered form builder with multi-step forms, quizzes, and payment collection via natural language prompts.',
+    url: 'https://wordpress.org/plugins/formgent/',
+    category: 'forms',
+    tags: ['forms', 'quizzes', 'payments', 'natural-language'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'SureForms',
+    description: 'AI-powered form builder with smart suggestions and native integrations with Google Sheets, Mailchimp, and FluentCRM.',
+    url: 'https://wordpress.com/plugins/sureforms',
+    category: 'forms',
+    tags: ['forms', 'integrations', 'smart-suggestions'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'WPForms AI',
+    description: 'Conversational AI form builder generating complex forms with payment options and conditional logic from a single prompt.',
+    url: 'https://wpforms.com/',
+    category: 'forms',
+    tags: ['forms', 'conditional-logic', 'payments', 'drag-and-drop'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'Fluent Forms AI',
+    description: 'Build fully functional WordPress forms using plain-language AI prompts — part of the popular Fluent Forms ecosystem.',
+    url: 'https://fluentforms.com/',
+    category: 'forms',
+    tags: ['forms', 'natural-language', 'ecosystem'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Uncanny Automator',
+    description: 'No-code automation tool connecting WordPress to AI tools, marketing platforms, CRMs, and email services.',
+    url: 'https://wordpress.org/plugins/uncanny-automator/',
+    category: 'forms',
+    tags: ['automation', 'no-code', 'integrations', 'crm'],
+    pricing: 'Freemium',
+  },
+
+  // ─── Translation ───────────────────────────────────────────────────────────
+  {
+    name: 'Weglot',
+    description: 'AI translation using OpenAI and Gemini with context-aware models. Supports WooCommerce emails and dynamic content.',
+    url: 'https://wordpress.org/plugins/weglot/',
+    category: 'translation',
+    tags: ['translation', 'multilingual', 'openai', 'woocommerce'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'AI Translate',
+    description: 'Auto-translates your entire website in real-time using AI, supports 35+ languages with no manual work.',
+    url: 'https://wordpress.org/plugins/ai-translate/',
+    category: 'translation',
+    tags: ['translation', 'real-time', 'automatic'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'GPTranslate',
+    description: 'AI-powered multilingual translation supporting ChatGPT, Gemini, DeepSeek, Claude, and DeepL — choose your preferred model.',
+    url: 'https://wordpress.com/plugins/gptranslate',
+    category: 'translation',
+    tags: ['translation', 'multi-model', 'claude', 'deepl'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'ConveyThis Translate',
+    description: 'Works with all themes and plugins including WooCommerce, supports 200+ languages with a visual in-context editor.',
+    url: 'https://www.conveythis.com/',
+    category: 'translation',
+    tags: ['translation', '200-languages', 'visual-editor'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Linguise',
+    description: 'Cloud AI translation with dynamic checkout and customer email support for WooCommerce — fully automatic.',
+    url: 'https://www.linguise.com/integrations/wordpress-automatic-translation-plugin/',
+    category: 'translation',
+    tags: ['translation', 'woocommerce', 'cloud', 'automatic'],
+    pricing: 'Paid',
+  },
+
+  // ─── Video & Transcription ─────────────────────────────────────────────────
+  {
+    name: 'VidSEO',
+    description: 'Embeds video transcripts for accessibility and SEO, automatically retrieves YouTube subtitles and formats them.',
+    url: 'https://wordpress.org/plugins/vidseo/',
+    category: 'video',
+    tags: ['transcription', 'youtube', 'seo', 'accessibility'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Wubtitle',
+    description: 'All-in-one video-to-text plugin with auto-subtitling and transcript conversion from YouTube and Vimeo embeds.',
+    url: 'https://wordpress.com/plugins/wubtitle',
+    category: 'video',
+    tags: ['subtitles', 'transcription', 'youtube', 'vimeo'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Hyperaudio',
+    description: 'Interactive transcript display plugin for improved content accessibility and full-text searchability of video/audio.',
+    url: 'https://github.com/hyperaudio/wordpress-hyperaudio',
+    github: 'https://github.com/hyperaudio/wordpress-hyperaudio',
+    category: 'video',
+    tags: ['transcription', 'interactive', 'accessibility'],
+    pricing: 'Open Source',
+  },
+
+  // ─── Page Builders ─────────────────────────────────────────────────────────
+  {
+    name: 'Elementor AI',
+    description: 'AI-powered content and layout suggestions inside Elementor builder with code snippet generation and prompt-to-design.',
+    url: 'https://elementor.com/',
+    category: 'page-builders',
+    tags: ['page-builder', 'elementor', 'layout', 'code-gen'],
+    pricing: 'Freemium',
+    featured: true,
+  },
+  {
+    name: 'Divi AI',
+    description: 'Content, image, and layout generation inside the Divi ecosystem — generate entire page sections from a prompt.',
+    url: 'https://www.divi.com/',
+    category: 'page-builders',
+    tags: ['page-builder', 'divi', 'layout', 'image-gen'],
+    pricing: 'Paid',
+  },
+
+  // ─── Themes ────────────────────────────────────────────────────────────────
+  {
+    name: 'Mindware',
+    description: 'Modern AI startup and SaaS theme with clean layouts, bold typography, and CTA-focused section templates.',
+    url: 'https://themeforest.net/',
+    category: 'themes',
+    tags: ['saas', 'startup', 'landing-page'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'Elementra',
+    description: 'Sleek Elementor-based theme with an AI chatbot layout for SaaS products and automation platform landing pages.',
+    url: 'https://themeforest.net/',
+    category: 'themes',
+    tags: ['elementor', 'saas', 'chatbot-layout'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'Hub',
+    description: 'Multipurpose theme with 80+ pre-built websites, 700+ templates, and AI-driven customization recommendations.',
+    url: 'https://themeforest.net/',
+    category: 'themes',
+    tags: ['multipurpose', 'templates', 'customization'],
+    pricing: 'Paid',
+  },
+
+  // ─── MCP Integration ───────────────────────────────────────────────────────
+  {
+    name: 'Royal MCP',
+    description: 'Implements the Model Context Protocol for WordPress, giving AI platforms structured, secure access to site content.',
+    url: 'https://wordpress.org/plugins/royal-mcp/',
+    category: 'mcp',
+    tags: ['mcp', 'agents', 'protocol', 'ai-access'],
+    pricing: 'Free',
+  },
+  {
+    name: 'WordPress WAE',
+    description: 'Comprehensive MCP integration providing 45 carefully designed WordPress abilities for AI agent interaction.',
+    url: 'https://github.com/kradyy/wordpress-wae',
+    github: 'https://github.com/kradyy/wordpress-wae',
+    category: 'mcp',
+    tags: ['mcp', 'agents', '45-abilities', 'open-source'],
+    pricing: 'Open Source',
+  },
+
+  // ─── Hosting & Site Builders ───────────────────────────────────────────────
+  {
+    name: 'ZipWP',
+    description: 'AI website builder generating complete WordPress sites from a business description with included managed hosting.',
+    url: 'https://zipwp.com/',
+    category: 'hosting',
+    tags: ['site-builder', 'managed-hosting', 'ai-generated'],
+    pricing: 'Freemium',
+    featured: true,
+  },
+  {
+    name: '10Web AI Builder',
+    description: 'Build full WordPress sites with an AI Co-Pilot in minutes — powered by managed Google Cloud infrastructure.',
+    url: 'https://10web.io/wordpress-ai-builder/',
+    category: 'hosting',
+    tags: ['site-builder', 'google-cloud', 'managed-hosting'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'Hostinger AI Builder',
+    description: 'AI-powered WordPress site builder with the Kodee AI chatbot for real-time guidance and instant site generation.',
+    url: 'https://www.hostinger.com/ai-website-builder-for-wordpress',
+    category: 'hosting',
+    tags: ['site-builder', 'chatbot', 'managed-hosting'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'Elementor Hosting',
+    description: 'Managed WordPress hosting with a built-in AI assistant, Google Cloud infrastructure, and Elementor pre-installed.',
+    url: 'https://elementor.com/hosting/',
+    category: 'hosting',
+    tags: ['managed-hosting', 'google-cloud', 'elementor'],
+    pricing: 'Paid',
+  },
+
+  // ─── Open Source ───────────────────────────────────────────────────────────
+  {
+    name: 'AI Engine (source)',
+    description: 'Full source code for the popular AI Engine plugin — contribute features, report bugs, or fork for your own builds.',
+    url: 'https://github.com/jordymeow/ai-engine',
+    github: 'https://github.com/jordymeow/ai-engine',
+    category: 'open-source',
+    tags: ['plugin', 'chatbot', 'content', 'community'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'ai-services (felixarntz)',
+    description: 'Unified AI services layer for WP core and plugins — the foundation for multi-provider AI in WordPress.',
+    url: 'https://github.com/felixarntz/ai-services',
+    github: 'https://github.com/felixarntz/ai-services',
+    category: 'open-source',
+    tags: ['sdk', 'core', 'multi-provider', 'php'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'WP AI Assistant',
+    description: 'Open-source GPT ChatBot WordPress plugin built with the OpenAI API — ideal for learning and customization.',
+    url: 'https://github.com/federicopepedev/wp-ai-assistant',
+    github: 'https://github.com/federicopepedev/wp-ai-assistant',
+    category: 'open-source',
+    tags: ['chatbot', 'gpt', 'beginner-friendly'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'Innovator AI',
+    description: 'AI assistant for WordPress content writing using OpenAI and ChatGPT — lightweight and easy to extend.',
+    url: 'https://github.com/wp-innovator/innovator-ai',
+    github: 'https://github.com/wp-innovator/innovator-ai',
+    category: 'open-source',
+    tags: ['content', 'chatgpt', 'lightweight'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'Human Made AI Plugin',
+    description: 'AI integration layer from Human Made providing deep WordPress integration with machine-learning capabilities for enterprise.',
+    url: 'https://github.com/humanmade/ai-plugin',
+    github: 'https://github.com/humanmade/ai-plugin',
+    category: 'open-source',
+    tags: ['enterprise', 'ml', 'integration', 'human-made'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'Automattic AI Experiments',
+    description: 'Public repo of prototypes and proof-of-concept AI projects for WordPress and WooCommerce from the Automattic team.',
+    url: 'https://github.com/Automattic/ai-experiments',
+    github: 'https://github.com/Automattic/ai-experiments',
+    category: 'open-source',
+    tags: ['experiments', 'woocommerce', 'automattic', 'research'],
+    pricing: 'Open Source',
+  },
+
+  // ─── Learning Resources ────────────────────────────────────────────────────
+  {
+    name: 'Make WordPress – AI Initiative',
+    description: 'Official WordPress contributor hub for AI features, RFC discussions, and the PHP AI Client SDK roadmap.',
+    url: 'https://make.wordpress.org/ai/',
+    category: 'learning',
+    tags: ['official', 'community', 'roadmap', 'rfc'],
+    pricing: 'Free',
+  },
+  {
+    name: 'WP Developer News – AI',
+    description: 'WordPress developer blog covering new AI APIs, PHP SDK releases, integration guides, and community experiments.',
+    url: 'https://developer.wordpress.org/news/',
+    category: 'learning',
+    tags: ['official', 'tutorials', 'api-updates'],
+    pricing: 'Free',
+  },
+  {
+    name: 'Build & Sell AI Tools on WordPress',
+    description: 'Udemy course on creating and monetizing AI tools using WordPress — covers setup, APIs, and plugin development.',
+    url: 'https://www.udemy.com/course/build-ai-tools-on-wordpress/',
+    category: 'learning',
+    tags: ['udemy', 'course', 'monetization', 'plugin-dev'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'Complete AI WordPress Creation Course',
+    description: 'Fast-track Udemy course on building full WordPress sites using AI from scratch — design, copy, and launch.',
+    url: 'https://www.udemy.com/course/complete-ai-wordpress-creation-course/',
+    category: 'learning',
+    tags: ['udemy', 'course', 'site-building'],
+    pricing: 'Paid',
+  },
+  {
+    name: 'WordPress.com AI Learning Path',
+    description: 'Free self-guided courses on building WordPress sites with AI — from WordPress.com\'s official learning platform.',
+    url: 'https://wordpress.com/learn/courses/unlocking-the-power-of-ai/',
+    category: 'learning',
+    tags: ['free', 'official', 'self-paced', 'beginner'],
+    pricing: 'Free',
+  },
+];
+
+export function getCategoryBySlug(slug: string): Category | undefined {
+  return categories.find((c) => c.slug === slug);
+}
+
+export const featuredTools = tools.filter((t) => t.featured);
+export const totalTools = tools.length;
+export const totalCategories = categories.length;

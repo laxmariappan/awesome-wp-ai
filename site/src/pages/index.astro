@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+import ToolsApp from '../components/ToolsApp';
+import { tools, categories, totalTools, totalCategories } from '../data/tools';
+---
+
+<Layout>
+  <Header />
+  <main>
+    <Hero totalTools={totalTools} totalCategories={totalCategories} />
+    <ToolsApp tools={tools} categories={categories} client:load />
+  </main>
+  <Footer />
+</Layout>
+
+<style is:global>
+  /* Hide scrollbar for category pills */
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Line clamp utility */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
