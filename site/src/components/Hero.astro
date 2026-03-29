@@ -6,74 +6,134 @@ interface Props {
 const { totalTools, totalCategories } = Astro.props;
 ---
 
-<section class="relative overflow-hidden border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0d0f1a]">
-  <!-- Gradient blobs -->
+<section class="relative overflow-hidden bg-surface-900 dark:bg-surface-900 border-b border-white/[0.06]">
+
+  <!-- ── Ambient background orbs ── -->
   <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-    <div class="absolute -top-32 -left-20 w-[500px] h-[500px] rounded-full bg-brand-500/10 blur-[100px]"></div>
-    <div class="absolute top-10 right-0 w-[400px] h-[400px] rounded-full bg-purple-500/10 blur-[120px]"></div>
+    <!-- Primary blue orb -->
+    <div class="absolute -top-40 -left-24 w-[600px] h-[600px] rounded-full animate-float"
+         style="background: radial-gradient(circle, rgba(37,99,235,0.18) 0%, rgba(37,99,235,0.04) 60%, transparent 80%); filter: blur(1px);">
+    </div>
+    <!-- Cyan orb -->
+    <div class="absolute top-20 right-0 w-[500px] h-[500px] rounded-full animate-float-delay"
+         style="background: radial-gradient(circle, rgba(6,182,212,0.14) 0%, rgba(6,182,212,0.03) 60%, transparent 80%); filter: blur(1px);">
+    </div>
+    <!-- Subtle grid overlay -->
+    <div class="absolute inset-0 opacity-[0.03]"
+         style="background-image: linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px); background-size: 64px 64px;">
+    </div>
   </div>
 
+  <!-- ── Content ── -->
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
 
     <!-- Badge -->
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-700 mb-6">
-      <span class="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse"></span>
-      Community curated · Open source
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold mb-6
+                border border-brand-500/30 bg-brand-500/10 text-brand-300
+                animate-fade-in"
+         style="animation-delay: 0ms">
+      <span class="relative flex h-1.5 w-1.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-500"></span>
+      </span>
+      Community curated · Open source · Always free
     </div>
 
     <!-- Headline -->
-    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4 leading-tight">
-      Discover the Best
-      <span class="block bg-gradient-to-r from-brand-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-        WordPress AI Tools
-      </span>
+    <h1 class="text-4xl sm:text-5xl lg:text-[3.75rem] font-extrabold tracking-tight leading-[1.1] mb-5
+               animate-slide-up"
+        style="animation-delay: 80ms">
+      <span class="text-white">Discover the Best</span>
+      <br />
+      <span class="text-shimmer">WordPress AI Tools</span>
     </h1>
 
-    <p class="max-w-2xl mx-auto text-lg text-gray-500 dark:text-gray-400 mb-10">
-      A hand-curated list of AI-powered plugins, frameworks, themes, and resources
-      for the WordPress ecosystem — updated regularly by the community.
+    <!-- Subhead -->
+    <p class="max-w-xl mx-auto text-base sm:text-lg text-slate-400 leading-relaxed mb-10
+              animate-slide-up"
+       style="animation-delay: 140ms">
+      Hand-curated AI plugins, frameworks, themes, and resources
+      for the WP ecosystem — searchable, filterable, always up to date.
     </p>
 
-    <!-- Stats -->
-    <div class="inline-flex items-center gap-6 sm:gap-10 px-6 py-3 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 mb-10">
+    <!-- Stats row -->
+    <div class="inline-flex items-center gap-8 sm:gap-12 px-6 sm:px-8 py-4 rounded-2xl mb-10
+                border border-white/[0.08] bg-white/[0.04] backdrop-blur-sm
+                animate-slide-up"
+         style="animation-delay: 200ms">
+
       <div class="text-center">
-        <p class="text-2xl font-bold text-gray-900 dark:text-white">{totalTools}<span class="text-brand-500">+</span></p>
-        <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Tools</p>
+        <p class="font-mono text-2xl font-bold text-white">
+          <span data-count-up data-target={totalTools}>0</span>
+          <span class="text-brand-400">+</span>
+        </p>
+        <p class="text-[11px] text-slate-500 uppercase tracking-widest mt-0.5 font-mono">Tools</p>
       </div>
-      <div class="w-px h-8 bg-gray-200 dark:bg-gray-700"></div>
+
+      <div class="w-px h-8 bg-white/[0.08]"></div>
+
       <div class="text-center">
-        <p class="text-2xl font-bold text-gray-900 dark:text-white">{totalCategories}</p>
-        <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Categories</p>
+        <p class="font-mono text-2xl font-bold text-white">
+          <span data-count-up data-target={totalCategories}>0</span>
+        </p>
+        <p class="text-[11px] text-slate-500 uppercase tracking-widest mt-0.5 font-mono">Categories</p>
       </div>
-      <div class="w-px h-8 bg-gray-200 dark:bg-gray-700"></div>
+
+      <div class="w-px h-8 bg-white/[0.08]"></div>
+
       <div class="text-center">
-        <p class="text-2xl font-bold text-gray-900 dark:text-white">Free</p>
-        <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Always</p>
+        <p class="font-mono text-2xl font-bold text-white">CC0</p>
+        <p class="text-[11px] text-slate-500 uppercase tracking-widest mt-0.5 font-mono">License</p>
       </div>
     </div>
 
     <!-- CTA buttons -->
-    <div class="flex flex-wrap justify-center gap-3">
-      <a
-        href="#tools"
-        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold shadow-sm transition-colors"
-      >
+    <div class="flex flex-wrap justify-center gap-3 animate-slide-up" style="animation-delay: 260ms">
+      <a href="#tools"
+         class="btn-gradient inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white">
         Browse all tools
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>
       </a>
-      <a
-        href="https://github.com/laxmariappan/awesome-wp-ai"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm font-semibold hover:border-brand-400 hover:text-brand-600 dark:hover:text-brand-400 transition-all"
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+      <a href="https://github.com/laxmariappan/awesome-wp-ai"
+         target="_blank" rel="noopener noreferrer"
+         class="btn-ghost inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-300 hover:text-white">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
         </svg>
         Star on GitHub
       </a>
     </div>
+
   </div>
 </section>
+
+<!-- Count-up animation -->
+<script>
+  function animateCount(el: HTMLElement) {
+    const target = parseInt(el.dataset.target ?? '0', 10);
+    const duration = 1200;
+    const startTime = performance.now();
+    function update(now: number) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // Ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = String(Math.floor(eased * target));
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target as HTMLElement);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+
+  document.querySelectorAll<HTMLElement>('[data-count-up]').forEach(el => observer.observe(el));
+</script>
