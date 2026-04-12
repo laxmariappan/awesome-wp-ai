@@ -61,6 +61,7 @@ Plugins focused on writing assistance, blog post drafting, and text optimization
 AI-powered plugins for search engine optimization, metadata, and alt text.
 
 - [Rank Math SEO](https://wordpress.org/plugins/seo-by-rank-math/) - AI-powered SEO plugin (3M+ installs) with Content AI for keyword suggestions, meta titles, descriptions, and content scoring.
+- [toprank](https://github.com/nowork-studio/toprank) - Open-source Claude Code plugin with 9 SEO and Google Ads skills that can ship metadata rewrites, schema markup, bid updates, and CMS publishing workflows for WordPress teams.
 - [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) - Long-established SEO plugin with an AI-powered title and meta description generator (v21.0+).
 - [SOOZ – AI for SEO](https://wordpress.org/plugins/ai-for-seo/) - Bulk alt text and metadata generator with SEO Autopilot, syncs with Yoast, Rank Math, and SEOPress.
 - [Alt Text AI](https://wordpress.org/plugins/alttext-ai/) - Automatically generates image alt text for SEO and accessibility, integrates with major SEO plugins.
