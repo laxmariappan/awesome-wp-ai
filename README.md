@@ -10,6 +10,10 @@ Contributions welcome! Read the [contribution guidelines](CONTRIBUTING.md) first
 
 - [Official WordPress AI Infrastructure](#official-wordpress-ai-infrastructure)
 - [Community AI Providers](#community-ai-providers)
+- [Abilities API](#abilities-api)
+- [Plugins with Abilities API](#plugins-with-abilities-api)
+- [MCP Integration](#mcp-integration)
+- [Agent Skills](#agent-skills)
 - [Multi-Purpose AI Plugins](#multi-purpose-ai-plugins)
 - [Content Generation](#content-generation)
 - [SEO & Metadata](#seo--metadata)
@@ -21,9 +25,6 @@ Contributions welcome! Read the [contribution guidelines](CONTRIBUTING.md) first
 - [Video & Transcription](#video--transcription)
 - [Page Builders with AI](#page-builders-with-ai)
 - [Themes](#themes)
-- [Plugins with Abilities API](#plugins-with-abilities-api)
-- [MCP Integration](#mcp-integration)
-- [Agent Skills](#agent-skills)
 - [Hosting & Site Builders](#hosting--site-builders)
 - [Open Source Projects](#open-source-projects)
 - [Learning Resources](#learning-resources)
@@ -58,6 +59,89 @@ Community-built provider plugins for the PHP AI Client SDK — write against the
 - [Open WebUI provider](https://wordpress.org/plugins/ai-provider-for-open-webui/) - OpenAI-compatible settings with automatic model discovery.
 - [Alibaba Cloud provider](https://wordpress.org/plugins/ai-provider-for-alibaba-cloud/) - DashScope/Qwen connector with function-calling support.
 - [DuetG AI Connector](https://github.com/duetg/duetg-ai-connector) - Supports DeepSeek, Moonshot, MiniMax, SiliconFlow, LM Studio, and Ollama.
+
+## Abilities API
+
+Developer tools, SDKs, and utilities for building with the WordPress [Abilities API](https://developer.wordpress.org/apis/abilities/) (`wp_register_ability()`). These tools help you author, discover, test, debug, and expose abilities.
+
+- [Lax Abilities Toolkit](https://github.com/laxmariappan/lax-abilities-toolkit) - Developer-friendly toolkit that exposes content management as Abilities via the WP Abilities API. Supports any post type or taxonomy via filter hooks.
+- [Abilities Scout](https://github.com/laxmariappan/abilities-scout) - Scan any installed WordPress plugin and discover potential abilities for the Abilities API (WP 6.9+). One click, static analysis, no code execution.
+- [wp-ability-toolkit](https://github.com/emdashcodes/wp-ability-toolkit) - Toolkit for developing and testing abilities and AI integrations.
+- [wp-abilities-test](https://github.com/jonathanbossenger/wp-abilities-test) - Small test and demo plugin for PHP and JS abilities by Jonathan Bossenger.
+- [WebMCP Abilities](https://github.com/code-atlantic/webmcp-abilities) - By WP Popup Maker team. Bridges `wp_register_ability()` to Chrome's `navigator.modelContext` browser API — register once for both MCP Adapter and WebMCP.
+- [ai-valve](https://github.com/soderlind/ai-valve) - Meters and gates AI Client prompt calls as middleware.
+- [Grumpy AI Gate](https://wordpress.org/plugins/grumpy-ai-gate/) - Records and inspects AI Client requests for debugging and governance.
+- [wp-ai-content-kit](https://github.com/richtabor/wp-ai-content-kit) - Content operations toolkit (alt text, excerpts, etc.) built on the WP AI Client.
+- [Enable Abilities for MCP](https://wordpress.org/plugins/enable-abilities-for-mcp/) - 32 abilities, WooCommerce-aware; explicit bridge between the Abilities API and MCP Adapter.
+- [mcp-expose-abilities](https://github.com/bjornfix/mcp-expose-abilities) - Documents 61+ core abilities and 280+ ecosystem abilities across Elementor, Rank Math, Wordfence, Brevo, Cloudflare, and Google Workspace.
+- [wp-cli/ability-command](https://github.com/wp-cli/ability-command) - Official WP-CLI package for listing, inspecting, and executing registered abilities from the command line.
+
+## Plugins with Abilities API
+
+Major plugins that have implemented `wp_register_ability()`, making their functionality discoverable and invocable by AI agents via the MCP Adapter.
+
+- [Advanced Custom Fields (ACF) 6.8](https://www.advancedcustomfields.com/blog/acf-pro-6-8-release-ai-ready-discoverable-content/) - Full Abilities API integration. AI tools can discover, inspect, create, and modify field groups, CPTs, taxonomies, and content. 2M+ installs.
+- [WooCommerce](https://developer.woocommerce.com/docs/features/mcp/) - Registers abilities under `woocommerce/` namespace, exposed via MCP Adapter. Provides structured AI access to products, orders, and customers. 7M+ installs.
+- [WPForms Lite](https://wpforms.com/) - Abilities API integration. 6M+ installs.
+- [WPCode / Insert Headers and Footers](https://wordpress.org/plugins/insert-headers-and-footers/) - Dedicated abilities class. 3M+ installs.
+- [Jetpack](https://wordpress.org/plugins/jetpack/) - Bundles abilities; Jetpack Forms registers abilities via core. 3M+ installs.
+- [Ninja Forms](https://ninjaforms.com/blog/build-wordpress-forms-with-ai/) - 32 abilities across 7 capability areas. 600K+ installs.
+- [SureForms](https://wordpress.org/plugins/sureforms/) - Abilities API integration. 500K+ installs.
+- [MainWP Dashboard](https://wordpress.org/plugins/mainwp/) - Abilities woven throughout; exposes site management surface to AI agents. 20K+ installs.
+- [miniOrange AI Agent](https://wordpress.org/plugins/miniorange-ai-agent/) - Abilities API adopted across SAML SSO, OAuth, LDAP, and 2FA plugins. AI tools can diagnose SSO errors.
+- [VigIA](https://wordpress.org/plugins/vigia/) - 9 Abilities API actions around analytics, robots, and blocking.
+- [DiveWP](https://wordpress.org/plugins/divewp-boost-site-performance/) - 11 performance-diagnostic abilities for technical audits.
+- [CartFlows](https://wordpress.org/plugins/cartflows/) - Abilities API integration. 200K+ installs.
+- [OttoKit Automation](https://wordpress.org/plugins/suretriggers/) - Abilities API integration. 100K+ installs.
+- [LatePoint Booking](https://wordpress.org/plugins/latepoint/) - Abilities API integration. 100K+ installs.
+- [WP Password Policy](https://wordpress.org/plugins/password-requirements/) - v3.6.0 added Abilities API; password-policy controls accessible via MCP.
+- [Fluid Design System for Elementor](https://wordpress.org/plugins/fluid-design-system-for-elementor/) - v2.3.0 added AI-agent integration, registering `fluid-design-system` MCP server with MCP Adapter.
+- [hCaptcha for WP](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) - Abilities API integration. 70K+ installs.
+- [WindPress (Tailwind CSS)](https://wordpress.org/plugins/windpress/) - Abilities API integration. 3K+ installs.
+- [Ultimate Multisite](https://wordpress.org/plugins/ultimate-multisite/) - AI access to SaaS and WaaS networks.
+- [WS Form](https://wsform.com/completing-the-stack-ws-form-and-the-wordpress-ai-client-sdk/) - Full Abilities API + built-in MCP server + "Create from AI" template.
+
+## MCP Integration
+
+Plugins, servers, and tools implementing the [Model Context Protocol](https://modelcontextprotocol.io/) for WordPress.
+
+### Official
+
+- [WordPress MCP Adapter](https://github.com/WordPress/mcp-adapter) - Official WordPress MCP adapter bridging the Abilities API to MCP-compatible AI agents. 820+ stars.
+- [WordPress.org Plugin Directory MCP Server](https://make.wordpress.org/meta/2026/03/20/plugin-directory-mcp-server/) - Official MCP server built on Abilities API. Validate readmes, check submission status, and submit plugins. [Full docs](https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/)
+- [WordPress Playground MCP](https://make.wordpress.org/playground/2026/03/17/connect-ai-coding-agents-to-wordpress-playground-with-mcp/) - One `npx` command connects agents to WordPress Playground running in the browser via WebAssembly. No server, no Docker.
+
+### Plugins (WordPress.org)
+
+- [Royal MCP](https://wordpress.org/plugins/royal-mcp/) - Security-focused MCP implementation; auto-detects WooCommerce.
+- [AI Agent Hub](https://wordpress.org/plugins/ai-workflow-automation-ai-agent-hub/) - 80+ abilities, 10 modules, MCP server, and workflow builder.
+- [StifLi Flex MCP](https://wordpress.org/plugins/stifli-flex-mcp/) - 117+ tools; auto-discovers registered abilities.
+- [Abilities Bridge](https://wordpress.org/plugins/abilities-bridge/) - MCP server + admin chat with 7-gate permissions.
+- [MountDev AI MCP Connector](https://wordpress.org/plugins/mountdev-ai-mcp-connector/) - 75+ tools, OAuth 2.0 for ChatGPT integration.
+- [Rapls AI Chatbot](https://wordpress.org/plugins/rapls-ai-chatbot/) - 7 MCP tools; "WordPress Abilities API Bridge" auto-registers tools as abilities. Bilingual English/Japanese.
+- [Virtual Media Folders](https://wordpress.org/plugins/virtual-media-folders/) - Folder-management abilities for agentic media organization.
+- [All Sources Images](https://wordpress.org/plugins/all-sources-images/) - Image search, featured-image, and generation abilities.
+
+### Community Servers & Libraries
+
+- [GravityMCP](https://github.com/GravityKit/GravityMCP) - By GravityKit. Open-source MCP server for Gravity Forms.
+- [Novamira](https://novamira.ai/) - Five raw primitives (Execute PHP, Read/Write/Edit Files, Delete/Toggle, List Directory) in a sandboxed PHP execution environment. Free, open source, WordPress 6.9+.
+- [Respira](https://www.npmjs.com/package/@respira/wordpress-mcp-server) - Full-featured MCP client for self-hosted WordPress with multi-site support and Abilities API integration. 940+ weekly npm downloads.
+- [Claudeus WP MCP](https://github.com/deus-h/claudeus-wp-mcp) - 145 tools for comprehensive WordPress management.
+- [mcp-wordpress](https://github.com/docdyhr/mcp-wordpress) - DXT extension for Claude Desktop.
+- [@automattic/mcp-wordpress-remote](https://github.com/Automattic/mcp-wordpress-remote) - Automattic's remote MCP server implementation.
+- [rnaga/wp-mcp](https://github.com/rnaga/wp-mcp) - CRUD primitives for posts, users, comments, terms, metadata, options, and site settings. Also on npm as `@rnaga/wp-mcp`.
+- [buddypress-mcp](https://github.com/vapvarun/buddypress-mcp) - BuddyPress MCP server + abilities MU-plugin.
+- [elementor-mcp-api](https://github.com/bvisible/elementor-mcp-api) - REST + MCP controls for AI-driven Elementor editing; auto-registers 20 abilities with MCP Adapter.
+- [wordpress-wae](https://github.com/kradyy/wordpress-wae) - 84 carefully designed abilities for AI agent interaction with WordPress.
+
+## Agent Skills
+
+Portable instruction bundles that teach AI coding assistants WordPress development patterns. Not plugins — knowledge for machines.
+
+- [WordPress/agent-skills](https://github.com/WordPress/agent-skills) - Official repository with 14 skills for Claude Code, Codex, Copilot, Cursor, Gemini CLI, and more. 1.2K+ stars. Install via `npx skills add`. Includes: `wordpress-router`, `wp-block-development`, `wp-plugin-development`, `wp-rest-api`, `wp-abilities-api`, `wp-performance`, `wp-playground`, and more.
+- [wp-cli/ai-command](https://github.com/wp-cli/ai-command) - CLI control of WordPress with WP-CLI, AI, and MCP.
+- [claude-skills-wp-abilities-api](https://github.com/nathanonn/claude-skills-wp-abilities-api) - Claude skill package for WordPress Abilities API docs and conventions.
 
 ## Multi-Purpose AI Plugins
 
@@ -158,77 +242,6 @@ WordPress themes built for AI products or with integrated AI capabilities.
 - [Elementra](https://themeforest.net/) - Elementor-based theme with AI chatbot layout for SaaS and automation platforms.
 - [Hub](https://themeforest.net/) - Multipurpose theme with 80+ pre-built websites, 700+ templates, and AI-driven customization.
 
-## Plugins with Abilities API
-
-Plugins that have implemented the WordPress [Abilities API](https://developer.wordpress.org/apis/abilities/) (`wp_register_ability()`), making their functionality discoverable and invocable by AI agents via the MCP Adapter.
-
-- [Advanced Custom Fields (ACF) 6.8](https://www.advancedcustomfields.com/blog/acf-pro-6-8-release-ai-ready-discoverable-content/) - Full Abilities API integration. AI tools can discover, inspect, create, and modify field groups, CPTs, taxonomies, and content. 2M+ installs.
-- [WooCommerce](https://developer.woocommerce.com/docs/features/mcp/) - Registers abilities under `woocommerce/` namespace, exposed via MCP Adapter. Provides structured AI access to products, orders, and customers. 7M+ installs.
-- [WPForms Lite](https://wpforms.com/) - Abilities API integration. 6M+ installs.
-- [WPCode / Insert Headers and Footers](https://wordpress.org/plugins/insert-headers-and-footers/) - Dedicated abilities class. 3M+ installs.
-- [Jetpack](https://wordpress.org/plugins/jetpack/) - Bundles abilities; Jetpack Forms registers abilities via core. 3M+ installs.
-- [Ninja Forms](https://ninjaforms.com/blog/build-wordpress-forms-with-ai/) - 32 abilities across 7 capability areas. 600K+ installs.
-- [SureForms](https://wordpress.org/plugins/sureforms/) - Abilities API integration. 500K+ installs.
-- [MainWP Dashboard](https://wordpress.org/plugins/mainwp/) - Abilities woven throughout; exposes site management surface to AI agents. 20K+ installs.
-- [miniOrange AI Agent](https://wordpress.org/plugins/miniorange-ai-agent/) - Abilities API adopted across SAML SSO, OAuth, LDAP, and 2FA plugins. AI tools can diagnose SSO errors.
-- [VigIA](https://wordpress.org/plugins/vigia/) - 9 Abilities API actions around analytics, robots, and blocking. 800+ installs.
-- [DiveWP](https://wordpress.org/plugins/divewp-boost-site-performance/) - 11 performance-diagnostic abilities for technical audits.
-- [Enable Abilities for MCP](https://wordpress.org/plugins/enable-abilities-for-mcp/) - 32 abilities, WooCommerce-aware, explicit MCP bridge.
-- [CartFlows](https://wordpress.org/plugins/cartflows/) - Abilities API integration. 200K+ installs.
-- [OttoKit Automation](https://wordpress.org/plugins/suretriggers/) - Abilities API integration. 100K+ installs.
-- [LatePoint Booking](https://wordpress.org/plugins/latepoint/) - Abilities API integration. 100K+ installs.
-- [WP Password Policy](https://wordpress.org/plugins/password-requirements/) - v3.6.0 added Abilities API; password-policy controls accessible via MCP.
-- [Fluid Design System for Elementor](https://wordpress.org/plugins/fluid-design-system-for-elementor/) - v2.3.0 added AI-agent integration, registering `fluid-design-system` MCP server with MCP Adapter.
-- [hCaptcha for WP](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) - Abilities API integration. 70K+ installs.
-- [WindPress (Tailwind CSS)](https://wordpress.org/plugins/windpress/) - Abilities API integration. 3K+ installs.
-- [Ultimate Multisite](https://wordpress.org/plugins/ultimate-multisite/) - AI access to SaaS and WaaS networks.
-
-## MCP Integration
-
-Plugins, servers, and tools implementing the [Model Context Protocol](https://modelcontextprotocol.io/) for WordPress.
-
-### Official
-
-- [WordPress MCP Adapter](https://github.com/WordPress/mcp-adapter) - Official WordPress MCP adapter bridging the Abilities API to MCP-compatible AI agents. 820+ stars.
-- [WordPress.org Plugin Directory MCP Server](https://make.wordpress.org/meta/2026/03/20/plugin-directory-mcp-server/) - Official MCP server built on Abilities API. Validate readmes, check submission status, and submit plugins. [Full docs](https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/)
-- [WordPress Playground MCP](https://make.wordpress.org/playground/2026/03/17/connect-ai-coding-agents-to-wordpress-playground-with-mcp/) - One `npx` command connects agents to WordPress Playground running in the browser via WebAssembly. No server, no Docker.
-
-### Plugins (WordPress.org)
-
-- [Royal MCP](https://wordpress.org/plugins/royal-mcp/) - Security-focused MCP implementation; auto-detects WooCommerce.
-- [AI Agent Hub](https://wordpress.org/plugins/ai-workflow-automation-ai-agent-hub/) - 80+ abilities, 10 modules, MCP server, and workflow builder.
-- [StifLi Flex MCP](https://wordpress.org/plugins/stifli-flex-mcp/) - 117+ tools; auto-discovers registered abilities.
-- [Abilities Bridge](https://wordpress.org/plugins/abilities-bridge/) - MCP server + admin chat with 7-gate permissions.
-- [MountDev AI MCP Connector](https://wordpress.org/plugins/mountdev-ai-mcp-connector/) - 75+ tools, OAuth 2.0 for ChatGPT integration.
-- [Rapls AI Chatbot](https://wordpress.org/plugins/rapls-ai-chatbot/) - 7 MCP tools; "WordPress Abilities API Bridge" auto-registers tools as abilities. Bilingual English/Japanese.
-- [Virtual Media Folders](https://wordpress.org/plugins/virtual-media-folders/) - Folder-management abilities for agentic media organization.
-- [All Sources Images](https://wordpress.org/plugins/all-sources-images/) - Image search, featured-image, and generation abilities.
-
-### Community Servers & Libraries
-
-- [GravityMCP](https://github.com/GravityKit/GravityMCP) - By GravityKit. Open-source MCP server for Gravity Forms.
-- [Novamira](https://novamira.ai/) - Five raw primitives (Execute PHP, Read/Write/Edit Files, Delete/Toggle, List Directory) in a sandboxed PHP execution environment. Free, open source, WordPress 6.9+.
-- [Respira](https://www.npmjs.com/package/@respira/wordpress-mcp-server) - Full-featured MCP client for self-hosted WordPress with multi-site support and Abilities API integration. 940+ weekly npm downloads.
-- [WebMCP Abilities](https://github.com/code-atlantic/webmcp-abilities) - By WP Popup Maker team. Bridges `wp_register_ability()` to Chrome's `navigator.modelContext` browser API.
-- [Claudeus WP MCP](https://github.com/deus-h/claudeus-wp-mcp) - 145 tools for comprehensive WordPress management.
-- [mcp-wordpress](https://github.com/docdyhr/mcp-wordpress) - DXT extension for Claude Desktop.
-- [@automattic/mcp-wordpress-remote](https://github.com/Automattic/mcp-wordpress-remote) - Automattic's remote MCP server implementation.
-- [rnaga/wp-mcp](https://github.com/rnaga/wp-mcp) - CRUD primitives for posts, users, comments, terms, metadata, options, and site settings. Also on npm as `@rnaga/wp-mcp`.
-- [buddypress-mcp](https://github.com/vapvarun/buddypress-mcp) - BuddyPress MCP server + abilities MU-plugin.
-- [elementor-mcp-api](https://github.com/bvisible/elementor-mcp-api) - REST + MCP controls for AI-driven Elementor editing; auto-registers 20 abilities with MCP Adapter.
-- [mcp-expose-abilities](https://github.com/bjornfix/mcp-expose-abilities) - Documents 61+ core abilities and 280+ ecosystem abilities across Elementor, Rank Math, Wordfence, Brevo, Cloudflare, and Google Workspace.
-- [wordpress-wae](https://github.com/kradyy/wordpress-wae) - 84 carefully designed abilities for AI agent interaction.
-- [WS Form MCP Server](https://wsform.com/how-to-create-an-mcp-server-in-wordpress-with-the-abilities-api-and-mcp-adapter/) - Built-in MCP server in WS Form; tutorial covers building your own.
-
-## Agent Skills
-
-Portable instruction bundles that teach AI coding assistants WordPress development patterns. Not plugins — knowledge for machines.
-
-- [WordPress/agent-skills](https://github.com/WordPress/agent-skills) - Official repository with 14 skills for Claude Code, Codex, Copilot, Cursor, Gemini CLI, and more. 1.2K+ stars. Install via `npx skills add`. Includes: `wordpress-router`, `wp-block-development`, `wp-plugin-development`, `wp-rest-api`, `wp-abilities-api`, `wp-performance`, `wp-playground`, and more.
-- [wp-cli/ability-command](https://github.com/wp-cli/ability-command) - Official WP-CLI package for listing, inspecting, and executing registered abilities.
-- [wp-cli/ai-command](https://github.com/wp-cli/ai-command) - CLI control of WordPress with WP-CLI, AI, and MCP. 25+ stars.
-- [claude-skills-wp-abilities-api](https://github.com/nathanonn/claude-skills-wp-abilities-api) - Claude skill package for WordPress Abilities API docs and conventions.
-
 ## Hosting & Site Builders
 
 Managed WordPress hosting platforms with AI website builders or integrated MCP support.
@@ -256,12 +269,6 @@ Community-driven and open-source AI projects built on or for WordPress.
 - [Innovator AI](https://github.com/wp-innovator/innovator-ai) - AI assistant for WordPress content writing using OpenAI and ChatGPT.
 - [Human Made AI Plugin](https://github.com/humanmade/ai-plugin) - AI integration layer providing deep WordPress integration with ML capabilities.
 - [Automattic AI Experiments](https://github.com/Automattic/ai-experiments) - Prototypes and proof-of-concept AI projects for WordPress and WooCommerce from Automattic.
-- [wp-ai-content-kit](https://github.com/richtabor/wp-ai-content-kit) - Content operations toolkit for alt text, excerpts, and more using the WP AI Client.
-- [ai-valve](https://github.com/soderlind/ai-valve) - Meters and gates AI Client prompt calls as middleware.
-- [wp-ability-toolkit](https://github.com/emdashcodes/wp-ability-toolkit) - Toolkit for developing and testing abilities and AI integrations.
-- [mcp-expose-abilities](https://github.com/bjornfix/mcp-expose-abilities) - Documents 61+ core abilities and 280+ ecosystem abilities across major plugins.
-- [wordpress-wae](https://github.com/kradyy/wordpress-wae) - 84 abilities for comprehensive AI agent interaction with WordPress.
-- [Grumpy AI Gate](https://wordpress.org/plugins/grumpy-ai-gate/) - Records and inspects AI Client requests for debugging and governance.
 
 ## Learning Resources
 
