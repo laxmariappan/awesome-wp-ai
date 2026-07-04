@@ -25,6 +25,8 @@ Contributions welcome! Read the [contribution guidelines](CONTRIBUTING.md) first
 - [Video & Transcription](#video--transcription)
 - [Page Builders with AI](#page-builders-with-ai)
 - [Themes](#themes)
+- [Developer Tools](#developer-tools)
+- [AI Agents](#ai-agents)
 - [Hosting & Site Builders](#hosting--site-builders)
 - [Open Source Projects](#open-source-projects)
 - [Learning Resources](#learning-resources)
@@ -134,6 +136,9 @@ Plugins, servers, and tools implementing the [Model Context Protocol](https://mo
 - [buddypress-mcp](https://github.com/vapvarun/buddypress-mcp) - BuddyPress MCP server + abilities MU-plugin.
 - [elementor-mcp-api](https://github.com/bvisible/elementor-mcp-api) - REST + MCP controls for AI-driven Elementor editing; auto-registers 20 abilities with MCP Adapter.
 - [wordpress-wae](https://github.com/kradyy/wordpress-wae) - 84 carefully designed abilities for AI agent interaction with WordPress.
+- [MCP for WordPress (InstaWP)](https://github.com/InstaWP/mcp-wp) - Node-based MCP server exposing unified content, taxonomy, media, user, and plugin tools with multi-site support for clients like Claude Desktop.
+- [Publishio](https://github.com/rtCamp/publishio) - rtCamp plugin that connects MCP-compatible AI assistants to your site and builds pages and posts from your own registered block patterns, preserving your design system.
+- [WSP WordPress MCP](https://github.com/bilalnaseer/wsp-wordpress-mcp) - Free plugin with a built-in native MCP server that connects AI coding agents to WordPress, WooCommerce, ACF, Elementor, and Yoast SEO with granular per-ability controls.
 
 ## Agent Skills
 
@@ -160,6 +165,7 @@ Plugins focused on writing assistance, blog post drafting, and text optimization
 - [AI Copilot](https://wordpress.org/plugins/ai-copilot/) - Rewrite, expand, shorten, and translate text in the WordPress editor with support for OpenAI, Claude, Gemini, Perplexity, and DeepSeek.
 - [Jetpack AI Assistant](https://jetpack.com/) - AI-powered content generation directly in the WordPress block editor via Jetpack infrastructure. Also registers Abilities API abilities.
 - [Bertha AI](https://bertha.ai/) - Specialized AI content generation and copywriting plugin for WordPress.
+- [GetGenie AI](https://wordpress.org/plugins/getgenie/) - All-in-one AI content writer (80,000+ installs) with NLP keyword research, SERP and competitor analysis, 40+ templates, and the GenieChat assistant.
 
 ## SEO & Metadata
 
@@ -242,6 +248,21 @@ WordPress themes built for AI products or with integrated AI capabilities.
 - [Elementra](https://themeforest.net/) - Elementor-based theme with AI chatbot layout for SaaS and automation platforms.
 - [Hub](https://themeforest.net/) - Multipurpose theme with 80+ pre-built websites, 700+ templates, and AI-driven customization.
 
+## Developer Tools
+
+AI-assisted coding tools for building with WordPress.
+
+- [CodeWP](https://codewp.ai/) - AI code generator trained specifically for WordPress, WooCommerce, and popular plugins, producing PHP, JS, and SQL snippets and exportable plugins from natural-language prompts.
+- [PHP MCP Client](https://github.com/Automattic/php-mcp-client) - Automattic PHP implementation of a Model Context Protocol client, supporting stdio and HTTP transports for connecting WordPress to external MCP servers.
+
+## AI Agents
+
+Autonomous and agentic assistants that can take actions across a WordPress site.
+
+- [AgentWP](https://agentwp.com/) - Site-aware AI assistant (from the makers of CodeWP) that indexes your WordPress site to answer questions, generate content, and produce tailored code snippets. [GitHub](https://github.com/wpai-inc/agentwp)
+- [SD AI Agent for WordPress](https://github.com/Ultimate-Multisite/superdav-ai-agent) - Universal open-source AI agent that connects to any plugin through the WordPress Abilities API, with agentic tool-calling, RAG, memory, and bring-your-own-key model support.
+- [WP AI Agent](https://github.com/Automattic/wp-ai-agent) - Automattic research plugin exposing a WP-CLI AI agent that runs a ReAct loop over WordPress Abilities, MCP servers, and file-system tools.
+
 ## Hosting & Site Builders
 
 Managed WordPress hosting platforms with AI website builders or integrated MCP support.
@@ -283,6 +304,7 @@ Courses, tutorials, and official documentation for building with WordPress AI.
 - [Custom WooCommerce Abilities for MCP Adapter](https://wprobo.com/how-to-register-custom-woocommerce-abilities-for-the-wordpress-mcp-adapter/) - By WPRobo.
 - [Fluent Forms: WordPress Abilities API for Automation](https://fluentforms.com/wordpress-abilities-api-for-automation/) - Plain-language guide.
 - [WordCamp US 2025: Turn Your Local WordPress Install into Your AI Coding Assistant](https://us.wordcamp.org/2025/session/turn-your-local-wordpress-install-into-your-ai-coding-assistant/) - MCP + Abilities API workshop by Jonathan Bossenger.
+- [WordPress AI Workshop](https://github.com/wptrainingteam/wp-ai-workshop) - Official WordPress Training Team hands-on workshop for building AI-powered admin tools with the WordPress 7.0 AI building blocks (PHP AI Client, Abilities API, and MCP).
 - [Build and Sell AI Tools on WordPress](https://www.udemy.com/course/build-ai-tools-on-wordpress/) - Udemy course on creating and selling AI tools using WordPress.
 - [Complete AI WordPress Creation Course](https://www.udemy.com/course/complete-ai-wordpress-creation-course/) - Fast-track course on building WordPress sites with AI on Udemy.
 - [WordPress.com AI Learning Path](https://wordpress.com/learn/courses/unlocking-the-power-of-ai/) - Free self-guided courses on building WordPress sites with AI from WordPress.com.
