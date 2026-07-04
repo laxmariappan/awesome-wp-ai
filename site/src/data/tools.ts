@@ -35,6 +35,8 @@ export const categories: Category[] = [
   { slug: 'themes',         label: 'Themes',                 emoji: '🎭', color: 'bg-rose-100', darkColor: 'dark:bg-rose-900/30', textColor: 'text-rose-700 dark:text-rose-300' },
   { slug: 'abilities-api',  label: 'Abilities API',          emoji: '🧩', color: 'bg-fuchsia-100', darkColor: 'dark:bg-fuchsia-900/30', textColor: 'text-fuchsia-700 dark:text-fuchsia-300' },
   { slug: 'mcp',            label: 'MCP Integration',        emoji: '🤖', color: 'bg-slate-100', darkColor: 'dark:bg-slate-700/30', textColor: 'text-slate-700 dark:text-slate-300' },
+  { slug: 'developer-tools', label: 'Developer Tools',       emoji: '🛠️', color: 'bg-lime-100', darkColor: 'dark:bg-lime-900/30', textColor: 'text-lime-700 dark:text-lime-300' },
+  { slug: 'ai-agents',      label: 'AI Agents',              emoji: '🦾', color: 'bg-stone-100', darkColor: 'dark:bg-stone-800/40', textColor: 'text-stone-700 dark:text-stone-300' },
   { slug: 'hosting',        label: 'Hosting & Site Builders', emoji: '☁️', color: 'bg-green-100', darkColor: 'dark:bg-green-900/30', textColor: 'text-green-700 dark:text-green-300' },
   { slug: 'open-source',    label: 'Open Source',            emoji: '🔓', color: 'bg-yellow-100', darkColor: 'dark:bg-yellow-900/30', textColor: 'text-yellow-700 dark:text-yellow-300' },
   { slug: 'learning',       label: 'Learning Resources',     emoji: '📚', color: 'bg-sky-100', darkColor: 'dark:bg-sky-900/30', textColor: 'text-sky-700 dark:text-sky-300' },
@@ -186,6 +188,14 @@ export const tools: Tool[] = [
     tags: ['copywriting', 'templates', 'ads'],
     pricing: 'Paid',
   },
+  {
+    name: 'GetGenie AI',
+    description: 'All-in-one AI content writer (80K+ installs) with NLP keyword research, SERP and competitor analysis, 40+ templates, and the GenieChat assistant.',
+    url: 'https://wordpress.org/plugins/getgenie/',
+    category: 'content',
+    tags: ['writing', 'seo', 'keywords', 'chatbot'],
+    pricing: 'Freemium',
+  },
 
   // ─── SEO & Metadata ────────────────────────────────────────────────────────
   {
@@ -196,6 +206,15 @@ export const tools: Tool[] = [
     tags: ['seo', 'keywords', 'meta', 'content-score'],
     pricing: 'Freemium',
     featured: true,
+  },
+  {
+    name: 'toprank',
+    description: 'Open-source Claude Code plugin with 9 SEO and Google Ads skills — ships metadata rewrites, schema markup, bid updates, and CMS publishing workflows for WordPress teams.',
+    url: 'https://github.com/nowork-studio/toprank',
+    github: 'https://github.com/nowork-studio/toprank',
+    category: 'seo',
+    tags: ['seo', 'google-ads', 'claude-code', 'skills'],
+    pricing: 'Open Source',
   },
   {
     name: 'Yoast SEO',
@@ -626,6 +645,33 @@ export const tools: Tool[] = [
     tags: ['mcp', '145-tools', 'claude', 'management'],
     pricing: 'Open Source',
   },
+  {
+    name: 'MCP for WordPress (InstaWP)',
+    description: 'Node-based MCP server exposing unified content, taxonomy, media, user, and plugin tools with multi-site support for clients like Claude Desktop.',
+    url: 'https://github.com/InstaWP/mcp-wp',
+    github: 'https://github.com/InstaWP/mcp-wp',
+    category: 'mcp',
+    tags: ['mcp', 'server', 'multi-site', 'node'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'Publishio',
+    description: 'rtCamp plugin that connects MCP-compatible AI assistants to your site and builds pages and posts from your own registered block patterns.',
+    url: 'https://github.com/rtCamp/publishio',
+    github: 'https://github.com/rtCamp/publishio',
+    category: 'mcp',
+    tags: ['mcp', 'block-patterns', 'rtcamp', 'publishing'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'WSP WordPress MCP',
+    description: 'Free plugin with a built-in native MCP server connecting AI coding agents to WordPress, WooCommerce, ACF, Elementor, and Yoast SEO with per-ability controls.',
+    url: 'https://github.com/bilalnaseer/wsp-wordpress-mcp',
+    github: 'https://github.com/bilalnaseer/wsp-wordpress-mcp',
+    category: 'mcp',
+    tags: ['mcp', 'server', 'woocommerce', 'acf'],
+    pricing: 'Open Source',
+  },
 
   // ─── Hosting & Site Builders ───────────────────────────────────────────────
   {
@@ -692,6 +738,56 @@ export const tools: Tool[] = [
     category: 'hosting',
     tags: ['mcp', 'sandbox', 'instant-sites', 'developer-tools'],
     pricing: 'Freemium',
+  },
+
+  // ─── Developer Tools ───────────────────────────────────────────────────────
+  {
+    name: 'CodeWP',
+    description: 'AI code generator trained specifically for WordPress, WooCommerce, and popular plugins — produces PHP, JS, and SQL snippets and exportable plugins from prompts.',
+    url: 'https://codewp.ai/',
+    category: 'developer-tools',
+    tags: ['code-generation', 'woocommerce', 'php', 'snippets'],
+    pricing: 'Freemium',
+    featured: true,
+  },
+  {
+    name: 'PHP MCP Client',
+    description: 'Automattic PHP implementation of a Model Context Protocol client, supporting stdio and HTTP transports for connecting WordPress to external MCP servers.',
+    url: 'https://github.com/Automattic/php-mcp-client',
+    github: 'https://github.com/Automattic/php-mcp-client',
+    category: 'developer-tools',
+    tags: ['mcp', 'php', 'client', 'automattic'],
+    pricing: 'Open Source',
+  },
+
+  // ─── AI Agents ─────────────────────────────────────────────────────────────
+  {
+    name: 'AgentWP',
+    description: 'Site-aware AI assistant (from the makers of CodeWP) that indexes your WordPress site to answer questions, generate content, and produce tailored code snippets.',
+    url: 'https://agentwp.com/',
+    github: 'https://github.com/wpai-inc/agentwp',
+    category: 'ai-agents',
+    tags: ['agent', 'assistant', 'code-gen', 'content'],
+    pricing: 'Freemium',
+    featured: true,
+  },
+  {
+    name: 'SD AI Agent for WordPress',
+    description: 'Universal open-source AI agent that connects to any plugin through the WordPress Abilities API, with agentic tool-calling, RAG, memory, and bring-your-own-key models.',
+    url: 'https://github.com/Ultimate-Multisite/superdav-ai-agent',
+    github: 'https://github.com/Ultimate-Multisite/superdav-ai-agent',
+    category: 'ai-agents',
+    tags: ['agent', 'abilities-api', 'rag', 'byok'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'WP AI Agent',
+    description: 'Automattic research plugin exposing a WP-CLI AI agent that runs a ReAct loop over WordPress Abilities, MCP servers, and file-system tools.',
+    url: 'https://github.com/Automattic/wp-ai-agent',
+    github: 'https://github.com/Automattic/wp-ai-agent',
+    category: 'ai-agents',
+    tags: ['agent', 'wp-cli', 'react-loop', 'automattic'],
+    pricing: 'Open Source',
   },
 
   // ─── Open Source ───────────────────────────────────────────────────────────
@@ -789,6 +885,15 @@ export const tools: Tool[] = [
     url: 'https://us.wordcamp.org/2025/session/turn-your-local-wordpress-install-into-your-ai-coding-assistant/',
     category: 'learning',
     tags: ['abilities-api', 'mcp', 'wordcamp', 'workshop'],
+    pricing: 'Free',
+  },
+  {
+    name: 'WordPress AI Workshop',
+    description: 'Official WordPress Training Team hands-on workshop for building AI-powered admin tools with the WP 7.0 building blocks (PHP AI Client, Abilities API, MCP).',
+    url: 'https://github.com/wptrainingteam/wp-ai-workshop',
+    github: 'https://github.com/wptrainingteam/wp-ai-workshop',
+    category: 'learning',
+    tags: ['workshop', 'official', 'tutorial', 'building-blocks'],
     pricing: 'Free',
   },
   {
