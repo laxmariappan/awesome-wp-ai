@@ -123,6 +123,7 @@ Plugins, servers, and tools implementing the [Model Context Protocol](https://mo
 - [Rapls AI Chatbot](https://wordpress.org/plugins/rapls-ai-chatbot/) - 7 MCP tools; "WordPress Abilities API Bridge" auto-registers tools as abilities. Bilingual English/Japanese.
 - [Virtual Media Folders](https://wordpress.org/plugins/virtual-media-folders/) - Folder-management abilities for agentic media organization.
 - [All Sources Images](https://wordpress.org/plugins/all-sources-images/) - Image search, featured-image, and generation abilities.
+- [WPVibe](https://wordpress.org/plugins/vibe-ai/) - By AwesomeMotive. MCP server plugin connecting Claude, ChatGPT, Cursor, and Windsurf to self-hosted WordPress with one-click OAuth and AES-256-GCM encrypted credentials; supports theme editing, content management, WP-CLI, and the Abilities API. [GitHub](https://github.com/awesomemotive/wpvibe-ai-mcp)
 
 ### Community Servers & Libraries
 
@@ -187,6 +188,7 @@ AI-powered plugins for search engine optimization, metadata, and alt text.
 Plugins for AI-driven image creation and visual content management.
 
 - [AI Featured Image](https://wordpress.org/plugins/ai-featured-image-generator/) - One-click AI image generation using OpenAI with a free tier and Pro features for Gemini and bulk generation.
+- [Envira Gallery](https://enviragallery.com/) - Popular photo gallery plugin (Pro) with an AI Image Assistant that generates alt text, titles, captions, and tags per image or in bulk, plus AI-written gallery descriptions.
 - [Genie Image](https://wordpress.com/plugins/genie-image-ai) - AI-powered image generation plugin for WordPress.
 
 ## Chatbots & Conversational AI
