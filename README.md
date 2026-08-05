@@ -144,9 +144,11 @@ Plugins, servers, and tools implementing the [Model Context Protocol](https://mo
 
 Portable instruction bundles that teach AI coding assistants WordPress development patterns. Not plugins — knowledge for machines.
 
+- [Automattic/wordpress-agent-skills](https://github.com/Automattic/wordpress-agent-skills) - Official Automattic skills for Claude Cowork covering site specification, design systems, and WordPress block theming, used by the Cowork plugin's `/create-site` command to generate and deploy full block themes to WordPress Studio.
+- [claude-skills-wp-abilities-api](https://github.com/nathanonn/claude-skills-wp-abilities-api) - Claude skill package for WordPress Abilities API docs and conventions.
+- [Respira Agent Skills](https://github.com/respira-press/agent-skills-wordpress) - Skills for Claude Code, Codex, Antigravity, and Cursor to audit, optimize, fix, and migrate WordPress sites, backed by 197+ MCP tools across 12 page builders (302 with the WooCommerce add-on).
 - [WordPress/agent-skills](https://github.com/WordPress/agent-skills) - Official repository with 14 skills for Claude Code, Codex, Copilot, Cursor, Gemini CLI, and more. 1.2K+ stars. Install via `npx skills add`. Includes: `wordpress-router`, `wp-block-development`, `wp-plugin-development`, `wp-rest-api`, `wp-abilities-api`, `wp-performance`, `wp-playground`, and more.
 - [wp-cli/ai-command](https://github.com/wp-cli/ai-command) - CLI control of WordPress with WP-CLI, AI, and MCP.
-- [claude-skills-wp-abilities-api](https://github.com/nathanonn/claude-skills-wp-abilities-api) - Claude skill package for WordPress Abilities API docs and conventions.
 
 ## Multi-Purpose AI Plugins
 
@@ -176,6 +178,7 @@ AI-powered plugins for search engine optimization, metadata, and alt text.
 - [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) - Long-established SEO plugin with an AI-powered title and meta description generator (v21.0+). Supports llms.txt and NLWeb schema aggregation in collaboration with Microsoft.
 - [SOOZ – AI for SEO](https://wordpress.org/plugins/ai-for-seo/) - Bulk alt text and metadata generator with SEO Autopilot, syncs with Yoast, Rank Math, and SEOPress.
 - [Alt Text AI](https://wordpress.org/plugins/alttext-ai/) - Automatically generates image alt text for SEO and accessibility, integrates with major SEO plugins.
+- [AI Alt Text Generator](https://wordpress.org/plugins/ai-alt-text-generator/) - No API key required; WCAG 2.2/ADA/Section 508-aligned alt text with page-context awareness, bulk processing, and WP-CLI support. 50 free images/month.
 - [Website LLMs.txt](https://wordpress.org/plugins/website-llms-txt/) - Generates an llms.txt file to help AI assistants understand your site.
 - [LLMs-Full.txt Generator](https://wordpress.org/plugins/llms-full-txt-generator/) - Generates a comprehensive llms-full.txt for AI consumption.
 
@@ -260,7 +263,9 @@ AI-assisted coding tools for building with WordPress.
 
 Autonomous and agentic assistants that can take actions across a WordPress site.
 
+- [Agent Builder](https://agentic-plugin.com/) - Free plugin with 8 built-in AI assistants, an Assistant Trainer for unlimited custom agents, 261 tools, 26 skill packs, and free daily credits via its built-in AI provider — no API key required.
 - [AgentWP](https://agentwp.com/) - Site-aware AI assistant (from the makers of CodeWP) that indexes your WordPress site to answer questions, generate content, and produce tailored code snippets. [GitHub](https://github.com/wpai-inc/agentwp)
+- [Angie](https://wordpress.org/plugins/angie/) - Elementor's free conversational AI agent built into the WordPress dashboard; understands site architecture, installed plugins, and data via MCP, and takes real action across WooCommerce, Gutenberg, ACF, WS Form, GiveWP, LearnDash, and more. [SDK](https://github.com/elementor/angie-sdk)
 - [SD AI Agent for WordPress](https://github.com/Ultimate-Multisite/superdav-ai-agent) - Universal open-source AI agent that connects to any plugin through the WordPress Abilities API, with agentic tool-calling, RAG, memory, and bring-your-own-key model support.
 - [WP AI Agent](https://github.com/Automattic/wp-ai-agent) - Automattic research plugin exposing a WP-CLI AI agent that runs a ReAct loop over WordPress Abilities, MCP servers, and file-system tools.
 
