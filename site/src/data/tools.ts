@@ -241,6 +241,14 @@ export const tools: Tool[] = [
     tags: ['alt-text', 'accessibility', 'images', 'seo'],
     pricing: 'Freemium',
   },
+  {
+    name: 'AI Alt Text Generator',
+    description: 'No API key required — WCAG 2.2/ADA/Section 508-aligned alt text with page-context awareness, bulk processing, and WP-CLI support. 50 free images/month.',
+    url: 'https://wordpress.org/plugins/ai-alt-text-generator/',
+    category: 'seo',
+    tags: ['alt-text', 'accessibility', 'wcag', 'wp-cli'],
+    pricing: 'Freemium',
+  },
 
   // ─── Image Generation ──────────────────────────────────────────────────────
   {
@@ -249,6 +257,14 @@ export const tools: Tool[] = [
     url: 'https://wordpress.org/plugins/ai-featured-image-generator/',
     category: 'image',
     tags: ['dall-e', 'featured-image', 'bulk', 'openai'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Envira Gallery',
+    description: 'Popular photo gallery plugin with an AI Image Assistant (Pro) that generates alt text, titles, captions, and tags per image or in bulk, plus AI-written gallery descriptions.',
+    url: 'https://enviragallery.com/',
+    category: 'image',
+    tags: ['gallery', 'alt-text', 'tagging', 'bulk'],
     pricing: 'Freemium',
   },
   {
@@ -672,6 +688,15 @@ export const tools: Tool[] = [
     tags: ['mcp', 'server', 'woocommerce', 'acf'],
     pricing: 'Open Source',
   },
+  {
+    name: 'WPVibe',
+    description: 'By AwesomeMotive. MCP server plugin connecting Claude, ChatGPT, Cursor, and Windsurf to self-hosted WordPress with one-click OAuth and AES-256-GCM encrypted credentials; supports theme editing, content management, WP-CLI, and the Abilities API.',
+    url: 'https://wordpress.org/plugins/vibe-ai/',
+    github: 'https://github.com/awesomemotive/wpvibe-ai-mcp',
+    category: 'mcp',
+    tags: ['mcp', 'oauth', 'awesomemotive', 'wp-cli'],
+    pricing: 'Free',
+  },
 
   // ─── Hosting & Site Builders ───────────────────────────────────────────────
   {
@@ -759,8 +784,34 @@ export const tools: Tool[] = [
     tags: ['mcp', 'php', 'client', 'automattic'],
     pricing: 'Open Source',
   },
+  {
+    name: 'Automattic/wordpress-agent-skills',
+    description: 'Official Automattic skills for Claude Cowork covering site specification, design systems, and WordPress block theming, used by the Cowork plugin\'s /create-site command to generate and deploy full block themes to WordPress Studio.',
+    url: 'https://github.com/Automattic/wordpress-agent-skills',
+    github: 'https://github.com/Automattic/wordpress-agent-skills',
+    category: 'developer-tools',
+    tags: ['agent-skills', 'claude-cowork', 'block-theme', 'automattic'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'Respira Agent Skills',
+    description: 'Skills for Claude Code, Codex, Antigravity, and Cursor to audit, optimize, fix, and migrate WordPress sites, backed by 197+ MCP tools across 12 page builders (302 with the WooCommerce add-on).',
+    url: 'https://github.com/respira-press/agent-skills-wordpress',
+    github: 'https://github.com/respira-press/agent-skills-wordpress',
+    category: 'developer-tools',
+    tags: ['agent-skills', 'page-builders', 'migration', 'audit'],
+    pricing: 'Open Source',
+  },
 
   // ─── AI Agents ─────────────────────────────────────────────────────────────
+  {
+    name: 'Agent Builder',
+    description: 'Free plugin with 8 built-in AI assistants, an Assistant Trainer for unlimited custom agents, 261 tools, 26 skill packs, and free daily credits via its built-in AI provider — no API key required.',
+    url: 'https://agentic-plugin.com/',
+    category: 'ai-agents',
+    tags: ['agent', 'no-code', 'free', 'assistants'],
+    pricing: 'Freemium',
+  },
   {
     name: 'AgentWP',
     description: 'Site-aware AI assistant (from the makers of CodeWP) that indexes your WordPress site to answer questions, generate content, and produce tailored code snippets.',
@@ -769,6 +820,16 @@ export const tools: Tool[] = [
     category: 'ai-agents',
     tags: ['agent', 'assistant', 'code-gen', 'content'],
     pricing: 'Freemium',
+    featured: true,
+  },
+  {
+    name: 'Angie',
+    description: 'Elementor\'s free conversational AI agent built into the WordPress dashboard; understands site architecture, installed plugins, and data via MCP, and takes real action across WooCommerce, Gutenberg, ACF, WS Form, GiveWP, LearnDash, and more.',
+    url: 'https://wordpress.org/plugins/angie/',
+    github: 'https://github.com/elementor/angie-sdk',
+    category: 'ai-agents',
+    tags: ['agent', 'elementor', 'mcp', 'dashboard'],
+    pricing: 'Free',
     featured: true,
   },
   {
