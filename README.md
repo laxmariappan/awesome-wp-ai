@@ -124,6 +124,8 @@ Plugins, servers, and tools implementing the [Model Context Protocol](https://mo
 - [Virtual Media Folders](https://wordpress.org/plugins/virtual-media-folders/) - Folder-management abilities for agentic media organization.
 - [All Sources Images](https://wordpress.org/plugins/all-sources-images/) - Image search, featured-image, and generation abilities.
 - [WPVibe](https://wordpress.org/plugins/vibe-ai/) - By AwesomeMotive. MCP server plugin connecting Claude, ChatGPT, Cursor, and Windsurf to self-hosted WordPress with one-click OAuth and AES-256-GCM encrypted credentials; supports theme editing, content management, WP-CLI, and the Abilities API. [GitHub](https://github.com/awesomemotive/wpvibe-ai-mcp)
+- [StrifeBridge MCP](https://wordpress.org/plugins/strifebridge-mcp/) - Free tier gives Claude 30+ tools over theme files, database queries, content, and user management; Pro unlocks all 53 tools. Bearer-token auth, path-traversal validation, and SQL guardrails against destructive statements.
+- [IATO MCP](https://wordpress.org/plugins/iato-mcp/) - Free, open-source plugin turning any self-hosted site into an MCP server for Claude, Gemini, and ChatGPT; 40 native WordPress tools (including widget-grained Elementor editing) plus 12 optional tools bridging to IATO's SEO crawler.
 
 ### Community Servers & Libraries
 

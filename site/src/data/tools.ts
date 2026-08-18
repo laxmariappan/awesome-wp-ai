@@ -697,6 +697,22 @@ export const tools: Tool[] = [
     tags: ['mcp', 'oauth', 'awesomemotive', 'wp-cli'],
     pricing: 'Free',
   },
+  {
+    name: 'StrifeBridge MCP',
+    description: 'Free tier gives Claude 30+ tools over theme files, database queries, content, and user management; Pro unlocks all 53 tools. Bearer-token auth, path-traversal validation, and SQL guardrails against destructive statements.',
+    url: 'https://wordpress.org/plugins/strifebridge-mcp/',
+    category: 'mcp',
+    tags: ['mcp', 'claude', 'database', 'theme-files'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'IATO MCP',
+    description: 'Free, open-source plugin turning any self-hosted site into an MCP server for Claude, Gemini, and ChatGPT; 40 native WordPress tools (including widget-grained Elementor editing) plus 12 optional tools bridging to IATO\'s SEO crawler.',
+    url: 'https://wordpress.org/plugins/iato-mcp/',
+    category: 'mcp',
+    tags: ['mcp', 'seo', 'elementor', 'open-source'],
+    pricing: 'Free',
+  },
 
   // ─── Hosting & Site Builders ───────────────────────────────────────────────
   {
