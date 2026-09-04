@@ -335,6 +335,14 @@ export const tools: Tool[] = [
     tags: ['woocommerce', 'descriptions', 'images', 'reviews'],
     pricing: 'Paid',
   },
+  {
+    name: 'WowRecommend',
+    description: 'AI-assisted rule builder for WooCommerce product recommendations with 32+ filters, 16+ display placements (product page, cart, checkout, thank-you), popup upsells, and order bumps.',
+    url: 'https://wordpress.org/plugins/wow-ai-product-recommendations/',
+    category: 'woocommerce',
+    tags: ['woocommerce', 'recommendations', 'upsells', 'rule-builder'],
+    pricing: 'Paid',
+  },
 
   // ─── Forms & Automation ────────────────────────────────────────────────────
   {
@@ -375,6 +383,14 @@ export const tools: Tool[] = [
     url: 'https://wordpress.org/plugins/uncanny-automator/',
     category: 'forms',
     tags: ['automation', 'no-code', 'integrations', 'crm'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Bit Flows',
+    description: 'Self-hosted visual workflow builder (n8n/Zapier-style) with an in-dashboard AI Agent that makes contextual decisions inside a flow; 307+ integrations, human-in-the-loop approval steps, and OpenAI/Gemini/Claude/DeepSeek support.',
+    url: 'https://wordpress.org/plugins/bit-pi/',
+    category: 'forms',
+    tags: ['automation', 'workflow', 'ai-agent', 'integrations'],
     pricing: 'Freemium',
   },
 
@@ -713,6 +729,22 @@ export const tools: Tool[] = [
     tags: ['mcp', 'seo', 'elementor', 'open-source'],
     pricing: 'Free',
   },
+  {
+    name: 'miniOrange Secure MCP Server',
+    description: '300+ tools behind a self-hosted OAuth 2.1 authorization server, role-based per-AI permissions, per-tool on/off control, and a full audit trail of every MCP call.',
+    url: 'https://wordpress.org/plugins/miniorange-secure-mcp-server/',
+    category: 'mcp',
+    tags: ['mcp', 'oauth', 'security', 'audit-trail'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Easy MCP AI',
+    description: 'Free, pure-PHP MCP server (no Node.js or proxy) with 240 tools spanning posts, WooCommerce, SEO, Google Analytics/Search Console, DataForSEO, Semrush, and SE Ranking.',
+    url: 'https://wordpress.org/plugins/easy-mcp-ai/',
+    category: 'mcp',
+    tags: ['mcp', 'seo', 'analytics', 'php'],
+    pricing: 'Free',
+  },
 
   // ─── Hosting & Site Builders ───────────────────────────────────────────────
   {
@@ -801,6 +833,15 @@ export const tools: Tool[] = [
     pricing: 'Open Source',
   },
   {
+    name: 'Automattic/agent-skills',
+    description: 'General-purpose WordPress expertise skills (not theme/site-creation-specific) installable globally or per-project for Codex, VS Code, and Claude Code.',
+    url: 'https://github.com/Automattic/agent-skills',
+    github: 'https://github.com/Automattic/agent-skills',
+    category: 'developer-tools',
+    tags: ['agent-skills', 'automattic', 'codex', 'claude-code'],
+    pricing: 'Open Source',
+  },
+  {
     name: 'Automattic/wordpress-agent-skills',
     description: 'Official Automattic skills for Claude Cowork covering site specification, design systems, and WordPress block theming, used by the Cowork plugin\'s /create-site command to generate and deploy full block themes to WordPress Studio.',
     url: 'https://github.com/Automattic/wordpress-agent-skills',
@@ -816,6 +857,15 @@ export const tools: Tool[] = [
     github: 'https://github.com/respira-press/agent-skills-wordpress',
     category: 'developer-tools',
     tags: ['agent-skills', 'page-builders', 'migration', 'audit'],
+    pricing: 'Open Source',
+  },
+  {
+    name: 'wpacademy/wordpress-dev-skills',
+    description: 'Skills enforcing WordPress coding standards, security best practices, WCAG 2.1 AA accessibility, and .org directory guidelines for plugin/theme development and security review.',
+    url: 'https://github.com/wpacademy/wordpress-dev-skills',
+    github: 'https://github.com/wpacademy/wordpress-dev-skills',
+    category: 'developer-tools',
+    tags: ['agent-skills', 'coding-standards', 'accessibility', 'security'],
     pricing: 'Open Source',
   },
 

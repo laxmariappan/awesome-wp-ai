@@ -126,6 +126,8 @@ Plugins, servers, and tools implementing the [Model Context Protocol](https://mo
 - [WPVibe](https://wordpress.org/plugins/vibe-ai/) - By AwesomeMotive. MCP server plugin connecting Claude, ChatGPT, Cursor, and Windsurf to self-hosted WordPress with one-click OAuth and AES-256-GCM encrypted credentials; supports theme editing, content management, WP-CLI, and the Abilities API. [GitHub](https://github.com/awesomemotive/wpvibe-ai-mcp)
 - [StrifeBridge MCP](https://wordpress.org/plugins/strifebridge-mcp/) - Free tier gives Claude 30+ tools over theme files, database queries, content, and user management; Pro unlocks all 53 tools. Bearer-token auth, path-traversal validation, and SQL guardrails against destructive statements.
 - [IATO MCP](https://wordpress.org/plugins/iato-mcp/) - Free, open-source plugin turning any self-hosted site into an MCP server for Claude, Gemini, and ChatGPT; 40 native WordPress tools (including widget-grained Elementor editing) plus 12 optional tools bridging to IATO's SEO crawler.
+- [miniOrange Secure MCP Server](https://wordpress.org/plugins/miniorange-secure-mcp-server/) - 300+ tools behind a self-hosted OAuth 2.1 authorization server, role-based per-AI permissions, per-tool on/off control, and a full audit trail of every MCP call.
+- [Easy MCP AI](https://wordpress.org/plugins/easy-mcp-ai/) - Free, pure-PHP MCP server (no Node.js or proxy) with 240 tools spanning posts, WooCommerce, SEO, Google Analytics/Search Console, DataForSEO, Semrush, and SE Ranking.
 
 ### Community Servers & Libraries
 
@@ -147,10 +149,12 @@ Plugins, servers, and tools implementing the [Model Context Protocol](https://mo
 
 Portable instruction bundles that teach AI coding assistants WordPress development patterns. Not plugins — knowledge for machines.
 
+- [Automattic/agent-skills](https://github.com/Automattic/agent-skills) - General-purpose WordPress expertise skills (not theme/site-creation-specific) installable globally or per-project for Codex, VS Code, and Claude Code.
 - [Automattic/wordpress-agent-skills](https://github.com/Automattic/wordpress-agent-skills) - Official Automattic skills for Claude Cowork covering site specification, design systems, and WordPress block theming, used by the Cowork plugin's `/create-site` command to generate and deploy full block themes to WordPress Studio.
 - [claude-skills-wp-abilities-api](https://github.com/nathanonn/claude-skills-wp-abilities-api) - Claude skill package for WordPress Abilities API docs and conventions.
 - [Respira Agent Skills](https://github.com/respira-press/agent-skills-wordpress) - Skills for Claude Code, Codex, Antigravity, and Cursor to audit, optimize, fix, and migrate WordPress sites, backed by 197+ MCP tools across 12 page builders (302 with the WooCommerce add-on).
 - [WordPress/agent-skills](https://github.com/WordPress/agent-skills) - Official repository with 14 skills for Claude Code, Codex, Copilot, Cursor, Gemini CLI, and more. 1.2K+ stars. Install via `npx skills add`. Includes: `wordpress-router`, `wp-block-development`, `wp-plugin-development`, `wp-rest-api`, `wp-abilities-api`, `wp-performance`, `wp-playground`, and more.
+- [wpacademy/wordpress-dev-skills](https://github.com/wpacademy/wordpress-dev-skills) - Skills enforcing WordPress coding standards, security best practices, WCAG 2.1 AA accessibility, and .org directory guidelines for plugin/theme development and security review.
 - [wp-cli/ai-command](https://github.com/wp-cli/ai-command) - CLI control of WordPress with WP-CLI, AI, and MCP.
 
 ## Multi-Purpose AI Plugins
@@ -209,6 +213,7 @@ AI tools specifically designed for WooCommerce stores and product management.
 - [StoreAgent](https://wordpress.org/plugins/storeagent-ai-for-woocommerce/) - WooCommerce AI plugin for product reviews, descriptions, and customer questions.
 - [WriteText.ai for WooCommerce](https://writetext.ai/woocommerce) - Uses store data and image analysis for SEO-optimized product content automation.
 - [AI Addons](https://woocommerce.com/products/ai-addons/) - Generates product descriptions, images, and review replies directly in WooCommerce.
+- [WowRecommend](https://wordpress.org/plugins/wow-ai-product-recommendations/) - AI-assisted rule builder for WooCommerce product recommendations with 32+ filters, 16+ display placements (product page, cart, checkout, thank-you), popup upsells, and order bumps.
 
 ## Forms & Automation
 
@@ -219,6 +224,7 @@ AI-powered form builders and workflow automation for WordPress.
 - [WPForms AI](https://wpforms.com/) - Conversational AI form builder generating complex forms with payment options and conditional logic. 6M+ installs with Abilities API integration.
 - [Fluent Forms](https://fluentforms.com/) - AI-powered form creation allowing forms to be built using natural language prompts.
 - [Uncanny Automator](https://wordpress.org/plugins/uncanny-automator/) - Automation tool connecting WordPress to AI tools, marketing platforms, and email services.
+- [Bit Flows](https://wordpress.org/plugins/bit-pi/) - Self-hosted visual workflow builder (n8n/Zapier-style) with an in-dashboard AI Agent that makes contextual decisions inside a flow; 307+ integrations, human-in-the-loop approval steps, and OpenAI/Gemini/Claude/DeepSeek support.
 - [Ninja Forms](https://wordpress.org/plugins/ninja-forms/) - 32 abilities across 7 capability areas; full AI form builder ("Dashboard Parity"). 100% free Abilities API implementation. [Docs](https://ninjaforms.com/docs/abilities-api/)
 - [WS Form](https://wsform.com/completing-the-stack-ws-form-and-the-wordpress-ai-client-sdk/) - Full Abilities API + built-in MCP server + "Create from AI" template. Aligned with WP AI Client SDK.
 
