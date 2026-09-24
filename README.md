@@ -61,6 +61,9 @@ Community-built provider plugins for the PHP AI Client SDK — write against the
 - [Open WebUI provider](https://wordpress.org/plugins/ai-provider-for-open-webui/) - OpenAI-compatible settings with automatic model discovery.
 - [Alibaba Cloud provider](https://wordpress.org/plugins/ai-provider-for-alibaba-cloud/) - DashScope/Qwen connector with function-calling support.
 - [DuetG AI Connector](https://github.com/duetg/duetg-ai-connector) - Supports DeepSeek, Moonshot, MiniMax, SiliconFlow, LM Studio, and Ollama.
+- [AI Provider for DeepSeek](https://wordpress.org/plugins/ai-provider-for-deepseek/) - Registers DeepSeek's chat and reasoning models as a provider for the PHP AI Client SDK on activation.
+- [AI Provider for Perplexity](https://wordpress.org/plugins/ai-provider-for-perplexity/) - Adds Perplexity's Sonar models so any plugin built on the WP AI Client can generate web-grounded, cited text.
+- [Ultimate AI Connector for Compatible Endpoints](https://wordpress.org/plugins/ultimate-ai-connector-compatible-endpoints/) - Connects the WordPress 7.0 AI Client to any OpenAI-compatible endpoint (Ollama, LM Studio, OpenRouter, Groq, and ~110 presets). [GitHub](https://github.com/Ultimate-Multisite/ultimate-ai-connector-compatible-endpoints)
 
 ## Abilities API
 
@@ -183,6 +186,8 @@ AI-powered plugins for search engine optimization, metadata, and alt text.
 - [Rank Math SEO](https://wordpress.org/plugins/seo-by-rank-math/) - AI-powered SEO plugin (3M+ installs) with Content AI for keyword suggestions, meta titles, descriptions, and content scoring. Supports llms.txt generation.
 - [toprank](https://github.com/nowork-studio/toprank) - Open-source Claude Code plugin with 9 SEO and Google Ads skills that can ship metadata rewrites, schema markup, bid updates, and CMS publishing workflows for WordPress teams.
 - [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) - Long-established SEO plugin with an AI-powered title and meta description generator (v21.0+). Supports llms.txt and NLWeb schema aggregation in collaboration with Microsoft.
+- [All in One SEO (AIOSEO)](https://wordpress.org/plugins/all-in-one-seo-pack/) - SEO plugin (2M+ installs) with a built-in AI Content Generator for titles, meta descriptions, FAQs, and schema, llms.txt generation, and support for AI agents reading and updating SEO data.
+- [SEOPress](https://wordpress.org/plugins/wp-seopress/) - SEO plugin (300K+ installs) that uses OpenAI, DeepSeek, and other providers to generate SEO titles, meta descriptions, and image alt text in bulk.
 - [SOOZ – AI for SEO](https://wordpress.org/plugins/ai-for-seo/) - Bulk alt text and metadata generator with SEO Autopilot, syncs with Yoast, Rank Math, and SEOPress.
 - [Alt Text AI](https://wordpress.org/plugins/alttext-ai/) - Automatically generates image alt text for SEO and accessibility, integrates with major SEO plugins.
 - [AI Alt Text Generator](https://wordpress.org/plugins/ai-alt-text-generator/) - No API key required; WCAG 2.2/ADA/Section 508-aligned alt text with page-context awareness, bulk processing, and WP-CLI support. 50 free images/month.
@@ -237,6 +242,7 @@ AI translation plugins for multilingual WordPress sites.
 - [GPTranslate](https://wordpress.com/plugins/gptranslate) - AI-powered multilingual translation supporting ChatGPT, Gemini, DeepSeek, Claude, and DeepL.
 - [ConveyThis Translate](https://www.conveythis.com/) - Works with all themes and plugins including WooCommerce, supports 200+ languages.
 - [Linguise](https://www.linguise.com/integrations/wordpress-automatic-translation-plugin/) - Cloud AI translation with dynamic checkout and customer email support for WooCommerce.
+- [TranslatePress](https://wordpress.org/plugins/translatepress-multilingual/) - Visual front-end translation plugin (400K+ installs) whose TranslatePress AI combines LLMs (GPT, Gemini) with DeepL and Google Translate for automatic site translation.
 
 ## Video & Transcription
 
@@ -253,6 +259,7 @@ Visual page builders with native AI capabilities.
 - [Elementor AI](https://elementor.com/) - AI-powered content and layout suggestions inside Elementor builder with code snippet generation.
 - [Divi AI](https://www.divi.com/) - Content, image, and layout generation inside the Divi ecosystem.
 - [Greenshift Page Builder](https://wordpress.org/plugins/greenshift-animation-and-page-builder-blocks/) - 70K+ installs with Abilities API integration.
+- [Kadence AI](https://www.kadencewp.com/wordpress-solutions/kadence-ai/) - AI starter templates and AI-powered blocks that generate on-brand pages, text, and imagery from a short business questionnaire. [Plugin](https://wordpress.org/plugins/kadence-starter-templates/)
 
 ## Themes
 

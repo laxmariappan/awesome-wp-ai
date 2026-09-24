@@ -117,6 +117,31 @@ export const tools: Tool[] = [
     tags: ['openai', 'gpt', 'provider', 'official'],
     pricing: 'Free',
   },
+  {
+    name: 'AI Provider for DeepSeek',
+    description: 'Registers DeepSeek\'s chat and reasoning models as a provider for the PHP AI Client SDK on activation.',
+    url: 'https://wordpress.org/plugins/ai-provider-for-deepseek/',
+    category: 'infrastructure',
+    tags: ['provider', 'deepseek', 'ai-client'],
+    pricing: 'Free',
+  },
+  {
+    name: 'AI Provider for Perplexity',
+    description: 'Adds Perplexity\'s Sonar models so any plugin built on the WP AI Client can generate web-grounded, cited text.',
+    url: 'https://wordpress.org/plugins/ai-provider-for-perplexity/',
+    category: 'infrastructure',
+    tags: ['provider', 'perplexity', 'ai-client'],
+    pricing: 'Free',
+  },
+  {
+    name: 'Ultimate AI Connector for Compatible Endpoints',
+    description: 'Connects the WordPress 7.0 AI Client to any OpenAI-compatible endpoint (Ollama, LM Studio, OpenRouter, Groq, and ~110 presets).',
+    url: 'https://wordpress.org/plugins/ultimate-ai-connector-compatible-endpoints/',
+    github: 'https://github.com/Ultimate-Multisite/ultimate-ai-connector-compatible-endpoints',
+    category: 'infrastructure',
+    tags: ['provider', 'openai-compatible', 'ollama', 'ai-client'],
+    pricing: 'Open Source',
+  },
 
   // ─── Multi-Purpose ─────────────────────────────────────────────────────────
   {
@@ -247,6 +272,22 @@ export const tools: Tool[] = [
     url: 'https://wordpress.org/plugins/ai-alt-text-generator/',
     category: 'seo',
     tags: ['alt-text', 'accessibility', 'wcag', 'wp-cli'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'All in One SEO (AIOSEO)',
+    description: 'SEO plugin (2M+ installs) with a built-in AI Content Generator for titles, meta descriptions, FAQs, and schema, llms.txt generation, and support for AI agents reading and updating SEO data.',
+    url: 'https://wordpress.org/plugins/all-in-one-seo-pack/',
+    category: 'seo',
+    tags: ['seo', 'meta', 'schema', 'llms-txt'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'SEOPress',
+    description: 'SEO plugin (300K+ installs) that uses OpenAI, DeepSeek, and other providers to generate SEO titles, meta descriptions, and image alt text in bulk.',
+    url: 'https://wordpress.org/plugins/wp-seopress/',
+    category: 'seo',
+    tags: ['seo', 'meta', 'alt-text', 'bulk'],
     pricing: 'Freemium',
   },
 
@@ -435,6 +476,14 @@ export const tools: Tool[] = [
     tags: ['translation', 'woocommerce', 'cloud', 'automatic'],
     pricing: 'Paid',
   },
+  {
+    name: 'TranslatePress',
+    description: 'Visual front-end translation plugin (400K+ installs) whose TranslatePress AI combines LLMs (GPT, Gemini) with DeepL and Google Translate for automatic site translation.',
+    url: 'https://wordpress.org/plugins/translatepress-multilingual/',
+    category: 'translation',
+    tags: ['translation', 'visual-editor', 'deepl', 'llm'],
+    pricing: 'Freemium',
+  },
 
   // ─── Video & Transcription ─────────────────────────────────────────────────
   {
@@ -480,6 +529,14 @@ export const tools: Tool[] = [
     category: 'page-builders',
     tags: ['page-builder', 'divi', 'layout', 'image-gen'],
     pricing: 'Paid',
+  },
+  {
+    name: 'Kadence AI',
+    description: 'AI starter templates and AI-powered blocks that generate on-brand pages, text, and imagery from a short business questionnaire.',
+    url: 'https://www.kadencewp.com/wordpress-solutions/kadence-ai/',
+    category: 'page-builders',
+    tags: ['starter-templates', 'blocks', 'gutenberg', 'kadence'],
+    pricing: 'Freemium',
   },
 
   // ─── Themes ────────────────────────────────────────────────────────────────
