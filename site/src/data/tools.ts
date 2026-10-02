@@ -221,6 +221,14 @@ export const tools: Tool[] = [
     tags: ['writing', 'seo', 'keywords', 'chatbot'],
     pricing: 'Freemium',
   },
+  {
+    name: 'Tutor LMS AI Studio',
+    description: 'Built into the Tutor LMS course builder (Pro); turns one prompt into a full course with outline, lessons, quizzes, descriptions, and a featured image.',
+    url: 'https://tutorlms.com/ai/',
+    category: 'content',
+    tags: ['lms', 'courses', 'quizzes', 'openai'],
+    pricing: 'Freemium',
+  },
 
   // ─── SEO & Metadata ────────────────────────────────────────────────────────
   {
@@ -538,6 +546,38 @@ export const tools: Tool[] = [
     tags: ['starter-templates', 'blocks', 'gutenberg', 'kadence'],
     pricing: 'Freemium',
   },
+  {
+    name: 'AI Block Editor',
+    description: 'Chat assistant inside the block editor that places, arranges, and edits Gutenberg blocks from natural language, matching your theme.json colors, typography, and spacing.',
+    url: 'https://wordpress.org/plugins/ai-editor/',
+    category: 'page-builders',
+    tags: ['gutenberg', 'blocks', 'theme-json', 'openai'],
+    pricing: 'Free',
+  },
+  {
+    name: 'AI Builder',
+    description: 'Generates custom Gutenberg pages, sections, images, and translations from prompts directly in the editor, with no proprietary builder lock-in.',
+    url: 'https://wordpress.org/plugins/ai-builder/',
+    category: 'page-builders',
+    tags: ['gutenberg', 'page-generation', 'images', 'translation'],
+    pricing: 'Freemium',
+  },
+  {
+    name: 'Blockenberg',
+    description: '600+ Gutenberg blocks plus an in-editor AI Agent that builds and edits pages through chat via OpenRouter (free models included), Codex, Claude, or Cursor.',
+    url: 'https://wordpress.org/plugins/blockenberg/',
+    category: 'page-builders',
+    tags: ['gutenberg', 'blocks', 'ai-agent', 'openrouter'],
+    pricing: 'Free',
+  },
+  {
+    name: 'Nexter Blocks',
+    description: 'Gutenberg site builder (90+ blocks, 10K+ installs) with built-in ChatGPT and Gemini content and image generation.',
+    url: 'https://wordpress.org/plugins/the-plus-addons-for-block-editor/',
+    category: 'page-builders',
+    tags: ['gutenberg', 'site-builder', 'chatgpt', 'gemini'],
+    pricing: 'Freemium',
+  },
 
   // ─── Themes ────────────────────────────────────────────────────────────────
   {
@@ -800,6 +840,22 @@ export const tools: Tool[] = [
     url: 'https://wordpress.org/plugins/easy-mcp-ai/',
     category: 'mcp',
     tags: ['mcp', 'seo', 'analytics', 'php'],
+    pricing: 'Free',
+  },
+  {
+    name: 'WordPress Studio MCP',
+    description: 'Automattic\'s local dev app exposes an MCP server so agents like Claude Code and Copilot can create, start, and manage local sites, edit files, query the database, and run WP-CLI.',
+    url: 'https://developer.wordpress.com/docs/developer-tools/studio/mcp-on-studio/',
+    category: 'mcp',
+    tags: ['mcp', 'local-dev', 'official', 'wp-cli'],
+    pricing: 'Free',
+  },
+  {
+    name: 'Agent Abilities for MCP',
+    description: 'Governed, off-by-default MCP server built on the Abilities API and official MCP Adapter; 179 curated abilities, least-privilege user binding, permission controls, and an audit log.',
+    url: 'https://wordpress.org/plugins/agent-abilities-for-mcp/',
+    category: 'mcp',
+    tags: ['mcp', 'abilities-api', 'permissions', 'audit-log'],
     pricing: 'Free',
   },
 

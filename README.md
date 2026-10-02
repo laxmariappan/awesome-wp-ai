@@ -115,6 +115,7 @@ Plugins, servers, and tools implementing the [Model Context Protocol](https://mo
 - [WordPress MCP Adapter](https://github.com/WordPress/mcp-adapter) - Official WordPress MCP adapter bridging the Abilities API to MCP-compatible AI agents. 820+ stars.
 - [WordPress.org Plugin Directory MCP Server](https://make.wordpress.org/meta/2026/03/20/plugin-directory-mcp-server/) - Official MCP server built on Abilities API. Validate readmes, check submission status, and submit plugins. [Full docs](https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/)
 - [WordPress Playground MCP](https://make.wordpress.org/playground/2026/03/17/connect-ai-coding-agents-to-wordpress-playground-with-mcp/) - One `npx` command connects agents to WordPress Playground running in the browser via WebAssembly. No server, no Docker.
+- [WordPress Studio MCP](https://developer.wordpress.com/docs/developer-tools/studio/mcp-on-studio/) - Automattic's local dev app exposes an MCP server (Settings → MCP) so agents like Claude Code and Copilot can create, start, and manage local sites, edit files, query the database, and run WP-CLI.
 
 ### Plugins (WordPress.org)
 
@@ -131,6 +132,7 @@ Plugins, servers, and tools implementing the [Model Context Protocol](https://mo
 - [IATO MCP](https://wordpress.org/plugins/iato-mcp/) - Free, open-source plugin turning any self-hosted site into an MCP server for Claude, Gemini, and ChatGPT; 40 native WordPress tools (including widget-grained Elementor editing) plus 12 optional tools bridging to IATO's SEO crawler.
 - [miniOrange Secure MCP Server](https://wordpress.org/plugins/miniorange-secure-mcp-server/) - 300+ tools behind a self-hosted OAuth 2.1 authorization server, role-based per-AI permissions, per-tool on/off control, and a full audit trail of every MCP call.
 - [Easy MCP AI](https://wordpress.org/plugins/easy-mcp-ai/) - Free, pure-PHP MCP server (no Node.js or proxy) with 240 tools spanning posts, WooCommerce, SEO, Google Analytics/Search Console, DataForSEO, Semrush, and SE Ranking.
+- [Agent Abilities for MCP](https://wordpress.org/plugins/agent-abilities-for-mcp/) - Governed, off-by-default MCP server built on the Abilities API and official MCP Adapter; 179 curated abilities, least-privilege user binding, permission controls, and an audit log. Also bridges abilities registered by other plugins.
 
 ### Community Servers & Libraries
 
@@ -178,6 +180,7 @@ Plugins focused on writing assistance, blog post drafting, and text optimization
 - [Jetpack AI Assistant](https://jetpack.com/) - AI-powered content generation directly in the WordPress block editor via Jetpack infrastructure. Also registers Abilities API abilities.
 - [Bertha AI](https://bertha.ai/) - Specialized AI content generation and copywriting plugin for WordPress.
 - [GetGenie AI](https://wordpress.org/plugins/getgenie/) - All-in-one AI content writer (80,000+ installs) with NLP keyword research, SERP and competitor analysis, 40+ templates, and the GenieChat assistant.
+- [Tutor LMS AI Studio](https://tutorlms.com/ai/) - Built into the Tutor LMS course builder (Pro); turns one prompt into a full course with outline, lessons, quizzes, descriptions, and a featured image. [Plugin](https://wordpress.org/plugins/tutor/)
 
 ## SEO & Metadata
 
@@ -260,6 +263,10 @@ Visual page builders with native AI capabilities.
 - [Divi AI](https://www.divi.com/) - Content, image, and layout generation inside the Divi ecosystem.
 - [Greenshift Page Builder](https://wordpress.org/plugins/greenshift-animation-and-page-builder-blocks/) - 70K+ installs with Abilities API integration.
 - [Kadence AI](https://www.kadencewp.com/wordpress-solutions/kadence-ai/) - AI starter templates and AI-powered blocks that generate on-brand pages, text, and imagery from a short business questionnaire. [Plugin](https://wordpress.org/plugins/kadence-starter-templates/)
+- [AI Block Editor](https://wordpress.org/plugins/ai-editor/) - Chat assistant inside the block editor that places, arranges, and edits Gutenberg blocks from natural language, matching your theme.json colors, typography, and spacing.
+- [AI Builder](https://wordpress.org/plugins/ai-builder/) - Generates custom Gutenberg pages, sections, images, and translations from prompts directly in the editor, with no proprietary builder lock-in.
+- [Blockenberg](https://wordpress.org/plugins/blockenberg/) - 600+ Gutenberg blocks plus an in-editor AI Agent that builds and edits pages through chat via OpenRouter (free models included), Codex, Claude, or Cursor.
+- [Nexter Blocks](https://wordpress.org/plugins/the-plus-addons-for-block-editor/) - Gutenberg site builder (90+ blocks, 10K+ installs) with built-in ChatGPT and Gemini content and image generation.
 
 ## Themes
 
