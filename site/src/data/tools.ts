@@ -275,6 +275,15 @@ export const tools: Tool[] = [
     pricing: 'Freemium',
   },
   {
+    name: 'VergeLabs Media Library',
+    description: 'Folders and categories for the media library, with AI alt text, titles, and captions on a 25-credit free trial. GPLv2 or later, forked from Enhanced Media Library',
+    url: 'https://github.com/vergelabsnathan/vergelabs-media-library',
+    github: 'https://github.com/vergelabsnathan/vergelabs-media-library',
+    category: 'seo',
+    tags: ['alt-text', 'media-library', 'folders', 'captions'],
+    pricing: 'Freemium',
+  },
+  {
     name: 'All in One SEO (AIOSEO)',
     description: 'SEO plugin (2M+ installs) with a built-in AI Content Generator for titles, meta descriptions, FAQs, and schema, llms.txt generation, and support for AI agents reading and updating SEO data.',
     url: 'https://wordpress.org/plugins/all-in-one-seo-pack/',

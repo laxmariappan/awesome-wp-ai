@@ -191,6 +191,7 @@ AI-powered plugins for search engine optimization, metadata, and alt text.
 - [SOOZ – AI for SEO](https://wordpress.org/plugins/ai-for-seo/) - Bulk alt text and metadata generator with SEO Autopilot, syncs with Yoast, Rank Math, and SEOPress.
 - [Alt Text AI](https://wordpress.org/plugins/alttext-ai/) - Automatically generates image alt text for SEO and accessibility, integrates with major SEO plugins.
 - [AI Alt Text Generator](https://wordpress.org/plugins/ai-alt-text-generator/) - No API key required; WCAG 2.2/ADA/Section 508-aligned alt text with page-context awareness, bulk processing, and WP-CLI support. 50 free images/month.
+- [VergeLabs Media Library](https://github.com/vergelabsnathan/vergelabs-media-library) - Folders and categories for the media library, with AI alt text, titles, and captions on a 25-credit free trial. GPLv2 or later, forked from Enhanced Media Library.
 - [Website LLMs.txt](https://wordpress.org/plugins/website-llms-txt/) - Generates an llms.txt file to help AI assistants understand your site.
 - [LLMs-Full.txt Generator](https://wordpress.org/plugins/llms-full-txt-generator/) - Generates a comprehensive llms-full.txt for AI consumption.
 
