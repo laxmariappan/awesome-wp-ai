@@ -22,6 +22,7 @@ export interface Tool {
   url: string;
   github?: string;
   links?: { label: string; url: string }[];
+  install?: string;  // copy-paste install command; worked out from the URL for WordPress.org plugins
   category: string;  // matches Category.slug
   group?: string;    // optional README sub-heading within the category
   added?: string;    // YYYY-MM-DD the tool was added to the list
@@ -33,6 +34,12 @@ export interface Tool {
 }
 
 export const categories = data.categories as Category[];
+// WordPress.org plugin pages carry the slug WP-CLI needs, so those get an install command for free
+const wpOrgInstall = (url: string) => {
+  const m = url.match(/^https:\/\/wordpress\.org\/plugins\/([a-z0-9-]+)\/?$/);
+  return m ? `wp plugin install ${m[1]} --activate` : undefined;
+};
+
 const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const seen = new Set<string>();
 const defaultType = Object.fromEntries(categories.map((c) => [c.slug, c.defaultType]));
@@ -42,7 +49,7 @@ export const tools: Tool[] = (data.tools as (Omit<Tool, 'slug' | 'type'> & { typ
   if (seen.has(slug)) slug = `${slug}-${t.category}`;
   if (seen.has(slug)) throw new Error(`Duplicate tool slug: ${slug}`);
   seen.add(slug);
-  return { ...t, type: t.type ?? defaultType[t.category], slug };
+  return { ...t, type: t.type ?? defaultType[t.category], install: t.install ?? wpOrgInstall(t.url), slug };
 });
 
 // "I want to…" collections: a few picks for a goal, each with a note on when to choose it

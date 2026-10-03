@@ -1602,6 +1602,7 @@
       "description": "Skills for Claude Code, Codex, Antigravity, and Cursor to audit, optimize, fix, and migrate WordPress sites, backed by 197+ MCP tools across 12 page builders (302 with the WooCommerce add-on).",
       "url": "https://github.com/respira-press/agent-skills-wordpress",
       "github": "https://github.com/respira-press/agent-skills-wordpress",
+      "install": "npx skills add respira-press/agent-skills-wordpress",
       "category": "agent-skills",
       "added": "2026-08-06",
       "tags": [
@@ -1617,6 +1618,7 @@
       "description": "Official repository with 14 skills for Claude Code, Codex, Copilot, Cursor, Gemini CLI, and more. 1.2K+ stars. Install via `npx skills add`. Includes: `wordpress-router`, `wp-block-development`, `wp-plugin-development`, `wp-rest-api`, `wp-abilities-api`, `wp-performance`, `wp-playground`, and more.",
       "url": "https://github.com/WordPress/agent-skills",
       "github": "https://github.com/WordPress/agent-skills",
+      "install": "npx skills add WordPress/agent-skills",
       "category": "agent-skills",
       "added": "2026-04-27",
       "tags": [
