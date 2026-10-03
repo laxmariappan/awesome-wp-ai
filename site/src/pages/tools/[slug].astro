@@ -75,6 +75,19 @@ const host = new URL(tool.url).hostname.replace(/^www\./, '');
         ))}
       </div>
 
+      {tool.install && (
+        <div class="mt-7">
+          <p class="text-[11px] font-mono uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-1.5">Install</p>
+          <div class="flex items-stretch gap-2">
+            <code id="install-cmd" class="flex-1 min-w-0 overflow-x-auto whitespace-nowrap px-3 py-2 rounded-lg text-sm font-mono bg-gray-100 dark:bg-black/40 text-gray-800 dark:text-slate-200 border border-gray-200 dark:border-white/10">{tool.install}</code>
+            <button id="install-copy" type="button"
+                    class="px-3 rounded-lg text-xs font-semibold border border-gray-200 dark:border-white/10 text-gray-700 dark:text-slate-200 hover:border-brand-500/50">
+              Copy
+            </button>
+          </div>
+        </div>
+      )}
+
       {added && <p class="mt-6 text-xs text-gray-500 dark:text-slate-500">Added to the list on {added}.</p>}
     </article>
 
@@ -100,3 +113,24 @@ const host = new URL(tool.url).hostname.replace(/^www\./, '');
   </main>
   <Footer />
 </Layout>
+
+<script>
+  const btn = document.getElementById('install-copy');
+  const cmd = document.getElementById('install-cmd');
+  btn?.addEventListener('click', async () => {
+    if (!cmd) return;
+    try {
+      await navigator.clipboard.writeText(cmd.textContent ?? '');
+    } catch {
+      // Clipboard API can be blocked (permissions, unfocused tab): fall back to select + copy
+      const range = document.createRange();
+      range.selectNodeContents(cmd);
+      const sel = window.getSelection();
+      sel?.removeAllRanges();
+      sel?.addRange(range);
+      document.execCommand('copy');
+    }
+    btn.textContent = 'Copied';
+    setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+  });
+</script>
