@@ -364,9 +364,11 @@ function MobileBottomNav({ activeCategory, hasSearch, drawerOpen, onBrowse, onSe
 
 // ─── Main app ─────────────────────────────────────────────────────────────────
 interface Props { tools: Tool[]; categories: Category[]; }
-type SortOption = 'default' | 'newest' | 'a-z' | 'z-a' | 'pricing';
+const SORT_OPTIONS = ['default', 'newest', 'a-z', 'z-a', 'pricing'] as const;
+type SortOption = typeof SORT_OPTIONS[number];
 
 const NEW_DAYS = 30;
+const URL_KEYS = ['q', 'category', 'pricing', 'type', 'sort'];
 const PRICING_OPTIONS = ['Free', 'Open Source', 'Freemium', 'Paid'];
 
 const selectCls = `px-3 py-2 rounded-xl border border-gray-200 dark:border-white/[0.08]
@@ -390,6 +392,52 @@ export default function ToolsApp({ tools, categories }: Props) {
   useEffect(() => {
     setNewSince(new Date(Date.now() - NEW_DAYS * 864e5).toISOString().slice(0, 10));
   }, []);
+
+  // ── Keep filters in the address so any view can be shared as a link ──
+  const urlReady = useRef(false);
+  const lastQuery = useRef('');
+
+  const readUrl = useCallback(() => {
+    const p = new URLSearchParams(window.location.search);
+    const cat = p.get('category') ?? 'all';
+    const sort = p.get('sort') ?? 'default';
+    setSearch(p.get('q') ?? '');
+    setActiveCategory(categories.some(c => c.slug === cat) ? cat : 'all');
+    setPricing(PRICING_OPTIONS.includes(p.get('pricing') ?? '') ? p.get('pricing')! : '');
+    setType(p.get('type') ?? '');
+    setSortBy((SORT_OPTIONS as readonly string[]).includes(sort) ? (sort as SortOption) : 'default');
+    lastQuery.current = p.get('q') ?? '';
+  }, [categories]);
+
+  // Declared before the read below on purpose: on first mount this runs while urlReady is still
+  // false, so it can't wipe the address before the filters have been read from it.
+  useEffect(() => {
+    if (!urlReady.current) return;
+    const p = new URLSearchParams();
+    if (search.trim())            p.set('q', search.trim());
+    if (activeCategory !== 'all') p.set('category', activeCategory);
+    if (pricing)                  p.set('pricing', pricing);
+    if (type)                     p.set('type', type);
+    if (sortBy !== 'default')     p.set('sort', sortBy);
+    const qs = p.toString();
+    const next = qs ? `?${qs}` : window.location.pathname;
+    // Compare in a fixed key order so a hand-written link isn't rewritten just for ordering
+    const cur = new URLSearchParams(window.location.search);
+    const curQs = new URLSearchParams(URL_KEYS.filter(k => cur.get(k)).map(k => [k, cur.get(k)!])).toString();
+    if (qs === curQs) return;
+    // Typing in search rewrites the current entry; picking a filter adds one, so Back undoes it
+    const typing = search.trim() !== lastQuery.current;
+    lastQuery.current = search.trim();
+    window.history[typing ? 'replaceState' : 'pushState'](null, '', next);
+  }, [search, activeCategory, pricing, type, sortBy]);
+
+  // Read once after mount (not during render, so the static HTML still matches), and on back/forward
+  useEffect(() => {
+    readUrl();
+    urlReady.current = true;
+    window.addEventListener('popstate', readUrl);
+    return () => window.removeEventListener('popstate', readUrl);
+  }, [readUrl]);
 
   const prevCategory  = useRef(activeCategory);
   const searchRef     = useRef<HTMLInputElement>(null);
