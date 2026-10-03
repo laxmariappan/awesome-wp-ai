@@ -6,5 +6,5 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   output: 'static',
   site: 'https://laxmariappan.github.io',
-  base: '/awesome-wp-ai',
+  base: '/awesome-wp-ai/',
 });

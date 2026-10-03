@@ -109,7 +109,9 @@ function ToolCard({
           <div className="flex items-center gap-1.5 min-w-0">
             <h3 className="font-semibold text-sm text-gray-900 dark:text-slate-100 truncate
                            group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors duration-200">
-              {tool.name}
+              <a href={`${import.meta.env.BASE_URL}tools/${tool.slug}/`} className="hover:underline underline-offset-2">
+                {tool.name}
+              </a>
             </h3>
             {isNew && (
               <span className="flex-shrink-0 text-[9px] font-mono font-bold px-1.5 py-0.5 rounded
