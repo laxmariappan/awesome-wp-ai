@@ -182,13 +182,11 @@ Full-featured plugins covering content generation, chatbots, image creation, and
 - [AI Engine](https://wordpress.org/plugins/ai-engine/) - The most widely-used WordPress AI plugin (80,000+ installs) with chatbots, content generation, AI forms, WooCommerce MCP module (25 tools), and MCP integration. [GitHub](https://github.com/jordymeow/ai-engine)
 - [AI Power (AI Puffer)](https://wordpress.org/plugins/gpt3-ai-content-generator/) - Complete AI engine with chatbot, content generation, image creation, automation, and training on custom data.
 - [MxChat](https://wordpress.org/plugins/mxchat-basic/) - Free AI chatbot and content generation supporting ChatGPT, Claude, Gemini, Grok, DeepSeek, and 100+ models.
-- [AI Copilot – Content Generator](https://wordpress.org/plugins/ai-copilot-content-generator/) - AI automation platform combining workflow automation, chatbots, content generation, and MCP integration.
 
 ## Content Generation
 
 Plugins focused on writing assistance, blog post drafting, and text optimization.
 
-- [WP AI CoPilot](https://wordpress.org/plugins/ai-co-pilot-for-wp/) - AI content writer using GPT-3/4 with 40+ templates supporting 33+ languages for posts, articles, and product descriptions.
 - [AI Copilot](https://wordpress.org/plugins/ai-copilot/) - Rewrite, expand, shorten, and translate text in the WordPress editor with support for OpenAI, Claude, Gemini, Perplexity, and DeepSeek.
 - [Jetpack AI Assistant](https://jetpack.com/) - AI-powered content generation directly in the WordPress block editor via Jetpack infrastructure. Also registers Abilities API abilities.
 - [Bertha AI](https://bertha.ai/) - Specialized AI content generation and copywriting plugin for WordPress.

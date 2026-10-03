@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "readme": "node scripts/generate-readme.mjs",
-    "readme:check": "node scripts/generate-readme.mjs --check"
+    "readme:check": "node scripts/generate-readme.mjs --check",
+    "links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^3.6.0",
