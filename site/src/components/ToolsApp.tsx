@@ -88,7 +88,7 @@ function ToolCard({
   return (
     // gridKey in the React key forces remount → re-triggers animation on category switch
     <div
-      key={`${tool.name}-${gridKey}`}
+      key={`${tool.slug}-${gridKey}`}
       className="glow-card rounded-2xl flex flex-col overflow-hidden animate-card-enter"
       style={{ animationDelay: `${delay}ms` }}
     >
@@ -368,7 +368,8 @@ const SORT_OPTIONS = ['default', 'newest', 'a-z', 'z-a', 'pricing'] as const;
 type SortOption = typeof SORT_OPTIONS[number];
 
 const NEW_DAYS = 30;
-const URL_KEYS = ['q', 'category', 'pricing', 'type', 'sort'];
+const URL_KEYS = ['q', 'category', 'pricing', 'type', 'tag', 'sort'];
+const POPULAR_TAGS = 12;
 const PRICING_OPTIONS = ['Free', 'Open Source', 'Freemium', 'Paid'];
 
 const selectCls = `px-3 py-2 rounded-xl border border-gray-200 dark:border-white/[0.08]
@@ -385,6 +386,7 @@ export default function ToolsApp({ tools, categories }: Props) {
   const [sortBy, setSortBy]                 = useState<SortOption>('default');
   const [pricing, setPricing]               = useState('');
   const [type, setType]                     = useState('');
+  const [tag, setTag]                       = useState('');
   const [drawerOpen, setDrawerOpen]         = useState(false);
   const [gridKey, setGridKey]               = useState(0);
   // Set after mount so the statically built HTML and the client agree on first render
@@ -405,6 +407,7 @@ export default function ToolsApp({ tools, categories }: Props) {
     setActiveCategory(categories.some(c => c.slug === cat) ? cat : 'all');
     setPricing(PRICING_OPTIONS.includes(p.get('pricing') ?? '') ? p.get('pricing')! : '');
     setType(p.get('type') ?? '');
+    setTag(p.get('tag') ?? '');
     setSortBy((SORT_OPTIONS as readonly string[]).includes(sort) ? (sort as SortOption) : 'default');
     lastQuery.current = p.get('q') ?? '';
   }, [categories]);
@@ -418,6 +421,7 @@ export default function ToolsApp({ tools, categories }: Props) {
     if (activeCategory !== 'all') p.set('category', activeCategory);
     if (pricing)                  p.set('pricing', pricing);
     if (type)                     p.set('type', type);
+    if (tag)                      p.set('tag', tag);
     if (sortBy !== 'default')     p.set('sort', sortBy);
     const qs = p.toString();
     const next = qs ? `?${qs}` : window.location.pathname;
@@ -429,7 +433,7 @@ export default function ToolsApp({ tools, categories }: Props) {
     const typing = search.trim() !== lastQuery.current;
     lastQuery.current = search.trim();
     window.history[typing ? 'replaceState' : 'pushState'](null, '', next);
-  }, [search, activeCategory, pricing, type, sortBy]);
+  }, [search, activeCategory, pricing, type, tag, sortBy]);
 
   // Read once after mount (not during render, so the static HTML still matches), and on back/forward
   useEffect(() => {
@@ -467,6 +471,7 @@ export default function ToolsApp({ tools, categories }: Props) {
     if (activeCategory !== 'all') r = r.filter(t => t.category === activeCategory);
     if (pricing) r = r.filter(t => t.pricing === pricing);
     if (type)    r = r.filter(t => t.type === type);
+    if (tag)     r = r.filter(t => t.tags.includes(tag));
     if (search.trim()) {
       const q = search.toLowerCase();
       r = r.filter(t =>
@@ -484,7 +489,13 @@ export default function ToolsApp({ tools, categories }: Props) {
       r = [...r].sort((a, b) => rank(a) - rank(b));
     }
     return r;
-  }, [tools, activeCategory, search, sortBy, pricing, type]);
+  }, [tools, activeCategory, search, sortBy, pricing, type, tag]);
+
+  const popularTags = useMemo(() => {
+    const n: Record<string, number> = {};
+    tools.forEach(t => t.tags.forEach(g => { n[g] = (n[g] ?? 0) + 1; }));
+    return Object.entries(n).sort((a, b) => b[1] - a[1]).slice(0, POPULAR_TAGS).map(([g]) => g);
+  }, [tools]);
 
   const typeOptions = useMemo(() => [...new Set(tools.map(t => t.type))].sort(), [tools]);
 
@@ -505,6 +516,7 @@ export default function ToolsApp({ tools, categories }: Props) {
     setSortBy('default');
     setPricing('');
     setType('');
+    setTag('');
   }
 
   const handleBrowseTab = useCallback(() => {
@@ -518,7 +530,7 @@ export default function ToolsApp({ tools, categories }: Props) {
     setTimeout(() => searchRef.current?.focus(), 350);
   }, []);
 
-  const hasFilters = search || activeCategory !== 'all' || pricing || type;
+  const hasFilters = search || activeCategory !== 'all' || pricing || type || tag;
   const activeCat = categories.find(c => c.slug === activeCategory);
 
   return (
@@ -632,6 +644,24 @@ export default function ToolsApp({ tools, categories }: Props) {
             </select>
           </div>
 
+          {/* Popular tags: these cut across categories */}
+          <div className="flex items-center gap-1.5 mb-4 flex-wrap">
+            <span className="text-[10px] font-mono uppercase tracking-widest text-gray-400 dark:text-slate-500 mr-1">Tags</span>
+            {popularTags.map(g => (
+              <button
+                key={g}
+                onClick={() => setTag(tag === g ? '' : g)}
+                aria-pressed={tag === g}
+                className={`px-2 py-0.5 rounded-md text-[11px] font-mono transition-colors duration-150
+                            ${tag === g
+                              ? 'bg-brand-500/20 text-brand-400 border border-brand-500/40'
+                              : 'bg-gray-100 dark:bg-white/[0.06] text-gray-600 dark:text-slate-400 border border-transparent hover:border-brand-500/40'}`}
+              >
+                #{g}
+              </button>
+            ))}
+          </div>
+
           {/* Active filter chips + result count */}
           <div className="flex items-center gap-2 mb-5 flex-wrap min-h-[1.75rem]">
             {activeCat && (
@@ -655,6 +685,12 @@ export default function ToolsApp({ tools, categories }: Props) {
               <span className={chipCls}>
                 {pricing}
                 <button onClick={() => setPricing('')} className={chipXCls} aria-label="Remove pricing filter"><IconX size={11} /></button>
+              </span>
+            )}
+            {tag && (
+              <span className={chipCls}>
+                #{tag}
+                <button onClick={() => setTag('')} className={chipXCls} aria-label="Remove tag filter"><IconX size={11} /></button>
               </span>
             )}
             {type && (
@@ -689,7 +725,7 @@ export default function ToolsApp({ tools, categories }: Props) {
               {filtered.map((tool, index) => (
                 <ToolCard
                   isNew={!!newSince && !!tool.added && tool.added >= newSince}
-                  key={`${tool.name}-${gridKey}`}
+                  key={`${tool.slug}-${gridKey}`}
                   tool={tool}
                   category={categoryMap[tool.category]}
                   index={index}
