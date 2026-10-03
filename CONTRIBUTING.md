@@ -4,38 +4,32 @@ Thank you for considering contributing to **awesome-wordpress-ai**!
 
 ## How to add an item
 
+All tools live in one file: [`site/src/data/tools.json`](site/src/data/tools.json). Both the website and the list in `README.md` are generated from it, so **do not edit the tool list in `README.md` by hand**.
+
 1. Fork this repository.
-2. Add your item to the appropriate section in `README.md`, in alphabetical order within that section.
-3. Use the format: `- [Name](url) - Description.` — one sentence, starting with a capital letter, ending with a period.
-4. **Also add the item to `site/src/data/tools.ts`** (see below) so it shows up on the GitHub Pages site, not just in `README.md`.
-5. Submit a pull request with a brief description of what you're adding and why it belongs here.
-
-## Keeping the website in sync
-
-The GitHub Pages site (built from `site/`) is **not** generated from `README.md` — it reads from a separate, hand-maintained file: [`site/src/data/tools.ts`](site/src/data/tools.ts). Adding an item to `README.md` alone will **not** make it appear on the site.
-
-When adding a new item:
-
-1. Add the entry to `README.md` as usual.
-2. Open `site/src/data/tools.ts` and add a matching `Tool` object in the section comment (`// ─── Category Name ───`) that corresponds to the same section you used in the README. Match the existing style:
-   ```ts
+2. Add an object to the `tools` array in `site/src/data/tools.json`, next to the other tools in the same category:
+   ```json
    {
-     name: 'Tool Name',
-     description: 'One sentence, no trailing period, matching the README description.',
-     url: 'https://example.com/',
-     github: 'https://github.com/owner/repo', // optional, only if there's a GitHub repo
-     category: 'category-slug', // must match a slug in the `categories` array at the top of the file
-     tags: ['a-few', 'lowercase-kebab', 'tags'],
-     pricing: 'Free' | 'Freemium' | 'Paid' | 'Open Source',
-   },
+     "name": "Tool Name",
+     "description": "One sentence, starting with a capital letter and ending with a period.",
+     "url": "https://example.com/",
+     "github": "https://github.com/owner/repo",
+     "category": "category-slug",
+     "tags": ["a-few", "lowercase-kebab", "tags"],
+     "pricing": "Free"
+   }
    ```
-3. Verify the build locally before opening a PR:
+   - `category` must match a `slug` in the `categories` array at the top of the file.
+   - `github`, `pricing` (`Free`, `Freemium`, `Paid` or `Open Source`), `group` (a README sub-heading) and `links` (extra `{ "label", "url" }` links) are optional.
+3. Regenerate the README and check the site builds:
    ```bash
-   cd site && npm ci && npm run build
+   cd site && npm ci && npm run readme && npm run build
    ```
-   The build should complete with no errors, and your tool should be visible in `site/dist/index.html`.
+4. Commit `tools.json` and `README.md` together and open a pull request saying what you're adding and why it belongs here.
 
-If a category doesn't exist yet in `tools.ts`, add it to the `categories` array at the top of the file (pick an emoji and a Tailwind color pair consistent with the existing entries) before adding tools to it.
+CI fails if `README.md` does not match `tools.json`.
+
+To add a category, add it to the `categories` array (its position sets the order on the site and in the README) with a `slug`, short `label`, README `title` and `description`, an emoji, and a Tailwind color set like the existing ones.
 
 ## Quality criteria
 
