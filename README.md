@@ -20,6 +20,7 @@ Contributions welcome! Read the [contribution guidelines](CONTRIBUTING.md) first
 - [Image Generation](#image-generation)
 - [Chatbots & Conversational AI](#chatbots--conversational-ai)
 - [WooCommerce & E-Commerce](#woocommerce--e-commerce)
+- [Agentic Commerce (Emerging)](#agentic-commerce-emerging)
 - [Forms & Automation](#forms--automation)
 - [Translation & Multilingual](#translation--multilingual)
 - [Video & Transcription](#video--transcription)
@@ -222,6 +223,25 @@ AI tools specifically designed for WooCommerce stores and product management.
 - [WriteText.ai for WooCommerce](https://writetext.ai/woocommerce) - Uses store data and image analysis for SEO-optimized product content automation.
 - [AI Addons](https://woocommerce.com/products/ai-addons/) - Generates product descriptions, images, and review replies directly in WooCommerce.
 - [WowRecommend](https://wordpress.org/plugins/wow-ai-product-recommendations/) - AI-assisted rule builder for WooCommerce product recommendations with 32+ filters, 16+ display placements (product page, cart, checkout, thank-you), popup upsells, and order bumps.
+
+## Agentic Commerce (Emerging)
+
+AI shopping agents (ChatGPT, Gemini, Google AI Mode, Claude) are starting to discover products and check out on a shopper's behalf. Two open protocols compete to standardize this: Stripe and OpenAI's ACP, and Google's UCP. WooCommerce support is still landing, and the community plugins below are very early (0–30 active installs as of October 2026), so treat this section as a watchlist rather than a set of recommendations.
+
+### Official & Protocols
+
+- [WooCommerce Agentic Commerce](https://woocommerce.com/agentic-commerce/) - Woo's hub for agent-ready stores: MCP and Abilities API available now, with UCP, ACP, and a WooCommerce AI merchant assistant listed as coming soon.
+- [Stripe Agentic Commerce Suite for WooCommerce](https://woocommerce.com/posts/stripe-agentic-commerce-suite-for-woocommerce/) - WooCommerce is a launch partner; the suite connects a store's catalog to multiple AI agents through the official Stripe extension.
+- [woocommerce/agentic-tools](https://github.com/woocommerce/agentic-tools) - Reference code bringing Anthropic's Claude Commerce Agent blueprint to WooCommerce: a shopping assistant that searches, builds carts, and hands off to normal checkout, plus a merchant assistant with human-approved changes. Not a supported extension. [Write-up](https://developer.woocommerce.com/2026/09/16/wc-claude-commerce-agent/)
+- [Agentic Commerce Protocol (ACP)](https://www.agenticcommerce.dev/) - Open standard from Stripe and OpenAI defining how agents, merchants, and payment providers complete purchases. [GitHub](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol)
+- [Universal Commerce Protocol (UCP)](https://ucp.dev/) - Google-led open standard for agent discovery, catalog browsing, and checkout, served from a `/.well-known/ucp` profile. [GitHub](https://github.com/Universal-Commerce-Protocol/ucp)
+- [AI & Agentic Commerce in WooCommerce Roadmap](https://developer.woocommerce.com/2025/10/03/ai-agentic-commerce-in-woocommerce/) - WooCommerce's developer roadmap for MCP, agentic checkout, and protocol support.
+
+### Early Community Plugins
+
+- [SDX AI Readiness Toolkit for WooCommerce](https://wordpress.org/plugins/sdx-ai-readiness-toolkit/) - Serves a UCP business profile and shopping catalog, MCP tools, OAuth 2.0, and ACP checkout from one plugin.
+- [Uncap AI Shopping Connector for WooCommerce](https://wordpress.org/plugins/uncap-ai-shopping-connector-for-woocommerce/) - Implements UCP, ACP pre-flight discovery, and MCP tools so agents can search products and create checkouts.
+- [Universal Commerce Protocol (UCP) for WooCommerce](https://wordpress.org/plugins/universal-commerce-protocol-ucp-for-woocommerce/) - Adds a `.well-known/ucp` endpoint, AI-optimized catalog, checkout sessions, and OAuth 2.0 identity linking over REST or MCP.
 
 ## Forms & Automation
 
