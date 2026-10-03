@@ -311,7 +311,7 @@
       "added": "2026-03-29",
       "tags": [
         "mcp",
-        "agents",
+        "agent",
         "official",
         "protocol"
       ],
@@ -343,7 +343,6 @@
       "type": "Plugin",
       "tags": [
         "claude",
-        "anthropic",
         "provider",
         "official"
       ],
@@ -373,7 +372,6 @@
       "type": "Plugin",
       "tags": [
         "openai",
-        "gpt",
         "provider",
         "official"
       ],
@@ -386,7 +384,12 @@
       "github": "https://github.com/saarnilauri/ai-provider-for-mistral",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "mistral",
+        "images"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -395,7 +398,11 @@
       "url": "https://wordpress.org/plugins/aslams-ai-provider-for-grok/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "grok"
+      ],
       "pricing": "Free"
     },
     {
@@ -404,7 +411,11 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-openrouter/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "openrouter"
+      ],
       "pricing": "Free"
     },
     {
@@ -413,7 +424,11 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-ollama/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "ollama"
+      ],
       "pricing": "Free"
     },
     {
@@ -422,7 +437,12 @@
       "url": "https://wordpress.org/plugins/mittwald-ai-provider/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "mittwald",
+        "managed-hosting"
+      ],
       "pricing": "Free"
     },
     {
@@ -431,7 +451,12 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-azure-ai-foundry/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "azure",
+        "openai"
+      ],
       "pricing": "Free"
     },
     {
@@ -440,7 +465,11 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-hugging-face/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "hugging-face"
+      ],
       "pricing": "Free"
     },
     {
@@ -449,7 +478,12 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-open-webui/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "open-webui",
+        "openai"
+      ],
       "pricing": "Free"
     },
     {
@@ -458,7 +492,11 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-alibaba-cloud/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "qwen"
+      ],
       "pricing": "Free"
     },
     {
@@ -468,7 +506,11 @@
       "github": "https://github.com/duetg/duetg-ai-connector",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "provider",
+        "ai-client",
+        "deepseek"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -643,7 +685,11 @@
       "category": "abilities-api",
       "added": "2026-04-27",
       "type": "Plugin",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "mcp",
+        "woocommerce"
+      ],
       "pricing": "Free"
     },
     {
@@ -682,7 +728,10 @@
       "url": "https://www.advancedcustomfields.com/blog/acf-pro-6-8-release-ai-ready-discoverable-content/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "content"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -691,7 +740,11 @@
       "url": "https://developer.woocommerce.com/docs/features/mcp/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "mcp",
+        "woocommerce"
+      ],
       "pricing": "Free"
     },
     {
@@ -714,7 +767,9 @@
       "url": "https://wordpress.org/plugins/insert-headers-and-footers/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -723,7 +778,10 @@
       "url": "https://wordpress.org/plugins/jetpack/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "core"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -732,7 +790,9 @@
       "url": "https://ninjaforms.com/blog/build-wordpress-forms-with-ai/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -741,7 +801,9 @@
       "url": "https://wordpress.org/plugins/sureforms/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -750,7 +812,10 @@
       "url": "https://wordpress.org/plugins/mainwp/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "agent"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -759,7 +824,11 @@
       "url": "https://wordpress.org/plugins/miniorange-ai-agent/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "agent",
+        "oauth"
+      ],
       "pricing": "Free"
     },
     {
@@ -768,7 +837,9 @@
       "url": "https://wordpress.org/plugins/vigia/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Free"
     },
     {
@@ -777,7 +848,9 @@
       "url": "https://wordpress.org/plugins/divewp-boost-site-performance/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Free"
     },
     {
@@ -786,7 +859,9 @@
       "url": "https://wordpress.org/plugins/cartflows/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -795,7 +870,10 @@
       "url": "https://wordpress.org/plugins/suretriggers/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "automation"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -804,7 +882,9 @@
       "url": "https://wordpress.org/plugins/latepoint/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -813,7 +893,10 @@
       "url": "https://wordpress.org/plugins/password-requirements/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "mcp"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -822,7 +905,12 @@
       "url": "https://wordpress.org/plugins/fluid-design-system-for-elementor/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "mcp",
+        "agent",
+        "elementor"
+      ],
       "pricing": "Free"
     },
     {
@@ -831,7 +919,9 @@
       "url": "https://wordpress.org/plugins/hcaptcha-for-forms-and-more/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Free"
     },
     {
@@ -840,7 +930,9 @@
       "url": "https://wordpress.org/plugins/windpress/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -849,7 +941,9 @@
       "url": "https://wordpress.org/plugins/ultimate-multisite/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api"
+      ],
       "pricing": "Free"
     },
     {
@@ -858,7 +952,11 @@
       "url": "https://wsform.com/completing-the-stack-ws-form-and-the-wordpress-ai-client-sdk/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "abilities-api",
+        "mcp",
+        "forms"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -871,7 +969,7 @@
       "added": "2026-03-29",
       "tags": [
         "mcp",
-        "agents",
+        "agent",
         "official",
         "protocol"
       ],
@@ -937,7 +1035,7 @@
       "added": "2026-03-29",
       "tags": [
         "mcp",
-        "agents",
+        "agent",
         "protocol",
         "ai-access"
       ],
@@ -952,7 +1050,7 @@
       "added": "2026-04-27",
       "tags": [
         "mcp",
-        "abilities",
+        "abilities-api",
         "workflow",
         "automation"
       ],
@@ -965,7 +1063,10 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "abilities-api"
+      ],
       "pricing": "Free"
     },
     {
@@ -975,7 +1076,10 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "abilities-api"
+      ],
       "pricing": "Free"
     },
     {
@@ -985,7 +1089,11 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "openai",
+        "oauth"
+      ],
       "pricing": "Free"
     },
     {
@@ -995,7 +1103,11 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "abilities-api",
+        "chatbot"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -1005,7 +1117,10 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "abilities-api"
+      ],
       "pricing": "Free"
     },
     {
@@ -1015,7 +1130,11 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "abilities-api",
+        "images"
+      ],
       "pricing": "Free"
     },
     {
@@ -1059,8 +1178,7 @@
       "tags": [
         "mcp",
         "seo",
-        "elementor",
-        "open-source"
+        "elementor"
       ],
       "pricing": "Free"
     },
@@ -1075,7 +1193,7 @@
         "mcp",
         "oauth",
         "security",
-        "audit-trail"
+        "audit-log"
       ],
       "pricing": "Freemium"
     },
@@ -1119,8 +1237,7 @@
       "added": "2026-04-27",
       "tags": [
         "mcp",
-        "gravity-forms",
-        "open-source"
+        "gravity-forms"
       ],
       "pricing": "Open Source"
     },
@@ -1134,8 +1251,7 @@
       "tags": [
         "mcp",
         "php-execution",
-        "sandboxed",
-        "open-source"
+        "sandboxed"
       ],
       "pricing": "Open Source"
     },
@@ -1164,7 +1280,6 @@
       "added": "2026-04-27",
       "tags": [
         "mcp",
-        "145-tools",
         "claude",
         "management"
       ],
@@ -1178,7 +1293,10 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "claude"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -1189,7 +1307,10 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "automattic"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -1200,7 +1321,9 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -1211,7 +1334,10 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "abilities-api"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -1222,7 +1348,11 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "mcp",
+        "abilities-api",
+        "elementor"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -1235,9 +1365,8 @@
       "added": "2026-03-29",
       "tags": [
         "mcp",
-        "agents",
-        "abilities",
-        "open-source"
+        "agent",
+        "abilities-api"
       ],
       "pricing": "Open Source"
     },
@@ -1251,7 +1380,6 @@
       "added": "2026-07-04",
       "tags": [
         "mcp",
-        "server",
         "multi-site",
         "node"
       ],
@@ -1283,7 +1411,6 @@
       "added": "2026-07-04",
       "tags": [
         "mcp",
-        "server",
         "woocommerce",
         "acf"
       ],
@@ -1326,7 +1453,11 @@
       "github": "https://github.com/nathanonn/claude-skills-wp-abilities-api",
       "category": "agent-skills",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "agent-skills",
+        "abilities-api",
+        "claude"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -1338,7 +1469,7 @@
       "added": "2026-08-06",
       "tags": [
         "agent-skills",
-        "page-builders",
+        "page-builder",
         "migration",
         "audit"
       ],
@@ -1351,7 +1482,12 @@
       "github": "https://github.com/WordPress/agent-skills",
       "category": "agent-skills",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "agent-skills",
+        "official",
+        "abilities-api",
+        "agent"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -1377,7 +1513,11 @@
       "category": "agent-skills",
       "added": "2026-04-27",
       "type": "Developer tool",
-      "tags": [],
+      "tags": [
+        "agent-skills",
+        "mcp",
+        "wp-cli"
+      ],
       "pricing": "Open Source"
     },
     {
@@ -1406,7 +1546,7 @@
       "tags": [
         "chatbot",
         "content",
-        "image",
+        "images",
         "fine-tuning"
       ],
       "pricing": "Freemium",
@@ -1449,9 +1589,9 @@
       "added": "2026-03-29",
       "tags": [
         "writing",
-        "gpt-4",
+        "openai",
         "templates",
-        "multilingual"
+        "translation"
       ],
       "pricing": "Freemium"
     },
@@ -1464,7 +1604,7 @@
       "tags": [
         "editor",
         "rewrite",
-        "translate",
+        "translation",
         "multi-model"
       ],
       "pricing": "Freemium"
@@ -1476,7 +1616,6 @@
       "category": "content",
       "added": "2026-03-29",
       "tags": [
-        "block-editor",
         "gutenberg",
         "jetpack",
         "automattic"
@@ -1524,7 +1663,7 @@
       "added": "2026-10-03",
       "tags": [
         "lms",
-        "courses",
+        "course",
         "quizzes",
         "openai"
       ],
@@ -1557,7 +1696,7 @@
         "seo",
         "google-ads",
         "claude-code",
-        "skills"
+        "agent-skills"
       ],
       "pricing": "Open Source"
     },
@@ -1611,7 +1750,7 @@
       "added": "2026-03-29",
       "tags": [
         "alt-text",
-        "metadata",
+        "meta",
         "bulk",
         "autopilot"
       ],
@@ -1651,7 +1790,9 @@
       "url": "https://wordpress.org/plugins/website-llms-txt/",
       "category": "seo",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "seo"
+      ],
       "pricing": "Free"
     },
     {
@@ -1660,7 +1801,9 @@
       "url": "https://wordpress.org/plugins/llms-full-txt-generator/",
       "category": "seo",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "seo"
+      ],
       "pricing": "Free"
     },
     {
@@ -1698,7 +1841,7 @@
       "category": "image",
       "added": "2026-03-29",
       "tags": [
-        "text-to-image",
+        "images",
         "media-library"
       ],
       "pricing": "Freemium"
@@ -1710,7 +1853,7 @@
       "category": "chatbots",
       "added": "2026-03-29",
       "tags": [
-        "chatgpt",
+        "openai",
         "rag",
         "vector",
         "lead-gen"
@@ -1753,7 +1896,7 @@
       "added": "2026-03-29",
       "tags": [
         "woocommerce",
-        "descriptions",
+        "product-descriptions",
         "reviews"
       ],
       "pricing": "Paid"
@@ -1793,7 +1936,7 @@
       "added": "2026-03-29",
       "tags": [
         "woocommerce",
-        "descriptions",
+        "product-descriptions",
         "images",
         "reviews"
       ],
@@ -2038,7 +2181,7 @@
       "tags": [
         "automation",
         "workflow",
-        "ai-agent",
+        "agent",
         "integrations"
       ],
       "pricing": "Freemium"
@@ -2055,7 +2198,10 @@
       ],
       "category": "forms",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "forms",
+        "abilities-api"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -2064,7 +2210,12 @@
       "url": "https://wsform.com/completing-the-stack-ws-form-and-the-wordpress-ai-client-sdk/",
       "category": "forms",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "forms",
+        "mcp",
+        "abilities-api",
+        "sdk"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -2075,7 +2226,6 @@
       "added": "2026-03-29",
       "tags": [
         "translation",
-        "multilingual",
         "openai",
         "woocommerce"
       ],
@@ -2116,7 +2266,6 @@
       "added": "2026-03-29",
       "tags": [
         "translation",
-        "200-languages",
         "visual-editor"
       ],
       "pricing": "Freemium"
@@ -2201,7 +2350,7 @@
         "page-builder",
         "elementor",
         "layout",
-        "code-gen"
+        "code-generation"
       ],
       "pricing": "Freemium",
       "featured": true
@@ -2216,7 +2365,7 @@
         "page-builder",
         "divi",
         "layout",
-        "image-gen"
+        "images"
       ],
       "pricing": "Paid"
     },
@@ -2226,7 +2375,10 @@
       "url": "https://wordpress.org/plugins/greenshift-animation-and-page-builder-blocks/",
       "category": "page-builders",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "page-builder",
+        "abilities-api"
+      ],
       "pricing": "Freemium"
     },
     {
@@ -2243,7 +2395,6 @@
       "added": "2026-09-25",
       "tags": [
         "starter-templates",
-        "blocks",
         "gutenberg",
         "kadence"
       ],
@@ -2257,7 +2408,6 @@
       "added": "2026-10-03",
       "tags": [
         "gutenberg",
-        "blocks",
         "theme-json",
         "openai"
       ],
@@ -2285,8 +2435,7 @@
       "added": "2026-10-03",
       "tags": [
         "gutenberg",
-        "blocks",
-        "ai-agent",
+        "agent",
         "openrouter"
       ],
       "pricing": "Free"
@@ -2300,7 +2449,7 @@
       "tags": [
         "gutenberg",
         "site-builder",
-        "chatgpt",
+        "openai",
         "gemini"
       ],
       "pricing": "Freemium"
@@ -2384,8 +2533,7 @@
       "tags": [
         "agent",
         "no-code",
-        "free",
-        "assistants"
+        "assistant"
       ],
       "pricing": "Freemium"
     },
@@ -2399,7 +2547,7 @@
       "tags": [
         "agent",
         "assistant",
-        "code-gen",
+        "code-generation",
         "content"
       ],
       "pricing": "Freemium",
@@ -2551,7 +2699,12 @@
       "url": "https://kinsta.com/blog/mcp-server-kinsta-api/",
       "category": "hosting",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "managed-hosting",
+        "mcp",
+        "integrations",
+        "tutorial"
+      ],
       "pricing": "Paid"
     },
     {
@@ -2560,7 +2713,11 @@
       "url": "https://pantheon.io/resources/content-publisher",
       "category": "hosting",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "managed-hosting",
+        "mcp",
+        "content"
+      ],
       "pricing": "Paid"
     },
     {
@@ -2583,7 +2740,11 @@
       "url": "https://wpvip.com",
       "category": "hosting",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "managed-hosting",
+        "mcp",
+        "agent"
+      ],
       "pricing": "Paid"
     },
     {
@@ -2594,7 +2755,6 @@
       "category": "open-source",
       "added": "2026-03-29",
       "tags": [
-        "plugin",
         "chatbot",
         "content",
         "community"
@@ -2626,8 +2786,7 @@
       "type": "MCP server",
       "tags": [
         "mcp",
-        "gravity-forms",
-        "open-source"
+        "gravity-forms"
       ],
       "pricing": "Open Source"
     },
@@ -2640,8 +2799,8 @@
       "added": "2026-03-29",
       "tags": [
         "chatbot",
-        "gpt",
-        "beginner-friendly"
+        "openai",
+        "beginner"
       ],
       "pricing": "Open Source"
     },
@@ -2654,7 +2813,7 @@
       "added": "2026-03-29",
       "tags": [
         "content",
-        "chatgpt",
+        "openai",
         "lightweight"
       ],
       "pricing": "Open Source"
@@ -2669,7 +2828,7 @@
       "tags": [
         "enterprise",
         "ml",
-        "integration",
+        "integrations",
         "human-made"
       ],
       "pricing": "Open Source"
@@ -2711,7 +2870,7 @@
       "added": "2026-03-29",
       "tags": [
         "official",
-        "tutorials",
+        "tutorial",
         "api-updates"
       ],
       "pricing": "Free"
@@ -2750,7 +2909,11 @@
       "url": "https://weston.ruter.net/2026/04/08/adding-an-mcp-server-to-the-wordpress-core-development-environment/",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "tutorial",
+        "mcp",
+        "core"
+      ],
       "pricing": "Free"
     },
     {
@@ -2759,7 +2922,10 @@
       "url": "https://summix.io/blog/wordpress-abilities-api-custom-abilities-7-0/",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "tutorial",
+        "abilities-api"
+      ],
       "pricing": "Free"
     },
     {
@@ -2768,7 +2934,12 @@
       "url": "https://wprobo.com/how-to-register-custom-woocommerce-abilities-for-the-wordpress-mcp-adapter/",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "tutorial",
+        "mcp",
+        "abilities-api",
+        "woocommerce"
+      ],
       "pricing": "Free"
     },
     {
@@ -2777,7 +2948,11 @@
       "url": "https://fluentforms.com/wordpress-abilities-api-for-automation/",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "tutorial",
+        "abilities-api",
+        "automation"
+      ],
       "pricing": "Free"
     },
     {
@@ -2819,7 +2994,7 @@
         "udemy",
         "course",
         "monetization",
-        "plugin-dev"
+        "developer-tools"
       ],
       "pricing": "Paid"
     },
@@ -2832,7 +3007,7 @@
       "tags": [
         "udemy",
         "course",
-        "site-building"
+        "site-builder"
       ],
       "pricing": "Paid"
     },
@@ -2843,7 +3018,6 @@
       "category": "learning",
       "added": "2026-03-29",
       "tags": [
-        "free",
         "official",
         "self-paced",
         "beginner"
@@ -2857,7 +3031,9 @@
       "github": "https://github.com/wpdevup/ai-wordpress",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": [],
+      "tags": [
+        "tutorial"
+      ],
       "pricing": "Open Source"
     }
   ]

@@ -48,7 +48,10 @@ const host = new URL(tool.url).hostname.replace(/^www\./, '');
       {tool.tags.length > 0 && (
         <ul class="mt-5 flex flex-wrap gap-1.5">
           {tool.tags.map((tag) => (
-            <li class="px-2 py-0.5 rounded-md text-[11px] font-mono bg-gray-100 dark:bg-white/[0.06] text-gray-600 dark:text-slate-400">#{tag}</li>
+            <li>
+              <a href={`${base}?tag=${encodeURIComponent(tag)}`}
+                 class="block px-2 py-0.5 rounded-md text-[11px] font-mono bg-gray-100 dark:bg-white/[0.06] text-gray-600 dark:text-slate-400 hover:text-brand-500 hover:bg-brand-500/10">#{tag}</a>
+            </li>
           ))}
         </ul>
       )}
