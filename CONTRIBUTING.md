@@ -22,7 +22,9 @@ All tools live in one file: [`site/src/data/tools.json`](site/src/data/tools.jso
    }
    ```
    - `category` must match a `slug` in the `categories` array at the top of the file.
-   - `github`, `pricing` (`Free`, `Freemium`, `Paid` or `Open Source`), `group` (a README sub-heading) and `links` (extra `{ "label", "url" }` links) are optional.
+   - `pricing` is `Free`, `Freemium`, `Paid` or `Open Source`. Please set it. People filter on it.
+   - `tags` are clickable on the site. Reuse existing ones where you can (`mcp`, `woocommerce`, `claude`, `seo`…) and skip tags that only repeat the pricing.
+   - Optional: `github`, `group` (a README sub-heading), `links` (extra `{ "label", "url" }` links), `type` (only if the category's `defaultType` is wrong for this tool) and `install` (a copy-paste install command; WordPress.org plugins get one automatically).
 3. Regenerate the README and check the site builds:
    ```bash
    cd site && npm ci && npm run readme && npm run build
@@ -30,6 +32,12 @@ All tools live in one file: [`site/src/data/tools.json`](site/src/data/tools.jso
 4. Commit `tools.json` and `README.md` together and open a pull request saying what you're adding and why it belongs here.
 
 CI fails if `README.md` does not match `tools.json`.
+
+`npm run links` checks every link in the file. It also runs every Monday and opens an issue if something is dead.
+
+## Collections
+
+The "I want to…" pages come from the `collections` array in the same file. Each pick is a tool slug plus one line on when to choose it. Suggestions are welcome, but keep them to picks you can defend. They are not rankings.
 
 To add a category, add it to the `categories` array (its position sets the order on the site and in the README) with a `slug`, short `label`, README `title` and `description`, an emoji, and a Tailwind color set like the existing ones.
 
