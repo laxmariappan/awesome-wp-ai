@@ -1707,34 +1707,6 @@
       "pricing": "Freemium"
     },
     {
-      "name": "AI Copilot – Content Generator",
-      "description": "AI automation platform combining workflow automation, chatbots, content generation, and MCP integration.",
-      "url": "https://wordpress.org/plugins/ai-copilot-content-generator/",
-      "category": "multi-purpose",
-      "added": "2026-03-29",
-      "tags": [
-        "automation",
-        "chatbot",
-        "forms",
-        "mcp"
-      ],
-      "pricing": "Freemium"
-    },
-    {
-      "name": "WP AI CoPilot",
-      "description": "AI content writer using GPT-3/4 with 40+ templates supporting 33+ languages for posts, articles, and product descriptions.",
-      "url": "https://wordpress.org/plugins/ai-co-pilot-for-wp/",
-      "category": "content",
-      "added": "2026-03-29",
-      "tags": [
-        "writing",
-        "openai",
-        "templates",
-        "translation"
-      ],
-      "pricing": "Freemium"
-    },
-    {
       "name": "AI Copilot",
       "description": "Rewrite, expand, shorten, and translate text in the WordPress editor with support for OpenAI, Claude, Gemini, Perplexity, and DeepSeek.",
       "url": "https://wordpress.org/plugins/ai-copilot/",
