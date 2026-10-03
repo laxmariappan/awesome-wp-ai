@@ -23,6 +23,7 @@ export interface Tool {
   links?: { label: string; url: string }[];
   category: string;  // matches Category.slug
   group?: string;    // optional README sub-heading within the category
+  added?: string;    // YYYY-MM-DD the tool was added to the list
   tags: string[];
   pricing?: Pricing;
   featured?: boolean;
