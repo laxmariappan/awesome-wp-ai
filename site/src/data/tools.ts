@@ -45,6 +45,23 @@ export const tools: Tool[] = (data.tools as (Omit<Tool, 'slug' | 'type'> & { typ
   return { ...t, type: t.type ?? defaultType[t.category], slug };
 });
 
+// "I want to…" collections: a few picks for a goal, each with a note on when to choose it
+export interface Collection {
+  slug: string;
+  title: string;
+  intro: string;
+  picks: { tool: Tool; note: string }[];
+}
+
+const bySlug = Object.fromEntries(tools.map((t) => [t.slug, t]));
+export const collections: Collection[] = data.collections.map((c) => ({
+  ...c,
+  picks: c.picks.map((p) => {
+    if (!bySlug[p.tool]) throw new Error(`Collection "${c.slug}" points at unknown tool "${p.tool}"`);
+    return { tool: bySlug[p.tool], note: p.note };
+  }),
+}));
+
 export function getCategoryBySlug(slug: string): Category | undefined {
   return categories.find((c) => c.slug === slug);
 }

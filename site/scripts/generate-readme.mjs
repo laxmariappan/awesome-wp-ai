@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../..', import.meta.url));
 const readmePath = `${root}/README.md`;
-const { categories, tools } = JSON.parse(readFileSync(new URL('../src/data/tools.json', import.meta.url), 'utf8'));
+const { categories, collections, tools } = JSON.parse(readFileSync(new URL('../src/data/tools.json', import.meta.url), 'utf8'));
 
 const anchor = (title) => title.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/ /g, '-');
 const entry = (t) => {
@@ -16,9 +16,15 @@ const entry = (t) => {
   return line;
 };
 
-const out = ['## Contents', ''];
+const SITE = 'https://laxmariappan.github.io/awesome-wp-ai/';
+
+const out = ['## Contents', '', '- [Start Here](#start-here)'];
 for (const c of categories) out.push(`- [${c.title}](#${anchor(c.title)})`);
 out.push('- [Credits](#credits)', '', '---', '');
+
+out.push('## Start Here', '', 'Not sure which tool you need? Pick a goal. Each page has a handful of picks and a line on when to choose which.', '');
+for (const c of collections) out.push(`- [${c.title}](${SITE}for/${c.slug}/) - ${c.intro}`);
+out.push('');
 
 for (const c of categories) {
   out.push(`## ${c.title}`, '');

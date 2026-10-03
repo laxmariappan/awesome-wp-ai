@@ -254,6 +254,143 @@
       "defaultType": "Learning resource"
     }
   ],
+  "collections": [
+    {
+      "slug": "connect-ai-to-my-site",
+      "title": "Connect Claude or ChatGPT to my site",
+      "intro": "You want an AI assistant to read and edit your WordPress site. That means running an MCP server on it. These are the ones worth a look, and which one fits depends mostly on where your site lives.",
+      "picks": [
+        {
+          "tool": "wpvibe",
+          "note": "Start here on a self-hosted site. Install the plugin, approve the connection, done. No terminal needed."
+        },
+        {
+          "tool": "wordpress-com",
+          "note": "If your site is on a paid WordPress.com plan, you already have this. Nothing to install, just switch it on."
+        },
+        {
+          "tool": "wordpress-mcp-adapter",
+          "note": "The official building block from the WordPress project. Pick it if you are a developer and want the thing everything else is built on."
+        },
+        {
+          "tool": "royal-mcp",
+          "note": "Security-first and well established. A good fit for a WooCommerce store where you want to control what the AI can touch."
+        },
+        {
+          "tool": "miniorange-secure-mcp-server",
+          "note": "For teams and agencies. Each AI gets its own role and every action is logged, so you can answer \"who changed that?\""
+        },
+        {
+          "tool": "ai-engine",
+          "note": "Already running AI Engine? It has MCP built in. No reason to add a second plugin."
+        }
+      ]
+    },
+    {
+      "slug": "run-ai-locally",
+      "title": "Run AI locally, nothing leaves my server",
+      "intro": "Client work, private drafts, or you just do not want to pay per token. WordPress can talk to a model running on your own machine. You need a provider plugin that points the built-in AI Client at it.",
+      "picks": [
+        {
+          "tool": "ollama-provider",
+          "note": "The simplest route. Run Ollama, install this, and any plugin built on the WordPress AI Client uses your local model."
+        },
+        {
+          "tool": "ultimate-ai-connector-for-compatible-endpoints",
+          "note": "Use this if you run LM Studio or anything else that speaks the OpenAI API. One plugin, lots of endpoints."
+        },
+        {
+          "tool": "open-webui-provider",
+          "note": "Only if Open WebUI is already your setup. It finds your models automatically."
+        },
+        {
+          "tool": "wordpress-studio-mcp",
+          "note": "A different kind of local: let a coding agent work on a local copy of your site instead of the live one."
+        }
+      ]
+    },
+    {
+      "slug": "woocommerce-product-content",
+      "title": "Write product descriptions for my WooCommerce store",
+      "intro": "Two hundred products and every description says \"high quality\". These generate titles and descriptions from your real product data, in bulk.",
+      "picks": [
+        {
+          "tool": "ai-product-tools",
+          "note": "Free to start and built for bulk. Try this first if you want to see results before paying anyone."
+        },
+        {
+          "tool": "storeagent",
+          "note": "Does descriptions and also answers customer questions and handles reviews. Pick it if you want one plugin for all three."
+        },
+        {
+          "tool": "writetext-ai-for-woocommerce",
+          "note": "Paid. It looks at your product images too, which matters for fashion, furniture and anything visual."
+        },
+        {
+          "tool": "kestrel-ai",
+          "note": "Paid, from the WooCommerce marketplace. A safe choice if you prefer to buy from Woo directly."
+        }
+      ]
+    },
+    {
+      "slug": "build-on-the-wordpress-ai-stack",
+      "title": "Build my own plugin on the WordPress AI stack",
+      "intro": "WordPress now ships three pieces for AI: an AI Client to call models, the Abilities API to describe what your plugin can do, and the MCP Adapter to expose that to agents. This is the order I would learn them in.",
+      "picks": [
+        {
+          "tool": "the-wordpress-abilities-api",
+          "note": "Read this first. It explains the idea the rest is built on, in plain language."
+        },
+        {
+          "tool": "wordpress-ai-workshop",
+          "note": "Then do this. A hands-on workshop from the Training Team that covers all three pieces."
+        },
+        {
+          "tool": "php-ai-client-sdk",
+          "note": "The SDK you will actually write code against. Provider-agnostic, so your plugin is not tied to one AI company."
+        },
+        {
+          "tool": "wordpress-ai",
+          "note": "The official AI plugin. Read the source when you want to see how the core team does it."
+        },
+        {
+          "tool": "abilities-scout",
+          "note": "Mine. Point it at any installed plugin and it suggests abilities you could register. Handy when you are staring at a blank file."
+        },
+        {
+          "tool": "wp-cli-ability-command",
+          "note": "List and run abilities from the terminal. The fastest way to check your registration worked."
+        }
+      ]
+    },
+    {
+      "slug": "teach-my-coding-agent-wordpress",
+      "title": "Teach my coding agent how WordPress works",
+      "intro": "Claude Code, Cursor and Codex write decent PHP and then get WordPress wrong: escaping, hooks, block.json. Skills fix that. They are instruction files your agent loads when the task calls for them.",
+      "picks": [
+        {
+          "tool": "wordpress-agent-skills",
+          "note": "Start here. The official set, maintained by the WordPress project, and it works with every major agent."
+        },
+        {
+          "tool": "wpacademy-wordpress-dev-skills",
+          "note": "Add this if you ship to WordPress.org. It checks coding standards, security and the directory guidelines."
+        },
+        {
+          "tool": "automattic-agent-skills",
+          "note": "Another general set, from Automattic. Worth comparing with the official one."
+        },
+        {
+          "tool": "wordpress-playground-mcp",
+          "note": "Give the agent somewhere to run its code. A disposable WordPress in the browser, no Docker."
+        },
+        {
+          "tool": "wordpress-studio-mcp",
+          "note": "Same idea with a real local site, if you already use Studio."
+        }
+      ]
+    }
+  ],
   "tools": [
     {
       "name": "WordPress/ai",
