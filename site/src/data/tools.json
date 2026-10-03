@@ -8,7 +8,8 @@
       "color": "bg-violet-100",
       "darkColor": "dark:bg-violet-900/30",
       "textColor": "text-violet-700 dark:text-violet-300",
-      "description": "The WordPress project maintains a growing set of official AI infrastructure components."
+      "description": "The WordPress project maintains a growing set of official AI infrastructure components.",
+      "defaultType": "Developer tool"
     },
     {
       "slug": "community-providers",
@@ -18,7 +19,8 @@
       "color": "bg-gray-100",
       "darkColor": "dark:bg-gray-800/40",
       "textColor": "text-gray-700 dark:text-gray-300",
-      "description": "Community-built provider plugins for the PHP AI Client SDK — write against the unified API and swap any provider."
+      "description": "Community-built provider plugins for the PHP AI Client SDK — write against the unified API and swap any provider.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "abilities-api",
@@ -28,7 +30,8 @@
       "color": "bg-fuchsia-100",
       "darkColor": "dark:bg-fuchsia-900/30",
       "textColor": "text-fuchsia-700 dark:text-fuchsia-300",
-      "description": "Developer tools, SDKs, and utilities for building with the WordPress [Abilities API](https://developer.wordpress.org/apis/abilities/) (`wp_register_ability()`). These tools help you author, discover, test, debug, and expose abilities."
+      "description": "Developer tools, SDKs, and utilities for building with the WordPress [Abilities API](https://developer.wordpress.org/apis/abilities/) (`wp_register_ability()`). These tools help you author, discover, test, debug, and expose abilities.",
+      "defaultType": "Developer tool"
     },
     {
       "slug": "abilities-plugins",
@@ -38,7 +41,8 @@
       "color": "bg-zinc-100",
       "darkColor": "dark:bg-zinc-800/40",
       "textColor": "text-zinc-700 dark:text-zinc-300",
-      "description": "Major plugins that have implemented `wp_register_ability()`, making their functionality discoverable and invocable by AI agents via the MCP Adapter."
+      "description": "Major plugins that have implemented `wp_register_ability()`, making their functionality discoverable and invocable by AI agents via the MCP Adapter.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "mcp",
@@ -48,7 +52,8 @@
       "color": "bg-slate-100",
       "darkColor": "dark:bg-slate-700/30",
       "textColor": "text-slate-700 dark:text-slate-300",
-      "description": "Plugins, servers, and tools implementing the [Model Context Protocol](https://modelcontextprotocol.io/) for WordPress."
+      "description": "Plugins, servers, and tools implementing the [Model Context Protocol](https://modelcontextprotocol.io/) for WordPress.",
+      "defaultType": "MCP server"
     },
     {
       "slug": "agent-skills",
@@ -58,7 +63,8 @@
       "color": "bg-violet-100",
       "darkColor": "dark:bg-violet-900/30",
       "textColor": "text-violet-700 dark:text-violet-300",
-      "description": "Portable instruction bundles that teach AI coding assistants WordPress development patterns. Not plugins — knowledge for machines."
+      "description": "Portable instruction bundles that teach AI coding assistants WordPress development patterns. Not plugins — knowledge for machines.",
+      "defaultType": "Agent skill"
     },
     {
       "slug": "multi-purpose",
@@ -68,7 +74,8 @@
       "color": "bg-purple-100",
       "darkColor": "dark:bg-purple-900/30",
       "textColor": "text-purple-700 dark:text-purple-300",
-      "description": "Full-featured plugins covering content generation, chatbots, image creation, and more."
+      "description": "Full-featured plugins covering content generation, chatbots, image creation, and more.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "content",
@@ -78,7 +85,8 @@
       "color": "bg-emerald-100",
       "darkColor": "dark:bg-emerald-900/30",
       "textColor": "text-emerald-700 dark:text-emerald-300",
-      "description": "Plugins focused on writing assistance, blog post drafting, and text optimization."
+      "description": "Plugins focused on writing assistance, blog post drafting, and text optimization.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "seo",
@@ -88,7 +96,8 @@
       "color": "bg-amber-100",
       "darkColor": "dark:bg-amber-900/30",
       "textColor": "text-amber-700 dark:text-amber-300",
-      "description": "AI-powered plugins for search engine optimization, metadata, and alt text."
+      "description": "AI-powered plugins for search engine optimization, metadata, and alt text.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "image",
@@ -98,7 +107,8 @@
       "color": "bg-pink-100",
       "darkColor": "dark:bg-pink-900/30",
       "textColor": "text-pink-700 dark:text-pink-300",
-      "description": "Plugins for AI-driven image creation and visual content management."
+      "description": "Plugins for AI-driven image creation and visual content management.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "chatbots",
@@ -108,7 +118,8 @@
       "color": "bg-cyan-100",
       "darkColor": "dark:bg-cyan-900/30",
       "textColor": "text-cyan-700 dark:text-cyan-300",
-      "description": "Conversational AI plugins for support, lead generation, and user engagement."
+      "description": "Conversational AI plugins for support, lead generation, and user engagement.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "woocommerce",
@@ -118,7 +129,8 @@
       "color": "bg-indigo-100",
       "darkColor": "dark:bg-indigo-900/30",
       "textColor": "text-indigo-700 dark:text-indigo-300",
-      "description": "AI tools specifically designed for WooCommerce stores and product management."
+      "description": "AI tools specifically designed for WooCommerce stores and product management.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "agentic-commerce",
@@ -128,7 +140,8 @@
       "color": "bg-neutral-100",
       "darkColor": "dark:bg-neutral-800/40",
       "textColor": "text-neutral-700 dark:text-neutral-300",
-      "description": "AI shopping agents (ChatGPT, Gemini, Google AI Mode, Claude) are starting to discover products and check out on a shopper's behalf. Two open protocols compete to standardize this: Stripe and OpenAI's ACP, and Google's UCP. WooCommerce support is still landing, and the community plugins below are very early (0–30 active installs as of October 2026), so treat this section as a watchlist rather than a set of recommendations."
+      "description": "AI shopping agents (ChatGPT, Gemini, Google AI Mode, Claude) are starting to discover products and check out on a shopper's behalf. Two open protocols compete to standardize this: Stripe and OpenAI's ACP, and Google's UCP. WooCommerce support is still landing, and the community plugins below are very early (0–30 active installs as of October 2026), so treat this section as a watchlist rather than a set of recommendations.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "forms",
@@ -138,7 +151,8 @@
       "color": "bg-orange-100",
       "darkColor": "dark:bg-orange-900/30",
       "textColor": "text-orange-700 dark:text-orange-300",
-      "description": "AI-powered form builders and workflow automation for WordPress."
+      "description": "AI-powered form builders and workflow automation for WordPress.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "translation",
@@ -148,7 +162,8 @@
       "color": "bg-red-100",
       "darkColor": "dark:bg-red-900/30",
       "textColor": "text-red-700 dark:text-red-300",
-      "description": "AI translation plugins for multilingual WordPress sites."
+      "description": "AI translation plugins for multilingual WordPress sites.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "video",
@@ -158,7 +173,8 @@
       "color": "bg-teal-100",
       "darkColor": "dark:bg-teal-900/30",
       "textColor": "text-teal-700 dark:text-teal-300",
-      "description": "Plugins for AI-powered video transcription, subtitles, and accessibility."
+      "description": "Plugins for AI-powered video transcription, subtitles, and accessibility.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "page-builders",
@@ -168,7 +184,8 @@
       "color": "bg-blue-100",
       "darkColor": "dark:bg-blue-900/30",
       "textColor": "text-blue-700 dark:text-blue-300",
-      "description": "Visual page builders with native AI capabilities."
+      "description": "Visual page builders with native AI capabilities.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "themes",
@@ -178,7 +195,8 @@
       "color": "bg-rose-100",
       "darkColor": "dark:bg-rose-900/30",
       "textColor": "text-rose-700 dark:text-rose-300",
-      "description": "WordPress themes built for AI products or with integrated AI capabilities."
+      "description": "WordPress themes built for AI products or with integrated AI capabilities.",
+      "defaultType": "Theme"
     },
     {
       "slug": "developer-tools",
@@ -188,7 +206,8 @@
       "color": "bg-lime-100",
       "darkColor": "dark:bg-lime-900/30",
       "textColor": "text-lime-700 dark:text-lime-300",
-      "description": "AI-assisted coding tools for building with WordPress."
+      "description": "AI-assisted coding tools for building with WordPress.",
+      "defaultType": "Developer tool"
     },
     {
       "slug": "ai-agents",
@@ -198,7 +217,8 @@
       "color": "bg-stone-100",
       "darkColor": "dark:bg-stone-800/40",
       "textColor": "text-stone-700 dark:text-stone-300",
-      "description": "Autonomous and agentic assistants that can take actions across a WordPress site."
+      "description": "Autonomous and agentic assistants that can take actions across a WordPress site.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "hosting",
@@ -208,7 +228,8 @@
       "color": "bg-green-100",
       "darkColor": "dark:bg-green-900/30",
       "textColor": "text-green-700 dark:text-green-300",
-      "description": "Managed WordPress hosting platforms with AI website builders or integrated MCP support."
+      "description": "Managed WordPress hosting platforms with AI website builders or integrated MCP support.",
+      "defaultType": "Hosting"
     },
     {
       "slug": "open-source",
@@ -218,7 +239,8 @@
       "color": "bg-yellow-100",
       "darkColor": "dark:bg-yellow-900/30",
       "textColor": "text-yellow-700 dark:text-yellow-300",
-      "description": "Community-driven and open-source AI projects built on or for WordPress."
+      "description": "Community-driven and open-source AI projects built on or for WordPress.",
+      "defaultType": "Plugin"
     },
     {
       "slug": "learning",
@@ -228,7 +250,8 @@
       "color": "bg-sky-100",
       "darkColor": "dark:bg-sky-900/30",
       "textColor": "text-sky-700 dark:text-sky-300",
-      "description": "Courses, tutorials, and official documentation for building with WordPress AI."
+      "description": "Courses, tutorials, and official documentation for building with WordPress AI.",
+      "defaultType": "Learning resource"
     }
   ],
   "tools": [
@@ -239,6 +262,7 @@
       "github": "https://github.com/WordPress/ai",
       "category": "infrastructure",
       "added": "2026-03-29",
+      "type": "Plugin",
       "tags": [
         "core",
         "framework",
@@ -316,6 +340,7 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-anthropic/",
       "category": "infrastructure",
       "added": "2026-04-27",
+      "type": "Plugin",
       "tags": [
         "claude",
         "anthropic",
@@ -330,6 +355,7 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-google/",
       "category": "infrastructure",
       "added": "2026-04-27",
+      "type": "Plugin",
       "tags": [
         "gemini",
         "google",
@@ -344,6 +370,7 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-openai/",
       "category": "infrastructure",
       "added": "2026-04-27",
+      "type": "Plugin",
       "tags": [
         "openai",
         "gpt",
@@ -359,7 +386,8 @@
       "github": "https://github.com/saarnilauri/ai-provider-for-mistral",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "Grok (xAI) provider",
@@ -367,7 +395,8 @@
       "url": "https://wordpress.org/plugins/aslams-ai-provider-for-grok/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "OpenRouter provider",
@@ -375,7 +404,8 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-openrouter/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Ollama provider",
@@ -383,7 +413,8 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-ollama/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "mittwald AI provider",
@@ -391,7 +422,8 @@
       "url": "https://wordpress.org/plugins/mittwald-ai-provider/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Azure AI Foundry provider",
@@ -399,7 +431,8 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-azure-ai-foundry/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Hugging Face provider",
@@ -407,7 +440,8 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-hugging-face/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Open WebUI provider",
@@ -415,7 +449,8 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-open-webui/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Alibaba Cloud provider",
@@ -423,7 +458,8 @@
       "url": "https://wordpress.org/plugins/ai-provider-for-alibaba-cloud/",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "DuetG AI Connector",
@@ -432,7 +468,8 @@
       "github": "https://github.com/duetg/duetg-ai-connector",
       "category": "community-providers",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "AI Provider for DeepSeek",
@@ -482,6 +519,7 @@
       "github": "https://github.com/laxmariappan/lax-abilities-toolkit",
       "category": "abilities-api",
       "added": "2026-04-27",
+      "type": "Plugin",
       "tags": [
         "abilities-api",
         "post-types",
@@ -498,6 +536,7 @@
       "github": "https://github.com/laxmariappan/abilities-scout",
       "category": "abilities-api",
       "added": "2026-04-27",
+      "type": "Plugin",
       "tags": [
         "abilities-api",
         "static-analysis",
@@ -573,6 +612,7 @@
       "url": "https://wordpress.org/plugins/grumpy-ai-gate/",
       "category": "abilities-api",
       "added": "2026-04-27",
+      "type": "Plugin",
       "tags": [
         "abilities-api",
         "debugging",
@@ -602,7 +642,9 @@
       "url": "https://wordpress.org/plugins/enable-abilities-for-mcp/",
       "category": "abilities-api",
       "added": "2026-04-27",
-      "tags": []
+      "type": "Plugin",
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "mcp-expose-abilities",
@@ -640,7 +682,8 @@
       "url": "https://www.advancedcustomfields.com/blog/acf-pro-6-8-release-ai-ready-discoverable-content/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "WooCommerce",
@@ -648,7 +691,8 @@
       "url": "https://developer.woocommerce.com/docs/features/mcp/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "WPForms Lite",
@@ -670,7 +714,8 @@
       "url": "https://wordpress.org/plugins/insert-headers-and-footers/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "Jetpack",
@@ -678,7 +723,8 @@
       "url": "https://wordpress.org/plugins/jetpack/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "Ninja Forms",
@@ -686,7 +732,8 @@
       "url": "https://ninjaforms.com/blog/build-wordpress-forms-with-ai/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "SureForms",
@@ -694,7 +741,8 @@
       "url": "https://wordpress.org/plugins/sureforms/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "MainWP Dashboard",
@@ -702,7 +750,8 @@
       "url": "https://wordpress.org/plugins/mainwp/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "miniOrange AI Agent",
@@ -710,7 +759,8 @@
       "url": "https://wordpress.org/plugins/miniorange-ai-agent/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "VigIA",
@@ -718,7 +768,8 @@
       "url": "https://wordpress.org/plugins/vigia/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "DiveWP",
@@ -726,7 +777,8 @@
       "url": "https://wordpress.org/plugins/divewp-boost-site-performance/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "CartFlows",
@@ -734,7 +786,8 @@
       "url": "https://wordpress.org/plugins/cartflows/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "OttoKit Automation",
@@ -742,7 +795,8 @@
       "url": "https://wordpress.org/plugins/suretriggers/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "LatePoint Booking",
@@ -750,7 +804,8 @@
       "url": "https://wordpress.org/plugins/latepoint/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "WP Password Policy",
@@ -758,7 +813,8 @@
       "url": "https://wordpress.org/plugins/password-requirements/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "Fluid Design System for Elementor",
@@ -766,7 +822,8 @@
       "url": "https://wordpress.org/plugins/fluid-design-system-for-elementor/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "hCaptcha for WP",
@@ -774,7 +831,8 @@
       "url": "https://wordpress.org/plugins/hcaptcha-for-forms-and-more/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "WindPress (Tailwind CSS)",
@@ -782,7 +840,8 @@
       "url": "https://wordpress.org/plugins/windpress/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "Ultimate Multisite",
@@ -790,7 +849,8 @@
       "url": "https://wordpress.org/plugins/ultimate-multisite/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "WS Form",
@@ -798,7 +858,8 @@
       "url": "https://wsform.com/completing-the-stack-ws-form-and-the-wordpress-ai-client-sdk/",
       "category": "abilities-plugins",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "WordPress MCP Adapter",
@@ -904,7 +965,8 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Abilities Bridge",
@@ -913,7 +975,8 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "MountDev AI MCP Connector",
@@ -922,7 +985,8 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Rapls AI Chatbot",
@@ -931,7 +995,8 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "Virtual Media Folders",
@@ -940,7 +1005,8 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "All Sources Images",
@@ -949,7 +1015,8 @@
       "category": "mcp",
       "group": "Plugins (WordPress.org)",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "WPVibe",
@@ -1111,7 +1178,8 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "@automattic/mcp-wordpress-remote",
@@ -1121,7 +1189,8 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "rnaga/wp-mcp",
@@ -1131,7 +1200,8 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "buddypress-mcp",
@@ -1141,7 +1211,8 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "elementor-mcp-api",
@@ -1151,7 +1222,8 @@
       "category": "mcp",
       "group": "Community Servers & Libraries",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "wordpress-wae",
@@ -1254,7 +1326,8 @@
       "github": "https://github.com/nathanonn/claude-skills-wp-abilities-api",
       "category": "agent-skills",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "Respira Agent Skills",
@@ -1278,7 +1351,8 @@
       "github": "https://github.com/WordPress/agent-skills",
       "category": "agent-skills",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "wpacademy/wordpress-dev-skills",
@@ -1302,7 +1376,9 @@
       "github": "https://github.com/wp-cli/ai-command",
       "category": "agent-skills",
       "added": "2026-04-27",
-      "tags": []
+      "type": "Developer tool",
+      "tags": [],
+      "pricing": "Open Source"
     },
     {
       "name": "AI Engine",
@@ -1476,6 +1552,7 @@
       "github": "https://github.com/nowork-studio/toprank",
       "category": "seo",
       "added": "2026-04-11",
+      "type": "Agent skill",
       "tags": [
         "seo",
         "google-ads",
@@ -1574,7 +1651,8 @@
       "url": "https://wordpress.org/plugins/website-llms-txt/",
       "category": "seo",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "LLMs-Full.txt Generator",
@@ -1582,7 +1660,8 @@
       "url": "https://wordpress.org/plugins/llms-full-txt-generator/",
       "category": "seo",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "AI Featured Image",
@@ -1741,6 +1820,7 @@
       "category": "agentic-commerce",
       "group": "Official & Protocols",
       "added": "2026-10-03",
+      "type": "Learning resource",
       "tags": [
         "official",
         "woocommerce",
@@ -1756,6 +1836,7 @@
       "category": "agentic-commerce",
       "group": "Official & Protocols",
       "added": "2026-10-03",
+      "type": "Learning resource",
       "tags": [
         "stripe",
         "acp",
@@ -1778,6 +1859,7 @@
       "category": "agentic-commerce",
       "group": "Official & Protocols",
       "added": "2026-10-03",
+      "type": "Developer tool",
       "tags": [
         "claude",
         "reference",
@@ -1794,6 +1876,7 @@
       "category": "agentic-commerce",
       "group": "Official & Protocols",
       "added": "2026-10-03",
+      "type": "Developer tool",
       "tags": [
         "protocol",
         "acp",
@@ -1810,6 +1893,7 @@
       "category": "agentic-commerce",
       "group": "Official & Protocols",
       "added": "2026-10-03",
+      "type": "Developer tool",
       "tags": [
         "protocol",
         "ucp",
@@ -1824,6 +1908,7 @@
       "category": "agentic-commerce",
       "group": "Official & Protocols",
       "added": "2026-10-03",
+      "type": "Learning resource",
       "tags": [
         "roadmap",
         "woocommerce",
@@ -1970,7 +2055,8 @@
       ],
       "category": "forms",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "WS Form",
@@ -1978,7 +2064,8 @@
       "url": "https://wsform.com/completing-the-stack-ws-form-and-the-wordpress-ai-client-sdk/",
       "category": "forms",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "Weglot",
@@ -2139,7 +2226,8 @@
       "url": "https://wordpress.org/plugins/greenshift-animation-and-page-builder-blocks/",
       "category": "page-builders",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Freemium"
     },
     {
       "name": "Kadence AI",
@@ -2262,6 +2350,7 @@
       "url": "https://codewp.ai/",
       "category": "developer-tools",
       "added": "2026-07-04",
+      "type": "Developer tool",
       "tags": [
         "code-generation",
         "woocommerce",
@@ -2462,7 +2551,8 @@
       "url": "https://kinsta.com/blog/mcp-server-kinsta-api/",
       "category": "hosting",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Paid"
     },
     {
       "name": "Pantheon",
@@ -2470,7 +2560,8 @@
       "url": "https://pantheon.io/resources/content-publisher",
       "category": "hosting",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Paid"
     },
     {
       "name": "InstaWP",
@@ -2492,7 +2583,8 @@
       "url": "https://wpvip.com",
       "category": "hosting",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Paid"
     },
     {
       "name": "AI Engine",
@@ -2531,6 +2623,7 @@
       "github": "https://github.com/GravityKit/GravityMCP",
       "category": "open-source",
       "added": "2026-04-27",
+      "type": "MCP server",
       "tags": [
         "mcp",
         "gravity-forms",
@@ -2657,7 +2750,8 @@
       "url": "https://weston.ruter.net/2026/04/08/adding-an-mcp-server-to-the-wordpress-core-development-environment/",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Custom Abilities in WordPress 7.0",
@@ -2665,7 +2759,8 @@
       "url": "https://summix.io/blog/wordpress-abilities-api-custom-abilities-7-0/",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Custom WooCommerce Abilities for MCP Adapter",
@@ -2673,7 +2768,8 @@
       "url": "https://wprobo.com/how-to-register-custom-woocommerce-abilities-for-the-wordpress-mcp-adapter/",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "Fluent Forms: WordPress Abilities API for Automation",
@@ -2681,7 +2777,8 @@
       "url": "https://fluentforms.com/wordpress-abilities-api-for-automation/",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Free"
     },
     {
       "name": "WordCamp US 2025: Turn Your Local WordPress Install into Your AI Coding Assistant",
@@ -2760,7 +2857,8 @@
       "github": "https://github.com/wpdevup/ai-wordpress",
       "category": "learning",
       "added": "2026-04-27",
-      "tags": []
+      "tags": [],
+      "pricing": "Open Source"
     }
   ]
 }

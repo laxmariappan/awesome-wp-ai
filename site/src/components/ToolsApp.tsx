@@ -367,11 +367,22 @@ interface Props { tools: Tool[]; categories: Category[]; }
 type SortOption = 'default' | 'newest' | 'a-z' | 'z-a' | 'pricing';
 
 const NEW_DAYS = 30;
+const PRICING_OPTIONS = ['Free', 'Open Source', 'Freemium', 'Paid'];
+
+const selectCls = `px-3 py-2 rounded-xl border border-gray-200 dark:border-white/[0.08]
+  bg-white dark:bg-surface-700 text-xs text-gray-700 dark:text-slate-300
+  hover:border-brand-500/40 transition-colors duration-200
+  focus:outline-none focus:ring-2 focus:ring-brand-500/30 cursor-pointer`;
+const chipCls = `inline-flex items-center gap-1.5 pl-2.5 pr-1.5 py-1 rounded-full text-xs font-medium
+  border border-brand-500/30 bg-brand-500/10 text-brand-400 animate-scale-in`;
+const chipXCls = 'p-0.5 rounded-full hover:bg-brand-500/20 transition-all duration-150 hover:rotate-90 transform';
 
 export default function ToolsApp({ tools, categories }: Props) {
   const [search, setSearch]                 = useState('');
   const [activeCategory, setActiveCategory] = useState<string>('all');
   const [sortBy, setSortBy]                 = useState<SortOption>('default');
+  const [pricing, setPricing]               = useState('');
+  const [type, setType]                     = useState('');
   const [drawerOpen, setDrawerOpen]         = useState(false);
   const [gridKey, setGridKey]               = useState(0);
   // Set after mount so the statically built HTML and the client agree on first render
@@ -406,6 +417,8 @@ export default function ToolsApp({ tools, categories }: Props) {
   const filtered = useMemo(() => {
     let r = tools;
     if (activeCategory !== 'all') r = r.filter(t => t.category === activeCategory);
+    if (pricing) r = r.filter(t => t.pricing === pricing);
+    if (type)    r = r.filter(t => t.type === type);
     if (search.trim()) {
       const q = search.toLowerCase();
       r = r.filter(t =>
@@ -423,7 +436,9 @@ export default function ToolsApp({ tools, categories }: Props) {
       r = [...r].sort((a, b) => rank(a) - rank(b));
     }
     return r;
-  }, [tools, activeCategory, search, sortBy]);
+  }, [tools, activeCategory, search, sortBy, pricing, type]);
+
+  const typeOptions = useMemo(() => [...new Set(tools.map(t => t.type))].sort(), [tools]);
 
   const countByCategory = useMemo(() => {
     const map: Record<string, number> = { all: tools.length };
@@ -440,6 +455,8 @@ export default function ToolsApp({ tools, categories }: Props) {
     setSearch('');
     setActiveCategory('all');
     setSortBy('default');
+    setPricing('');
+    setType('');
   }
 
   const handleBrowseTab = useCallback(() => {
@@ -453,7 +470,7 @@ export default function ToolsApp({ tools, categories }: Props) {
     setTimeout(() => searchRef.current?.focus(), 350);
   }, []);
 
-  const hasFilters = search || activeCategory !== 'all';
+  const hasFilters = search || activeCategory !== 'all' || pricing || type;
   const activeCat = categories.find(c => c.slug === activeCategory);
 
   return (
@@ -555,6 +572,18 @@ export default function ToolsApp({ tools, categories }: Props) {
             </select>
           </div>
 
+          {/* Pricing and type filters */}
+          <div className="flex gap-2 mb-4 flex-wrap">
+            <select value={pricing} onChange={e => setPricing(e.target.value)} aria-label="Filter by pricing" className={selectCls}>
+              <option value="">Pricing: Any</option>
+              {PRICING_OPTIONS.map(p => <option key={p} value={p}>{p}</option>)}
+            </select>
+            <select value={type} onChange={e => setType(e.target.value)} aria-label="Filter by type" className={selectCls}>
+              <option value="">Type: Any</option>
+              {typeOptions.map(t => <option key={t} value={t}>{t}</option>)}
+            </select>
+          </div>
+
           {/* Active filter chips + result count */}
           <div className="flex items-center gap-2 mb-5 flex-wrap min-h-[1.75rem]">
             {activeCat && (
@@ -571,6 +600,19 @@ export default function ToolsApp({ tools, categories }: Props) {
                 >
                   <IconX size={11} />
                 </button>
+              </span>
+            )}
+
+            {pricing && (
+              <span className={chipCls}>
+                {pricing}
+                <button onClick={() => setPricing('')} className={chipXCls} aria-label="Remove pricing filter"><IconX size={11} /></button>
+              </span>
+            )}
+            {type && (
+              <span className={chipCls}>
+                {type}
+                <button onClick={() => setType('')} className={chipXCls} aria-label="Remove type filter"><IconX size={11} /></button>
               </span>
             )}
 
