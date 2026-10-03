@@ -1,0 +1,99 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { tools, getCategoryBySlug, type Tool } from '../../data/tools';
+
+export function getStaticPaths() {
+  return tools.map((tool) => ({ params: { slug: tool.slug }, props: { tool } }));
+}
+
+interface Props { tool: Tool; }
+const { tool } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const category = getCategoryBySlug(tool.category);
+const related = tools.filter((t) => t.category === tool.category && t.slug !== tool.slug).slice(0, 6);
+const added = tool.added
+  ? new Date(`${tool.added}T00:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })
+  : null;
+const host = new URL(tool.url).hostname.replace(/^www\./, '');
+---
+
+<Layout title={`${tool.name} | Awesome WP AI`} description={tool.description}>
+  <Header />
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <nav class="text-xs text-gray-500 dark:text-slate-400 mb-6" aria-label="Breadcrumb">
+      <a href={base} class="hover:text-brand-500">All tools</a>
+      <span class="mx-1.5">/</span>
+      <span>{category?.label}</span>
+    </nav>
+
+    <article class="glow-card rounded-2xl p-6 sm:p-8">
+      <div class="flex flex-wrap items-center gap-2 mb-3">
+        {category && (
+          <span class={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-medium ${category.color} ${category.darkColor} ${category.textColor}`}>
+            {category.emoji} {category.label}
+          </span>
+        )}
+        {tool.pricing && (
+          <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-mono font-medium border border-gray-200 dark:border-white/10 text-gray-600 dark:text-slate-300">
+            {tool.pricing}
+          </span>
+        )}
+      </div>
+
+      <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">{tool.name}</h1>
+      <p class="mt-4 text-base leading-relaxed text-gray-700 dark:text-slate-300">{tool.description}</p>
+
+      {tool.tags.length > 0 && (
+        <ul class="mt-5 flex flex-wrap gap-1.5">
+          {tool.tags.map((tag) => (
+            <li class="px-2 py-0.5 rounded-md text-[11px] font-mono bg-gray-100 dark:bg-white/[0.06] text-gray-600 dark:text-slate-400">#{tag}</li>
+          ))}
+        </ul>
+      )}
+
+      <div class="mt-7 flex flex-wrap items-center gap-3">
+        <a href={tool.url} target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold btn-gradient text-white">
+          Visit {host} ↗
+        </a>
+        {tool.github && tool.github !== tool.url && (
+          <a href={tool.github} target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium border border-gray-200 dark:border-white/10 text-gray-700 dark:text-slate-200 hover:border-brand-500/50">
+            GitHub
+          </a>
+        )}
+        {tool.links?.map((l) => (
+          <a href={l.url} target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium border border-gray-200 dark:border-white/10 text-gray-700 dark:text-slate-200 hover:border-brand-500/50">
+            {l.label}
+          </a>
+        ))}
+      </div>
+
+      {added && <p class="mt-6 text-xs text-gray-500 dark:text-slate-500">Added to the list on {added}.</p>}
+    </article>
+
+    {related.length > 0 && (
+      <section class="mt-10">
+        <h2 class="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">More in {category?.label}</h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {related.map((r) => (
+            <li>
+              <a href={`${base}tools/${r.slug}/`} class="glow-card block rounded-xl p-4 h-full">
+                <span class="block font-semibold text-sm text-gray-900 dark:text-slate-100">{r.name}</span>
+                <span class="mt-1 block text-xs text-gray-500 dark:text-slate-400 line-clamp-2">{r.description}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <p class="mt-10 text-sm">
+      <a href={base} class="text-brand-500 hover:underline">← Back to all tools</a>
+    </p>
+  </main>
+  <Footer />
+</Layout>

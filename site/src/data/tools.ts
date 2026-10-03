@@ -27,10 +27,20 @@ export interface Tool {
   tags: string[];
   pricing?: Pricing;
   featured?: boolean;
+  slug: string;      // unique, URL-safe id used for /tools/<slug>/
 }
 
 export const categories = data.categories as Category[];
-export const tools = data.tools as Tool[];
+const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const seen = new Set<string>();
+export const tools: Tool[] = (data.tools as Omit<Tool, 'slug'>[]).map((t) => {
+  // A name can appear in more than one category; later ones get the category appended
+  let slug = slugify(t.name);
+  if (seen.has(slug)) slug = `${slug}-${t.category}`;
+  if (seen.has(slug)) throw new Error(`Duplicate tool slug: ${slug}`);
+  seen.add(slug);
+  return { ...t, slug };
+});
 
 export function getCategoryBySlug(slug: string): Category | undefined {
   return categories.find((c) => c.slug === slug);
