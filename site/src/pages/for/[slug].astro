@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { collections, getCategoryBySlug, type Collection } from '../../data/tools';
+
+export function getStaticPaths() {
+  return collections.map((collection) => ({ params: { slug: collection.slug }, props: { collection } }));
+}
+
+interface Props { collection: Collection; }
+const { collection } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const others = collections.filter((c) => c.slug !== collection.slug);
+---
+
+<Layout title={`${collection.title} | Awesome WP AI`} description={collection.intro}>
+  <Header />
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <nav class="text-xs text-gray-500 dark:text-slate-400 mb-6" aria-label="Breadcrumb">
+      <a href={base} class="hover:text-brand-500">All tools</a>
+      <span class="mx-1.5">/</span>
+      <span>I want to…</span>
+    </nav>
+
+    <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">{collection.title}</h1>
+    <p class="mt-4 text-base leading-relaxed text-gray-700 dark:text-slate-300">{collection.intro}</p>
+
+    <ol class="mt-8 space-y-4">
+      {collection.picks.map(({ tool, note }) => {
+        const category = getCategoryBySlug(tool.category);
+        return (
+          <li class="glow-card rounded-2xl p-5 sm:p-6">
+            <div class="flex flex-wrap items-center gap-2">
+              <h2 class="text-lg font-semibold text-gray-900 dark:text-white">
+                <a href={`${base}tools/${tool.slug}/`} class="hover:underline underline-offset-2">{tool.name}</a>
+              </h2>
+              {tool.pricing && (
+                <span class="px-2 py-0.5 rounded-md text-[11px] font-mono border border-gray-200 dark:border-white/10 text-gray-600 dark:text-slate-300">{tool.pricing}</span>
+              )}
+              {category && <span class="text-[11px] text-gray-500 dark:text-slate-500">{category.emoji} {category.label}</span>}
+            </div>
+            <p class="mt-2 text-sm font-medium text-gray-900 dark:text-slate-100">{note}</p>
+            <p class="mt-2 text-sm text-gray-600 dark:text-slate-400">{tool.description}</p>
+            <p class="mt-3 text-sm">
+              <a href={tool.url} target="_blank" rel="noopener noreferrer" class="text-brand-500 hover:underline">Visit ↗</a>
+              <a href={`${base}tools/${tool.slug}/`} class="ml-4 text-gray-500 dark:text-slate-400 hover:underline">Details</a>
+            </p>
+          </li>
+        );
+      })}
+    </ol>
+
+    <p class="mt-8 text-xs text-gray-500 dark:text-slate-500">
+      These are picks, not rankings. Think something is missing or wrong?
+      <a href="https://github.com/laxmariappan/awesome-wp-ai/issues/new" class="text-brand-500 hover:underline">Tell me</a>.
+    </p>
+
+    <section class="mt-10">
+      <h2 class="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Other goals</h2>
+      <ul class="space-y-1.5 text-sm">
+        {others.map((c) => (
+          <li><a href={`${base}for/${c.slug}/`} class="text-brand-500 hover:underline">{c.title}</a></li>
+        ))}
+      </ul>
+    </section>
+
+    <p class="mt-10 text-sm">
+      <a href={base} class="text-brand-500 hover:underline">← Back to all tools</a>
+    </p>
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,21 @@
+---
+import { collections } from '../data/tools';
+const base = import.meta.env.BASE_URL;
+---
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10" aria-labelledby="collections-title">
+  <h2 id="collections-title" class="text-sm font-semibold text-gray-900 dark:text-slate-100">Not sure where to start? Pick a goal.</h2>
+  <ul class="mt-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {collections.map((c) => (
+      <li>
+        <a href={`${base}for/${c.slug}/`} class="glow-card flex items-center justify-between gap-3 rounded-xl px-4 py-3 h-full">
+          <span>
+            <span class="block text-[11px] font-mono text-gray-400 dark:text-slate-500">I want to…</span>
+            <span class="block text-sm font-semibold text-gray-900 dark:text-slate-100">{c.title}</span>
+          </span>
+          <span class="text-xs font-mono text-gray-400 dark:text-slate-500 flex-shrink-0">{c.picks.length} picks →</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
