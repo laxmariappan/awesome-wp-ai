@@ -73,11 +73,13 @@ function ToolCard({
   category,
   index,
   gridKey,
+  isNew,
 }: {
   tool: Tool;
   category: Category | undefined;
   index: number;
   gridKey: number;
+  isNew: boolean;
 }) {
   const gradient = getGradient(tool.name);
   const delay = Math.min(index * 40, 480);
@@ -109,6 +111,12 @@ function ToolCard({
                            group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors duration-200">
               {tool.name}
             </h3>
+            {isNew && (
+              <span className="flex-shrink-0 text-[9px] font-mono font-bold px-1.5 py-0.5 rounded
+                               bg-emerald-500/15 text-emerald-500 border border-emerald-500/25 leading-none">
+                NEW
+              </span>
+            )}
             {tool.featured && (
               <span className="flex-shrink-0 text-[9px] font-mono font-bold px-1.5 py-0.5 rounded
                                bg-brand-500/15 text-brand-400 border border-brand-500/20 leading-none">
@@ -354,7 +362,9 @@ function MobileBottomNav({ activeCategory, hasSearch, drawerOpen, onBrowse, onSe
 
 // ─── Main app ─────────────────────────────────────────────────────────────────
 interface Props { tools: Tool[]; categories: Category[]; }
-type SortOption = 'default' | 'a-z' | 'z-a' | 'pricing';
+type SortOption = 'default' | 'newest' | 'a-z' | 'z-a' | 'pricing';
+
+const NEW_DAYS = 30;
 
 export default function ToolsApp({ tools, categories }: Props) {
   const [search, setSearch]                 = useState('');
@@ -362,6 +372,11 @@ export default function ToolsApp({ tools, categories }: Props) {
   const [sortBy, setSortBy]                 = useState<SortOption>('default');
   const [drawerOpen, setDrawerOpen]         = useState(false);
   const [gridKey, setGridKey]               = useState(0);
+  // Set after mount so the statically built HTML and the client agree on first render
+  const [newSince, setNewSince]             = useState<string | null>(null);
+  useEffect(() => {
+    setNewSince(new Date(Date.now() - NEW_DAYS * 864e5).toISOString().slice(0, 10));
+  }, []);
 
   const prevCategory  = useRef(activeCategory);
   const searchRef     = useRef<HTMLInputElement>(null);
@@ -397,6 +412,7 @@ export default function ToolsApp({ tools, categories }: Props) {
         t.tags.some(tag => tag.toLowerCase().includes(q))
       );
     }
+    if (sortBy === 'newest')  r = [...r].sort((a, b) => (b.added ?? '').localeCompare(a.added ?? ''));
     if (sortBy === 'a-z')     r = [...r].sort((a, b) => a.name.localeCompare(b.name));
     if (sortBy === 'z-a')     r = [...r].sort((a, b) => b.name.localeCompare(a.name));
     if (sortBy === 'pricing') {
@@ -530,6 +546,7 @@ export default function ToolsApp({ tools, categories }: Props) {
                          focus:outline-none focus:ring-2 focus:ring-brand-500/30 cursor-pointer flex-shrink-0"
             >
               <option value="default">Sort: Default</option>
+              <option value="newest">Newest first</option>
               <option value="a-z">A → Z</option>
               <option value="z-a">Z → A</option>
               <option value="pricing">By Pricing</option>
@@ -579,6 +596,7 @@ export default function ToolsApp({ tools, categories }: Props) {
             <div key={gridKey} className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
               {filtered.map((tool, index) => (
                 <ToolCard
+                  isNew={!!newSince && !!tool.added && tool.added >= newSince}
                   key={`${tool.name}-${gridKey}`}
                   tool={tool}
                   category={categoryMap[tool.category]}
