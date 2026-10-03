@@ -37,6 +37,10 @@ jobs:
         working-directory: site
         run: npm ci
 
+      - name: Check README is generated from tools.json
+        working-directory: site
+        run: npm run readme:check
+
       - name: Build
         working-directory: site
         run: npm run build

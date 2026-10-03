@@ -1,0 +1,2569 @@
+{
+  "categories": [
+    {
+      "slug": "infrastructure",
+      "label": "Official Infrastructure",
+      "title": "Official WordPress AI Infrastructure",
+      "emoji": "🏗️",
+      "color": "bg-violet-100",
+      "darkColor": "dark:bg-violet-900/30",
+      "textColor": "text-violet-700 dark:text-violet-300",
+      "description": "The WordPress project maintains a growing set of official AI infrastructure components."
+    },
+    {
+      "slug": "community-providers",
+      "label": "Community AI Providers",
+      "title": "Community AI Providers",
+      "emoji": "🔌",
+      "color": "bg-gray-100",
+      "darkColor": "dark:bg-gray-800/40",
+      "textColor": "text-gray-700 dark:text-gray-300",
+      "description": "Community-built provider plugins for the PHP AI Client SDK — write against the unified API and swap any provider."
+    },
+    {
+      "slug": "abilities-api",
+      "label": "Abilities API",
+      "title": "Abilities API",
+      "emoji": "🧩",
+      "color": "bg-fuchsia-100",
+      "darkColor": "dark:bg-fuchsia-900/30",
+      "textColor": "text-fuchsia-700 dark:text-fuchsia-300",
+      "description": "Developer tools, SDKs, and utilities for building with the WordPress [Abilities API](https://developer.wordpress.org/apis/abilities/) (`wp_register_ability()`). These tools help you author, discover, test, debug, and expose abilities."
+    },
+    {
+      "slug": "abilities-plugins",
+      "label": "Plugins with Abilities",
+      "title": "Plugins with Abilities API",
+      "emoji": "✅",
+      "color": "bg-zinc-100",
+      "darkColor": "dark:bg-zinc-800/40",
+      "textColor": "text-zinc-700 dark:text-zinc-300",
+      "description": "Major plugins that have implemented `wp_register_ability()`, making their functionality discoverable and invocable by AI agents via the MCP Adapter."
+    },
+    {
+      "slug": "mcp",
+      "label": "MCP Integration",
+      "title": "MCP Integration",
+      "emoji": "🤖",
+      "color": "bg-slate-100",
+      "darkColor": "dark:bg-slate-700/30",
+      "textColor": "text-slate-700 dark:text-slate-300",
+      "description": "Plugins, servers, and tools implementing the [Model Context Protocol](https://modelcontextprotocol.io/) for WordPress."
+    },
+    {
+      "slug": "agent-skills",
+      "label": "Agent Skills",
+      "title": "Agent Skills",
+      "emoji": "🎓",
+      "color": "bg-violet-100",
+      "darkColor": "dark:bg-violet-900/30",
+      "textColor": "text-violet-700 dark:text-violet-300",
+      "description": "Portable instruction bundles that teach AI coding assistants WordPress development patterns. Not plugins — knowledge for machines."
+    },
+    {
+      "slug": "multi-purpose",
+      "label": "Multi-Purpose",
+      "title": "Multi-Purpose AI Plugins",
+      "emoji": "⚡",
+      "color": "bg-purple-100",
+      "darkColor": "dark:bg-purple-900/30",
+      "textColor": "text-purple-700 dark:text-purple-300",
+      "description": "Full-featured plugins covering content generation, chatbots, image creation, and more."
+    },
+    {
+      "slug": "content",
+      "label": "Content Generation",
+      "title": "Content Generation",
+      "emoji": "✍️",
+      "color": "bg-emerald-100",
+      "darkColor": "dark:bg-emerald-900/30",
+      "textColor": "text-emerald-700 dark:text-emerald-300",
+      "description": "Plugins focused on writing assistance, blog post drafting, and text optimization."
+    },
+    {
+      "slug": "seo",
+      "label": "SEO & Metadata",
+      "title": "SEO & Metadata",
+      "emoji": "🔍",
+      "color": "bg-amber-100",
+      "darkColor": "dark:bg-amber-900/30",
+      "textColor": "text-amber-700 dark:text-amber-300",
+      "description": "AI-powered plugins for search engine optimization, metadata, and alt text."
+    },
+    {
+      "slug": "image",
+      "label": "Image Generation",
+      "title": "Image Generation",
+      "emoji": "🎨",
+      "color": "bg-pink-100",
+      "darkColor": "dark:bg-pink-900/30",
+      "textColor": "text-pink-700 dark:text-pink-300",
+      "description": "Plugins for AI-driven image creation and visual content management."
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots & Conversational AI",
+      "title": "Chatbots & Conversational AI",
+      "emoji": "💬",
+      "color": "bg-cyan-100",
+      "darkColor": "dark:bg-cyan-900/30",
+      "textColor": "text-cyan-700 dark:text-cyan-300",
+      "description": "Conversational AI plugins for support, lead generation, and user engagement."
+    },
+    {
+      "slug": "woocommerce",
+      "label": "WooCommerce & E-Commerce",
+      "title": "WooCommerce & E-Commerce",
+      "emoji": "🛒",
+      "color": "bg-indigo-100",
+      "darkColor": "dark:bg-indigo-900/30",
+      "textColor": "text-indigo-700 dark:text-indigo-300",
+      "description": "AI tools specifically designed for WooCommerce stores and product management."
+    },
+    {
+      "slug": "agentic-commerce",
+      "label": "Agentic Commerce (Emerging)",
+      "title": "Agentic Commerce (Emerging)",
+      "emoji": "🛍️",
+      "color": "bg-neutral-100",
+      "darkColor": "dark:bg-neutral-800/40",
+      "textColor": "text-neutral-700 dark:text-neutral-300",
+      "description": "AI shopping agents (ChatGPT, Gemini, Google AI Mode, Claude) are starting to discover products and check out on a shopper's behalf. Two open protocols compete to standardize this: Stripe and OpenAI's ACP, and Google's UCP. WooCommerce support is still landing, and the community plugins below are very early (0–30 active installs as of October 2026), so treat this section as a watchlist rather than a set of recommendations."
+    },
+    {
+      "slug": "forms",
+      "label": "Forms & Automation",
+      "title": "Forms & Automation",
+      "emoji": "📋",
+      "color": "bg-orange-100",
+      "darkColor": "dark:bg-orange-900/30",
+      "textColor": "text-orange-700 dark:text-orange-300",
+      "description": "AI-powered form builders and workflow automation for WordPress."
+    },
+    {
+      "slug": "translation",
+      "label": "Translation & Multilingual",
+      "title": "Translation & Multilingual",
+      "emoji": "🌍",
+      "color": "bg-red-100",
+      "darkColor": "dark:bg-red-900/30",
+      "textColor": "text-red-700 dark:text-red-300",
+      "description": "AI translation plugins for multilingual WordPress sites."
+    },
+    {
+      "slug": "video",
+      "label": "Video & Transcription",
+      "title": "Video & Transcription",
+      "emoji": "🎬",
+      "color": "bg-teal-100",
+      "darkColor": "dark:bg-teal-900/30",
+      "textColor": "text-teal-700 dark:text-teal-300",
+      "description": "Plugins for AI-powered video transcription, subtitles, and accessibility."
+    },
+    {
+      "slug": "page-builders",
+      "label": "Page Builders",
+      "title": "Page Builders with AI",
+      "emoji": "🧱",
+      "color": "bg-blue-100",
+      "darkColor": "dark:bg-blue-900/30",
+      "textColor": "text-blue-700 dark:text-blue-300",
+      "description": "Visual page builders with native AI capabilities."
+    },
+    {
+      "slug": "themes",
+      "label": "Themes",
+      "title": "Themes",
+      "emoji": "🎭",
+      "color": "bg-rose-100",
+      "darkColor": "dark:bg-rose-900/30",
+      "textColor": "text-rose-700 dark:text-rose-300",
+      "description": "WordPress themes built for AI products or with integrated AI capabilities."
+    },
+    {
+      "slug": "developer-tools",
+      "label": "Developer Tools",
+      "title": "Developer Tools",
+      "emoji": "🛠️",
+      "color": "bg-lime-100",
+      "darkColor": "dark:bg-lime-900/30",
+      "textColor": "text-lime-700 dark:text-lime-300",
+      "description": "AI-assisted coding tools for building with WordPress."
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents",
+      "title": "AI Agents",
+      "emoji": "🦾",
+      "color": "bg-stone-100",
+      "darkColor": "dark:bg-stone-800/40",
+      "textColor": "text-stone-700 dark:text-stone-300",
+      "description": "Autonomous and agentic assistants that can take actions across a WordPress site."
+    },
+    {
+      "slug": "hosting",
+      "label": "Hosting & Site Builders",
+      "title": "Hosting & Site Builders",
+      "emoji": "☁️",
+      "color": "bg-green-100",
+      "darkColor": "dark:bg-green-900/30",
+      "textColor": "text-green-700 dark:text-green-300",
+      "description": "Managed WordPress hosting platforms with AI website builders or integrated MCP support."
+    },
+    {
+      "slug": "open-source",
+      "label": "Open Source",
+      "title": "Open Source Projects",
+      "emoji": "🔓",
+      "color": "bg-yellow-100",
+      "darkColor": "dark:bg-yellow-900/30",
+      "textColor": "text-yellow-700 dark:text-yellow-300",
+      "description": "Community-driven and open-source AI projects built on or for WordPress."
+    },
+    {
+      "slug": "learning",
+      "label": "Learning Resources",
+      "title": "Learning Resources",
+      "emoji": "📚",
+      "color": "bg-sky-100",
+      "darkColor": "dark:bg-sky-900/30",
+      "textColor": "text-sky-700 dark:text-sky-300",
+      "description": "Courses, tutorials, and official documentation for building with WordPress AI."
+    }
+  ],
+  "tools": [
+    {
+      "name": "WordPress/ai",
+      "description": "Official AI plugin (formerly \"AI Experiments\") shipping experiments including title generation, content summarization, alt text, featured image generation, and image editing. Reference implementation for the Abilities API.",
+      "url": "https://github.com/WordPress/ai",
+      "github": "https://github.com/WordPress/ai",
+      "category": "infrastructure",
+      "tags": [
+        "core",
+        "framework",
+        "official"
+      ],
+      "pricing": "Free",
+      "featured": true
+    },
+    {
+      "name": "PHP AI Client SDK",
+      "description": "Platform-agnostic PHP AI client developed collaboratively with the broader PHP community. Write code against `wp_ai_client_prompt()` and it works with any registered provider.",
+      "url": "https://github.com/WordPress/php-ai-client",
+      "github": "https://github.com/WordPress/php-ai-client",
+      "category": "infrastructure",
+      "tags": [
+        "sdk",
+        "php",
+        "official",
+        "provider-agnostic"
+      ],
+      "pricing": "Free",
+      "featured": true
+    },
+    {
+      "name": "WP AI Client",
+      "description": "Client-side JavaScript AI library landing in WordPress 7.0 core.",
+      "url": "https://github.com/WordPress/wp-ai-client",
+      "github": "https://github.com/WordPress/wp-ai-client",
+      "category": "infrastructure",
+      "tags": [
+        "sdk",
+        "javascript",
+        "official",
+        "core"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "WordPress MCP Adapter",
+      "description": "Bridges the WordPress Abilities API to the Model Context Protocol, enabling AI agents to discover and invoke WordPress abilities programmatically. 820+ GitHub stars.",
+      "url": "https://github.com/WordPress/mcp-adapter",
+      "github": "https://github.com/WordPress/mcp-adapter",
+      "category": "infrastructure",
+      "tags": [
+        "mcp",
+        "agents",
+        "official",
+        "protocol"
+      ],
+      "pricing": "Free",
+      "featured": true
+    },
+    {
+      "name": "AI Services",
+      "description": "Makes AI centrally available in WordPress via PHP, REST API, JavaScript, and WP-CLI for any provider.",
+      "url": "https://github.com/felixarntz/ai-services",
+      "github": "https://github.com/felixarntz/ai-services",
+      "category": "infrastructure",
+      "tags": [
+        "sdk",
+        "api",
+        "php",
+        "rest"
+      ],
+      "pricing": "Open Source",
+      "featured": true
+    },
+    {
+      "name": "AI Provider for Anthropic Claude",
+      "description": "Official plugin registering Claude with the PHP AI Client SDK for text generation and function calling.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-anthropic/",
+      "category": "infrastructure",
+      "tags": [
+        "claude",
+        "anthropic",
+        "provider",
+        "official"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "AI Provider for Google Gemini",
+      "description": "Official plugin integrating Google Gemini models with support for text generation, image generation, and function calling.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-google/",
+      "category": "infrastructure",
+      "tags": [
+        "gemini",
+        "google",
+        "provider",
+        "official"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "AI Provider for OpenAI",
+      "description": "Official plugin supporting GPT models, DALL·E, GPT-4 Vision, and text-to-speech.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-openai/",
+      "category": "infrastructure",
+      "tags": [
+        "openai",
+        "gpt",
+        "provider",
+        "official"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Mistral AI provider",
+      "description": "By Lauri Saarni. Supports text, vision, function calling, and image generation.",
+      "url": "https://github.com/saarnilauri/ai-provider-for-mistral",
+      "github": "https://github.com/saarnilauri/ai-provider-for-mistral",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "Grok (xAI) provider",
+      "description": "By Aslam Doctor. Connects WordPress to xAI's Grok models.",
+      "url": "https://wordpress.org/plugins/aslams-ai-provider-for-grok/",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "OpenRouter provider",
+      "description": "By Jonathan Bossenger. Access 400+ models through a single connection.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-openrouter/",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "Ollama provider",
+      "description": "By Fueled. Run local open-source models with zero data leaving the server.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-ollama/",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "mittwald AI provider",
+      "description": "By German hosting company mittwald.",
+      "url": "https://wordpress.org/plugins/mittwald-ai-provider/",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "Azure AI Foundry provider",
+      "description": "By Per Soderlind. Supports Azure AI Foundry, Azure OpenAI, and Cognitive Services.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-azure-ai-foundry/",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "Hugging Face provider",
+      "description": "By Aslam Doctor. Supports text and images via multiple HF inference backends.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-hugging-face/",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "Open WebUI provider",
+      "description": "OpenAI-compatible settings with automatic model discovery.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-open-webui/",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "Alibaba Cloud provider",
+      "description": "DashScope/Qwen connector with function-calling support.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-alibaba-cloud/",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "DuetG AI Connector",
+      "description": "Supports DeepSeek, Moonshot, MiniMax, SiliconFlow, LM Studio, and Ollama.",
+      "url": "https://github.com/duetg/duetg-ai-connector",
+      "github": "https://github.com/duetg/duetg-ai-connector",
+      "category": "community-providers",
+      "tags": []
+    },
+    {
+      "name": "AI Provider for DeepSeek",
+      "description": "Registers DeepSeek's chat and reasoning models as a provider for the PHP AI Client SDK on activation.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-deepseek/",
+      "category": "community-providers",
+      "tags": [
+        "provider",
+        "deepseek",
+        "ai-client"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "AI Provider for Perplexity",
+      "description": "Adds Perplexity's Sonar models so any plugin built on the WP AI Client can generate web-grounded, cited text.",
+      "url": "https://wordpress.org/plugins/ai-provider-for-perplexity/",
+      "category": "community-providers",
+      "tags": [
+        "provider",
+        "perplexity",
+        "ai-client"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Ultimate AI Connector for Compatible Endpoints",
+      "description": "Connects the WordPress 7.0 AI Client to any OpenAI-compatible endpoint (Ollama, LM Studio, OpenRouter, Groq, and ~110 presets).",
+      "url": "https://wordpress.org/plugins/ultimate-ai-connector-compatible-endpoints/",
+      "github": "https://github.com/Ultimate-Multisite/ultimate-ai-connector-compatible-endpoints",
+      "category": "community-providers",
+      "tags": [
+        "provider",
+        "openai-compatible",
+        "ollama",
+        "ai-client"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Lax Abilities Toolkit",
+      "description": "Developer-friendly toolkit that exposes content management as Abilities via the WP Abilities API. Supports any post type or taxonomy via filter hooks.",
+      "url": "https://github.com/laxmariappan/lax-abilities-toolkit",
+      "github": "https://github.com/laxmariappan/lax-abilities-toolkit",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "post-types",
+        "taxonomies",
+        "filter-hooks"
+      ],
+      "pricing": "Open Source",
+      "featured": true
+    },
+    {
+      "name": "Abilities Scout",
+      "description": "Scan any installed WordPress plugin and discover potential abilities for the Abilities API (WP 6.9+). One click, static analysis, no code execution.",
+      "url": "https://github.com/laxmariappan/abilities-scout",
+      "github": "https://github.com/laxmariappan/abilities-scout",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "static-analysis",
+        "discovery",
+        "developer-tools"
+      ],
+      "pricing": "Open Source",
+      "featured": true
+    },
+    {
+      "name": "wp-ability-toolkit",
+      "description": "Toolkit for developing and testing abilities and AI integrations.",
+      "url": "https://github.com/emdashcodes/wp-ability-toolkit",
+      "github": "https://github.com/emdashcodes/wp-ability-toolkit",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "testing",
+        "developer-tools"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "wp-abilities-test",
+      "description": "Small test and demo plugin for PHP and JS abilities by Jonathan Bossenger.",
+      "url": "https://github.com/jonathanbossenger/wp-abilities-test",
+      "github": "https://github.com/jonathanbossenger/wp-abilities-test",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "demo",
+        "learning",
+        "php",
+        "javascript"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "WebMCP Abilities",
+      "description": "By WP Popup Maker team. Bridges `wp_register_ability()` to Chrome's `navigator.modelContext` browser API — register once for both MCP Adapter and WebMCP.",
+      "url": "https://github.com/code-atlantic/webmcp-abilities",
+      "github": "https://github.com/code-atlantic/webmcp-abilities",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "browser",
+        "webmcp",
+        "mcp"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "ai-valve",
+      "description": "Meters and gates AI Client prompt calls as middleware.",
+      "url": "https://github.com/soderlind/ai-valve",
+      "github": "https://github.com/soderlind/ai-valve",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "middleware",
+        "rate-limiting",
+        "governance"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Grumpy AI Gate",
+      "description": "Records and inspects AI Client requests for debugging and governance.",
+      "url": "https://wordpress.org/plugins/grumpy-ai-gate/",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "debugging",
+        "governance",
+        "logging"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "wp-ai-content-kit",
+      "description": "Content operations toolkit (alt text, excerpts, etc.) built on the WP AI Client.",
+      "url": "https://github.com/richtabor/wp-ai-content-kit",
+      "github": "https://github.com/richtabor/wp-ai-content-kit",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "alt-text",
+        "excerpts",
+        "content"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Enable Abilities for MCP",
+      "description": "32 abilities, WooCommerce-aware; explicit bridge between the Abilities API and MCP Adapter.",
+      "url": "https://wordpress.org/plugins/enable-abilities-for-mcp/",
+      "category": "abilities-api",
+      "tags": []
+    },
+    {
+      "name": "mcp-expose-abilities",
+      "description": "Documents 61+ core abilities and 280+ ecosystem abilities across Elementor, Rank Math, Wordfence, Brevo, Cloudflare, and Google Workspace.",
+      "url": "https://github.com/bjornfix/mcp-expose-abilities",
+      "github": "https://github.com/bjornfix/mcp-expose-abilities",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "documentation",
+        "ecosystem",
+        "reference"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "wp-cli/ability-command",
+      "description": "Official WP-CLI package for listing, inspecting, and executing registered abilities from the command line.",
+      "url": "https://github.com/wp-cli/ability-command",
+      "github": "https://github.com/wp-cli/ability-command",
+      "category": "abilities-api",
+      "tags": [
+        "abilities-api",
+        "wp-cli",
+        "official",
+        "cli"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Advanced Custom Fields (ACF) 6.8",
+      "description": "Full Abilities API integration. AI tools can discover, inspect, create, and modify field groups, CPTs, taxonomies, and content. 2M+ installs.",
+      "url": "https://www.advancedcustomfields.com/blog/acf-pro-6-8-release-ai-ready-discoverable-content/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "WooCommerce",
+      "description": "Registers abilities under `woocommerce/` namespace, exposed via MCP Adapter. Provides structured AI access to products, orders, and customers. 7M+ installs.",
+      "url": "https://developer.woocommerce.com/docs/features/mcp/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "WPForms Lite",
+      "description": "Abilities API integration. 6M+ installs.",
+      "url": "https://wpforms.com/",
+      "category": "abilities-plugins",
+      "tags": [
+        "forms",
+        "conditional-logic",
+        "payments",
+        "drag-and-drop"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "WPCode / Insert Headers and Footers",
+      "description": "Dedicated abilities class. 3M+ installs.",
+      "url": "https://wordpress.org/plugins/insert-headers-and-footers/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "Jetpack",
+      "description": "Bundles abilities; Jetpack Forms registers abilities via core. 3M+ installs.",
+      "url": "https://wordpress.org/plugins/jetpack/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "Ninja Forms",
+      "description": "32 abilities across 7 capability areas. 600K+ installs.",
+      "url": "https://ninjaforms.com/blog/build-wordpress-forms-with-ai/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "SureForms",
+      "description": "Abilities API integration. 500K+ installs.",
+      "url": "https://wordpress.org/plugins/sureforms/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "MainWP Dashboard",
+      "description": "Abilities woven throughout; exposes site management surface to AI agents. 20K+ installs.",
+      "url": "https://wordpress.org/plugins/mainwp/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "miniOrange AI Agent",
+      "description": "Abilities API adopted across SAML SSO, OAuth, LDAP, and 2FA plugins. AI tools can diagnose SSO errors.",
+      "url": "https://wordpress.org/plugins/miniorange-ai-agent/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "VigIA",
+      "description": "9 Abilities API actions around analytics, robots, and blocking.",
+      "url": "https://wordpress.org/plugins/vigia/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "DiveWP",
+      "description": "11 performance-diagnostic abilities for technical audits.",
+      "url": "https://wordpress.org/plugins/divewp-boost-site-performance/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "CartFlows",
+      "description": "Abilities API integration. 200K+ installs.",
+      "url": "https://wordpress.org/plugins/cartflows/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "OttoKit Automation",
+      "description": "Abilities API integration. 100K+ installs.",
+      "url": "https://wordpress.org/plugins/suretriggers/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "LatePoint Booking",
+      "description": "Abilities API integration. 100K+ installs.",
+      "url": "https://wordpress.org/plugins/latepoint/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "WP Password Policy",
+      "description": "v3.6.0 added Abilities API; password-policy controls accessible via MCP.",
+      "url": "https://wordpress.org/plugins/password-requirements/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "Fluid Design System for Elementor",
+      "description": "v2.3.0 added AI-agent integration, registering `fluid-design-system` MCP server with MCP Adapter.",
+      "url": "https://wordpress.org/plugins/fluid-design-system-for-elementor/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "hCaptcha for WP",
+      "description": "Abilities API integration. 70K+ installs.",
+      "url": "https://wordpress.org/plugins/hcaptcha-for-forms-and-more/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "WindPress (Tailwind CSS)",
+      "description": "Abilities API integration. 3K+ installs.",
+      "url": "https://wordpress.org/plugins/windpress/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "Ultimate Multisite",
+      "description": "AI access to SaaS and WaaS networks.",
+      "url": "https://wordpress.org/plugins/ultimate-multisite/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "WS Form",
+      "description": "Full Abilities API + built-in MCP server + \"Create from AI\" template.",
+      "url": "https://wsform.com/completing-the-stack-ws-form-and-the-wordpress-ai-client-sdk/",
+      "category": "abilities-plugins",
+      "tags": []
+    },
+    {
+      "name": "WordPress MCP Adapter",
+      "description": "Official WordPress MCP adapter bridging the Abilities API to MCP-compatible AI agents. 820+ stars.",
+      "url": "https://github.com/WordPress/mcp-adapter",
+      "github": "https://github.com/WordPress/mcp-adapter",
+      "category": "mcp",
+      "group": "Official",
+      "tags": [
+        "mcp",
+        "agents",
+        "official",
+        "protocol"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "WordPress.org Plugin Directory MCP Server",
+      "description": "Official MCP server built on Abilities API. Validate readmes, check submission status, and submit plugins.",
+      "url": "https://make.wordpress.org/meta/2026/03/20/plugin-directory-mcp-server/",
+      "links": [
+        {
+          "label": "Full docs",
+          "url": "https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/"
+        }
+      ],
+      "category": "mcp",
+      "group": "Official",
+      "tags": [
+        "mcp",
+        "official",
+        "plugin-directory",
+        "submission"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "WordPress Playground MCP",
+      "description": "One `npx` command connects agents to WordPress Playground running in the browser via WebAssembly. No server, no Docker.",
+      "url": "https://make.wordpress.org/playground/2026/03/17/connect-ai-coding-agents-to-wordpress-playground-with-mcp/",
+      "category": "mcp",
+      "group": "Official",
+      "tags": [
+        "mcp",
+        "playground",
+        "webassembly",
+        "official"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "WordPress Studio MCP",
+      "description": "Automattic's local dev app exposes an MCP server (Settings → MCP) so agents like Claude Code and Copilot can create, start, and manage local sites, edit files, query the database, and run WP-CLI.",
+      "url": "https://developer.wordpress.com/docs/developer-tools/studio/mcp-on-studio/",
+      "category": "mcp",
+      "group": "Official",
+      "tags": [
+        "mcp",
+        "local-dev",
+        "official",
+        "wp-cli"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Royal MCP",
+      "description": "Security-focused MCP implementation; auto-detects WooCommerce.",
+      "url": "https://wordpress.org/plugins/royal-mcp/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": [
+        "mcp",
+        "agents",
+        "protocol",
+        "ai-access"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "AI Agent Hub",
+      "description": "80+ abilities, 10 modules, MCP server, and workflow builder.",
+      "url": "https://wordpress.org/plugins/ai-workflow-automation-ai-agent-hub/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": [
+        "mcp",
+        "abilities",
+        "workflow",
+        "automation"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "StifLi Flex MCP",
+      "description": "117+ tools; auto-discovers registered abilities.",
+      "url": "https://wordpress.org/plugins/stifli-flex-mcp/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": []
+    },
+    {
+      "name": "Abilities Bridge",
+      "description": "MCP server + admin chat with 7-gate permissions.",
+      "url": "https://wordpress.org/plugins/abilities-bridge/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": []
+    },
+    {
+      "name": "MountDev AI MCP Connector",
+      "description": "75+ tools, OAuth 2.0 for ChatGPT integration.",
+      "url": "https://wordpress.org/plugins/mountdev-ai-mcp-connector/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": []
+    },
+    {
+      "name": "Rapls AI Chatbot",
+      "description": "7 MCP tools; \"WordPress Abilities API Bridge\" auto-registers tools as abilities. Bilingual English/Japanese.",
+      "url": "https://wordpress.org/plugins/rapls-ai-chatbot/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": []
+    },
+    {
+      "name": "Virtual Media Folders",
+      "description": "Folder-management abilities for agentic media organization.",
+      "url": "https://wordpress.org/plugins/virtual-media-folders/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": []
+    },
+    {
+      "name": "All Sources Images",
+      "description": "Image search, featured-image, and generation abilities.",
+      "url": "https://wordpress.org/plugins/all-sources-images/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": []
+    },
+    {
+      "name": "WPVibe",
+      "description": "By AwesomeMotive. MCP server plugin connecting Claude, ChatGPT, Cursor, and Windsurf to self-hosted WordPress with one-click OAuth and AES-256-GCM encrypted credentials; supports theme editing, content management, WP-CLI, and the Abilities API.",
+      "url": "https://wordpress.org/plugins/vibe-ai/",
+      "github": "https://github.com/awesomemotive/wpvibe-ai-mcp",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": [
+        "mcp",
+        "oauth",
+        "awesomemotive",
+        "wp-cli"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "StrifeBridge MCP",
+      "description": "Free tier gives Claude 30+ tools over theme files, database queries, content, and user management; Pro unlocks all 53 tools. Bearer-token auth, path-traversal validation, and SQL guardrails against destructive statements.",
+      "url": "https://wordpress.org/plugins/strifebridge-mcp/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": [
+        "mcp",
+        "claude",
+        "database",
+        "theme-files"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "IATO MCP",
+      "description": "Free, open-source plugin turning any self-hosted site into an MCP server for Claude, Gemini, and ChatGPT; 40 native WordPress tools (including widget-grained Elementor editing) plus 12 optional tools bridging to IATO's SEO crawler.",
+      "url": "https://wordpress.org/plugins/iato-mcp/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": [
+        "mcp",
+        "seo",
+        "elementor",
+        "open-source"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "miniOrange Secure MCP Server",
+      "description": "300+ tools behind a self-hosted OAuth 2.1 authorization server, role-based per-AI permissions, per-tool on/off control, and a full audit trail of every MCP call.",
+      "url": "https://wordpress.org/plugins/miniorange-secure-mcp-server/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": [
+        "mcp",
+        "oauth",
+        "security",
+        "audit-trail"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Easy MCP AI",
+      "description": "Free, pure-PHP MCP server (no Node.js or proxy) with 240 tools spanning posts, WooCommerce, SEO, Google Analytics/Search Console, DataForSEO, Semrush, and SE Ranking.",
+      "url": "https://wordpress.org/plugins/easy-mcp-ai/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": [
+        "mcp",
+        "seo",
+        "analytics",
+        "php"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Agent Abilities for MCP",
+      "description": "Governed, off-by-default MCP server built on the Abilities API and official MCP Adapter; 179 curated abilities, least-privilege user binding, permission controls, and an audit log. Also bridges abilities registered by other plugins.",
+      "url": "https://wordpress.org/plugins/agent-abilities-for-mcp/",
+      "category": "mcp",
+      "group": "Plugins (WordPress.org)",
+      "tags": [
+        "mcp",
+        "abilities-api",
+        "permissions",
+        "audit-log"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "GravityMCP",
+      "description": "By GravityKit. Open-source MCP server for Gravity Forms.",
+      "url": "https://github.com/GravityKit/GravityMCP",
+      "github": "https://github.com/GravityKit/GravityMCP",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": [
+        "mcp",
+        "gravity-forms",
+        "open-source"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Novamira",
+      "description": "Five raw primitives (Execute PHP, Read/Write/Edit Files, Delete/Toggle, List Directory) in a sandboxed PHP execution environment. Free, open source, WordPress 6.9+.",
+      "url": "https://novamira.ai/",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": [
+        "mcp",
+        "php-execution",
+        "sandboxed",
+        "open-source"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Respira",
+      "description": "Full-featured MCP client for self-hosted WordPress with multi-site support and Abilities API integration. 940+ weekly npm downloads.",
+      "url": "https://www.npmjs.com/package/@respira/wordpress-mcp-server",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": [
+        "mcp",
+        "npm",
+        "multi-site",
+        "abilities-api"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Claudeus WP MCP",
+      "description": "145 tools for comprehensive WordPress management.",
+      "url": "https://github.com/deus-h/claudeus-wp-mcp",
+      "github": "https://github.com/deus-h/claudeus-wp-mcp",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": [
+        "mcp",
+        "145-tools",
+        "claude",
+        "management"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "mcp-wordpress",
+      "description": "DXT extension for Claude Desktop.",
+      "url": "https://github.com/docdyhr/mcp-wordpress",
+      "github": "https://github.com/docdyhr/mcp-wordpress",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": []
+    },
+    {
+      "name": "@automattic/mcp-wordpress-remote",
+      "description": "Automattic's remote MCP server implementation.",
+      "url": "https://github.com/Automattic/mcp-wordpress-remote",
+      "github": "https://github.com/Automattic/mcp-wordpress-remote",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": []
+    },
+    {
+      "name": "rnaga/wp-mcp",
+      "description": "CRUD primitives for posts, users, comments, terms, metadata, options, and site settings. Also on npm as `@rnaga/wp-mcp`.",
+      "url": "https://github.com/rnaga/wp-mcp",
+      "github": "https://github.com/rnaga/wp-mcp",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": []
+    },
+    {
+      "name": "buddypress-mcp",
+      "description": "BuddyPress MCP server + abilities MU-plugin.",
+      "url": "https://github.com/vapvarun/buddypress-mcp",
+      "github": "https://github.com/vapvarun/buddypress-mcp",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": []
+    },
+    {
+      "name": "elementor-mcp-api",
+      "description": "REST + MCP controls for AI-driven Elementor editing; auto-registers 20 abilities with MCP Adapter.",
+      "url": "https://github.com/bvisible/elementor-mcp-api",
+      "github": "https://github.com/bvisible/elementor-mcp-api",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": []
+    },
+    {
+      "name": "wordpress-wae",
+      "description": "84 carefully designed abilities for AI agent interaction with WordPress.",
+      "url": "https://github.com/kradyy/wordpress-wae",
+      "github": "https://github.com/kradyy/wordpress-wae",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": [
+        "mcp",
+        "agents",
+        "abilities",
+        "open-source"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "MCP for WordPress (InstaWP)",
+      "description": "Node-based MCP server exposing unified content, taxonomy, media, user, and plugin tools with multi-site support for clients like Claude Desktop.",
+      "url": "https://github.com/InstaWP/mcp-wp",
+      "github": "https://github.com/InstaWP/mcp-wp",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": [
+        "mcp",
+        "server",
+        "multi-site",
+        "node"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Publishio",
+      "description": "rtCamp plugin that connects MCP-compatible AI assistants to your site and builds pages and posts from your own registered block patterns, preserving your design system.",
+      "url": "https://github.com/rtCamp/publishio",
+      "github": "https://github.com/rtCamp/publishio",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": [
+        "mcp",
+        "block-patterns",
+        "rtcamp",
+        "publishing"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "WSP WordPress MCP",
+      "description": "Free plugin with a built-in native MCP server that connects AI coding agents to WordPress, WooCommerce, ACF, Elementor, and Yoast SEO with granular per-ability controls.",
+      "url": "https://github.com/bilalnaseer/wsp-wordpress-mcp",
+      "github": "https://github.com/bilalnaseer/wsp-wordpress-mcp",
+      "category": "mcp",
+      "group": "Community Servers & Libraries",
+      "tags": [
+        "mcp",
+        "server",
+        "woocommerce",
+        "acf"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Automattic/agent-skills",
+      "description": "General-purpose WordPress expertise skills (not theme/site-creation-specific) installable globally or per-project for Codex, VS Code, and Claude Code.",
+      "url": "https://github.com/Automattic/agent-skills",
+      "github": "https://github.com/Automattic/agent-skills",
+      "category": "agent-skills",
+      "tags": [
+        "agent-skills",
+        "automattic",
+        "codex",
+        "claude-code"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Automattic/wordpress-agent-skills",
+      "description": "Official Automattic skills for Claude Cowork covering site specification, design systems, and WordPress block theming, used by the Cowork plugin's `/create-site` command to generate and deploy full block themes to WordPress Studio.",
+      "url": "https://github.com/Automattic/wordpress-agent-skills",
+      "github": "https://github.com/Automattic/wordpress-agent-skills",
+      "category": "agent-skills",
+      "tags": [
+        "agent-skills",
+        "claude-cowork",
+        "block-theme",
+        "automattic"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "claude-skills-wp-abilities-api",
+      "description": "Claude skill package for WordPress Abilities API docs and conventions.",
+      "url": "https://github.com/nathanonn/claude-skills-wp-abilities-api",
+      "github": "https://github.com/nathanonn/claude-skills-wp-abilities-api",
+      "category": "agent-skills",
+      "tags": []
+    },
+    {
+      "name": "Respira Agent Skills",
+      "description": "Skills for Claude Code, Codex, Antigravity, and Cursor to audit, optimize, fix, and migrate WordPress sites, backed by 197+ MCP tools across 12 page builders (302 with the WooCommerce add-on).",
+      "url": "https://github.com/respira-press/agent-skills-wordpress",
+      "github": "https://github.com/respira-press/agent-skills-wordpress",
+      "category": "agent-skills",
+      "tags": [
+        "agent-skills",
+        "page-builders",
+        "migration",
+        "audit"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "WordPress/agent-skills",
+      "description": "Official repository with 14 skills for Claude Code, Codex, Copilot, Cursor, Gemini CLI, and more. 1.2K+ stars. Install via `npx skills add`. Includes: `wordpress-router`, `wp-block-development`, `wp-plugin-development`, `wp-rest-api`, `wp-abilities-api`, `wp-performance`, `wp-playground`, and more.",
+      "url": "https://github.com/WordPress/agent-skills",
+      "github": "https://github.com/WordPress/agent-skills",
+      "category": "agent-skills",
+      "tags": []
+    },
+    {
+      "name": "wpacademy/wordpress-dev-skills",
+      "description": "Skills enforcing WordPress coding standards, security best practices, WCAG 2.1 AA accessibility, and .org directory guidelines for plugin/theme development and security review.",
+      "url": "https://github.com/wpacademy/wordpress-dev-skills",
+      "github": "https://github.com/wpacademy/wordpress-dev-skills",
+      "category": "agent-skills",
+      "tags": [
+        "agent-skills",
+        "coding-standards",
+        "accessibility",
+        "security"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "wp-cli/ai-command",
+      "description": "CLI control of WordPress with WP-CLI, AI, and MCP.",
+      "url": "https://github.com/wp-cli/ai-command",
+      "github": "https://github.com/wp-cli/ai-command",
+      "category": "agent-skills",
+      "tags": []
+    },
+    {
+      "name": "AI Engine",
+      "description": "The most widely-used WordPress AI plugin (80,000+ installs) with chatbots, content generation, AI forms, WooCommerce MCP module (25 tools), and MCP integration.",
+      "url": "https://wordpress.org/plugins/ai-engine/",
+      "github": "https://github.com/jordymeow/ai-engine",
+      "category": "multi-purpose",
+      "tags": [
+        "chatbot",
+        "content",
+        "forms",
+        "mcp",
+        "openai"
+      ],
+      "pricing": "Freemium",
+      "featured": true
+    },
+    {
+      "name": "AI Power (AI Puffer)",
+      "description": "Complete AI engine with chatbot, content generation, image creation, automation, and training on custom data.",
+      "url": "https://wordpress.org/plugins/gpt3-ai-content-generator/",
+      "category": "multi-purpose",
+      "tags": [
+        "chatbot",
+        "content",
+        "image",
+        "fine-tuning"
+      ],
+      "pricing": "Freemium",
+      "featured": true
+    },
+    {
+      "name": "MxChat",
+      "description": "Free AI chatbot and content generation supporting ChatGPT, Claude, Gemini, Grok, DeepSeek, and 100+ models.",
+      "url": "https://wordpress.org/plugins/mxchat-basic/",
+      "category": "multi-purpose",
+      "tags": [
+        "chatbot",
+        "multi-model",
+        "claude",
+        "gemini",
+        "deepseek"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "AI Copilot – Content Generator",
+      "description": "AI automation platform combining workflow automation, chatbots, content generation, and MCP integration.",
+      "url": "https://wordpress.org/plugins/ai-copilot-content-generator/",
+      "category": "multi-purpose",
+      "tags": [
+        "automation",
+        "chatbot",
+        "forms",
+        "mcp"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "WP AI CoPilot",
+      "description": "AI content writer using GPT-3/4 with 40+ templates supporting 33+ languages for posts, articles, and product descriptions.",
+      "url": "https://wordpress.org/plugins/ai-co-pilot-for-wp/",
+      "category": "content",
+      "tags": [
+        "writing",
+        "gpt-4",
+        "templates",
+        "multilingual"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "AI Copilot",
+      "description": "Rewrite, expand, shorten, and translate text in the WordPress editor with support for OpenAI, Claude, Gemini, Perplexity, and DeepSeek.",
+      "url": "https://wordpress.org/plugins/ai-copilot/",
+      "category": "content",
+      "tags": [
+        "editor",
+        "rewrite",
+        "translate",
+        "multi-model"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Jetpack AI Assistant",
+      "description": "AI-powered content generation directly in the WordPress block editor via Jetpack infrastructure. Also registers Abilities API abilities.",
+      "url": "https://jetpack.com/",
+      "category": "content",
+      "tags": [
+        "block-editor",
+        "gutenberg",
+        "jetpack",
+        "automattic"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Bertha AI",
+      "description": "Specialized AI content generation and copywriting plugin for WordPress.",
+      "url": "https://bertha.ai/",
+      "category": "content",
+      "tags": [
+        "copywriting",
+        "templates",
+        "ads"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "GetGenie AI",
+      "description": "All-in-one AI content writer (80,000+ installs) with NLP keyword research, SERP and competitor analysis, 40+ templates, and the GenieChat assistant.",
+      "url": "https://wordpress.org/plugins/getgenie/",
+      "category": "content",
+      "tags": [
+        "writing",
+        "seo",
+        "keywords",
+        "chatbot"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Tutor LMS AI Studio",
+      "description": "Built into the Tutor LMS course builder (Pro); turns one prompt into a full course with outline, lessons, quizzes, descriptions, and a featured image.",
+      "url": "https://tutorlms.com/ai/",
+      "links": [
+        {
+          "label": "Plugin",
+          "url": "https://wordpress.org/plugins/tutor/"
+        }
+      ],
+      "category": "content",
+      "tags": [
+        "lms",
+        "courses",
+        "quizzes",
+        "openai"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Rank Math SEO",
+      "description": "AI-powered SEO plugin (3M+ installs) with Content AI for keyword suggestions, meta titles, descriptions, and content scoring. Supports llms.txt generation.",
+      "url": "https://wordpress.org/plugins/seo-by-rank-math/",
+      "category": "seo",
+      "tags": [
+        "seo",
+        "keywords",
+        "meta",
+        "content-score"
+      ],
+      "pricing": "Freemium",
+      "featured": true
+    },
+    {
+      "name": "toprank",
+      "description": "Open-source Claude Code plugin with 9 SEO and Google Ads skills that can ship metadata rewrites, schema markup, bid updates, and CMS publishing workflows for WordPress teams.",
+      "url": "https://github.com/nowork-studio/toprank",
+      "github": "https://github.com/nowork-studio/toprank",
+      "category": "seo",
+      "tags": [
+        "seo",
+        "google-ads",
+        "claude-code",
+        "skills"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Yoast SEO",
+      "description": "Long-established SEO plugin with an AI-powered title and meta description generator (v21.0+). Supports llms.txt and NLWeb schema aggregation in collaboration with Microsoft.",
+      "url": "https://wordpress.org/plugins/wordpress-seo/",
+      "category": "seo",
+      "tags": [
+        "seo",
+        "meta",
+        "readability"
+      ],
+      "pricing": "Freemium",
+      "featured": true
+    },
+    {
+      "name": "All in One SEO (AIOSEO)",
+      "description": "SEO plugin (2M+ installs) with a built-in AI Content Generator for titles, meta descriptions, FAQs, and schema, llms.txt generation, and support for AI agents reading and updating SEO data.",
+      "url": "https://wordpress.org/plugins/all-in-one-seo-pack/",
+      "category": "seo",
+      "tags": [
+        "seo",
+        "meta",
+        "schema",
+        "llms-txt"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "SEOPress",
+      "description": "SEO plugin (300K+ installs) that uses OpenAI, DeepSeek, and other providers to generate SEO titles, meta descriptions, and image alt text in bulk.",
+      "url": "https://wordpress.org/plugins/wp-seopress/",
+      "category": "seo",
+      "tags": [
+        "seo",
+        "meta",
+        "alt-text",
+        "bulk"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "SOOZ – AI for SEO",
+      "description": "Bulk alt text and metadata generator with SEO Autopilot, syncs with Yoast, Rank Math, and SEOPress.",
+      "url": "https://wordpress.org/plugins/ai-for-seo/",
+      "category": "seo",
+      "tags": [
+        "alt-text",
+        "metadata",
+        "bulk",
+        "autopilot"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Alt Text AI",
+      "description": "Automatically generates image alt text for SEO and accessibility, integrates with major SEO plugins.",
+      "url": "https://wordpress.org/plugins/alttext-ai/",
+      "category": "seo",
+      "tags": [
+        "alt-text",
+        "accessibility",
+        "images",
+        "seo"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "AI Alt Text Generator",
+      "description": "No API key required; WCAG 2.2/ADA/Section 508-aligned alt text with page-context awareness, bulk processing, and WP-CLI support. 50 free images/month.",
+      "url": "https://wordpress.org/plugins/ai-alt-text-generator/",
+      "category": "seo",
+      "tags": [
+        "alt-text",
+        "accessibility",
+        "wcag",
+        "wp-cli"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Website LLMs.txt",
+      "description": "Generates an llms.txt file to help AI assistants understand your site.",
+      "url": "https://wordpress.org/plugins/website-llms-txt/",
+      "category": "seo",
+      "tags": []
+    },
+    {
+      "name": "LLMs-Full.txt Generator",
+      "description": "Generates a comprehensive llms-full.txt for AI consumption.",
+      "url": "https://wordpress.org/plugins/llms-full-txt-generator/",
+      "category": "seo",
+      "tags": []
+    },
+    {
+      "name": "AI Featured Image",
+      "description": "One-click AI image generation using OpenAI with a free tier and Pro features for Gemini and bulk generation.",
+      "url": "https://wordpress.org/plugins/ai-featured-image-generator/",
+      "category": "image",
+      "tags": [
+        "dall-e",
+        "featured-image",
+        "bulk",
+        "openai"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Envira Gallery",
+      "description": "Popular photo gallery plugin (Pro) with an AI Image Assistant that generates alt text, titles, captions, and tags per image or in bulk, plus AI-written gallery descriptions.",
+      "url": "https://enviragallery.com/",
+      "category": "image",
+      "tags": [
+        "gallery",
+        "alt-text",
+        "tagging",
+        "bulk"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Genie Image",
+      "description": "AI-powered image generation plugin for WordPress.",
+      "url": "https://wordpress.com/plugins/genie-image-ai",
+      "category": "image",
+      "tags": [
+        "text-to-image",
+        "media-library"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "WPBot",
+      "description": "AI & OpenAI ChatGPT integration with RAG Vector Database, content writer, and image generation.",
+      "url": "https://wordpress.org/plugins/chatbot/",
+      "category": "chatbots",
+      "tags": [
+        "chatgpt",
+        "rag",
+        "vector",
+        "lead-gen"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Tidio AI Chatbot",
+      "description": "Conversational chatbot for live support and lead generation with AI escalation.",
+      "url": "https://www.tidio.com/",
+      "category": "chatbots",
+      "tags": [
+        "live-chat",
+        "lead-gen",
+        "support",
+        "multi-channel"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "AI Product Tools",
+      "description": "Bulk product content generator with a store-aware AI Shop Assistant for WooCommerce descriptions, titles, and taxonomies.",
+      "url": "https://wordpress.org/plugins/ai-product-tools/",
+      "category": "woocommerce",
+      "tags": [
+        "woocommerce",
+        "product-descriptions",
+        "bulk",
+        "taxonomies"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Kestrel AI",
+      "description": "Content assistant for WooCommerce generating product descriptions and review responses directly in the dashboard.",
+      "url": "https://woocommerce.com/products/kestrel-ai/",
+      "category": "woocommerce",
+      "tags": [
+        "woocommerce",
+        "descriptions",
+        "reviews"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "StoreAgent",
+      "description": "WooCommerce AI plugin for product reviews, descriptions, and customer questions.",
+      "url": "https://wordpress.org/plugins/storeagent-ai-for-woocommerce/",
+      "category": "woocommerce",
+      "tags": [
+        "woocommerce",
+        "reviews",
+        "customer-support"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "WriteText.ai for WooCommerce",
+      "description": "Uses store data and image analysis for SEO-optimized product content automation.",
+      "url": "https://writetext.ai/woocommerce",
+      "category": "woocommerce",
+      "tags": [
+        "woocommerce",
+        "seo",
+        "automation",
+        "image-analysis"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "AI Addons",
+      "description": "Generates product descriptions, images, and review replies directly in WooCommerce.",
+      "url": "https://woocommerce.com/products/ai-addons/",
+      "category": "woocommerce",
+      "tags": [
+        "woocommerce",
+        "descriptions",
+        "images",
+        "reviews"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "WowRecommend",
+      "description": "AI-assisted rule builder for WooCommerce product recommendations with 32+ filters, 16+ display placements (product page, cart, checkout, thank-you), popup upsells, and order bumps.",
+      "url": "https://wordpress.org/plugins/wow-ai-product-recommendations/",
+      "category": "woocommerce",
+      "tags": [
+        "woocommerce",
+        "recommendations",
+        "upsells",
+        "rule-builder"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "WooCommerce Agentic Commerce",
+      "description": "Woo's hub for agent-ready stores: MCP and Abilities API available now, with UCP, ACP, and a WooCommerce AI merchant assistant listed as coming soon.",
+      "url": "https://woocommerce.com/agentic-commerce/",
+      "category": "agentic-commerce",
+      "group": "Official & Protocols",
+      "tags": [
+        "official",
+        "woocommerce",
+        "mcp",
+        "roadmap"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Stripe Agentic Commerce Suite for WooCommerce",
+      "description": "WooCommerce is a launch partner; the suite connects a store's catalog to multiple AI agents through the official Stripe extension.",
+      "url": "https://woocommerce.com/posts/stripe-agentic-commerce-suite-for-woocommerce/",
+      "category": "agentic-commerce",
+      "group": "Official & Protocols",
+      "tags": [
+        "stripe",
+        "acp",
+        "checkout",
+        "official"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "woocommerce/agentic-tools",
+      "description": "Reference code bringing Anthropic's Claude Commerce Agent blueprint to WooCommerce: a shopping assistant that searches, builds carts, and hands off to normal checkout, plus a merchant assistant with human-approved changes. Not a supported extension.",
+      "url": "https://github.com/woocommerce/agentic-tools",
+      "github": "https://github.com/woocommerce/agentic-tools",
+      "links": [
+        {
+          "label": "Write-up",
+          "url": "https://developer.woocommerce.com/2026/09/16/wc-claude-commerce-agent/"
+        }
+      ],
+      "category": "agentic-commerce",
+      "group": "Official & Protocols",
+      "tags": [
+        "claude",
+        "reference",
+        "shopping-agent",
+        "official"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Agentic Commerce Protocol (ACP)",
+      "description": "Open standard from Stripe and OpenAI defining how agents, merchants, and payment providers complete purchases.",
+      "url": "https://www.agenticcommerce.dev/",
+      "github": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+      "category": "agentic-commerce",
+      "group": "Official & Protocols",
+      "tags": [
+        "protocol",
+        "acp",
+        "stripe",
+        "openai"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Universal Commerce Protocol (UCP)",
+      "description": "Google-led open standard for agent discovery, catalog browsing, and checkout, served from a `/.well-known/ucp` profile.",
+      "url": "https://ucp.dev/",
+      "github": "https://github.com/Universal-Commerce-Protocol/ucp",
+      "category": "agentic-commerce",
+      "group": "Official & Protocols",
+      "tags": [
+        "protocol",
+        "ucp",
+        "google"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "AI & Agentic Commerce in WooCommerce Roadmap",
+      "description": "WooCommerce's developer roadmap for MCP, agentic checkout, and protocol support.",
+      "url": "https://developer.woocommerce.com/2025/10/03/ai-agentic-commerce-in-woocommerce/",
+      "category": "agentic-commerce",
+      "group": "Official & Protocols",
+      "tags": [
+        "roadmap",
+        "woocommerce",
+        "official"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "SDX AI Readiness Toolkit for WooCommerce",
+      "description": "Serves a UCP business profile and shopping catalog, MCP tools, OAuth 2.0, and ACP checkout from one plugin.",
+      "url": "https://wordpress.org/plugins/sdx-ai-readiness-toolkit/",
+      "category": "agentic-commerce",
+      "group": "Early Community Plugins",
+      "tags": [
+        "ucp",
+        "acp",
+        "mcp",
+        "early-stage"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Uncap AI Shopping Connector for WooCommerce",
+      "description": "Implements UCP, ACP pre-flight discovery, and MCP tools so agents can search products and create checkouts.",
+      "url": "https://wordpress.org/plugins/uncap-ai-shopping-connector-for-woocommerce/",
+      "category": "agentic-commerce",
+      "group": "Early Community Plugins",
+      "tags": [
+        "ucp",
+        "acp",
+        "mcp",
+        "early-stage"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Universal Commerce Protocol (UCP) for WooCommerce",
+      "description": "Adds a `.well-known/ucp` endpoint, AI-optimized catalog, checkout sessions, and OAuth 2.0 identity linking over REST or MCP.",
+      "url": "https://wordpress.org/plugins/universal-commerce-protocol-ucp-for-woocommerce/",
+      "category": "agentic-commerce",
+      "group": "Early Community Plugins",
+      "tags": [
+        "ucp",
+        "checkout",
+        "oauth",
+        "early-stage"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "FormGent",
+      "description": "Modern AI-powered form builder with multi-step forms, quizzes, and payments using natural language.",
+      "url": "https://wordpress.org/plugins/formgent/",
+      "category": "forms",
+      "tags": [
+        "forms",
+        "quizzes",
+        "payments",
+        "natural-language"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "SureForms",
+      "description": "AI-powered form builder with smart suggestions and native integrations with Google Sheets, Mailchimp, and FluentCRM. Implements Abilities API.",
+      "url": "https://wordpress.com/plugins/sureforms",
+      "category": "forms",
+      "tags": [
+        "forms",
+        "integrations",
+        "smart-suggestions"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "WPForms AI",
+      "description": "Conversational AI form builder generating complex forms with payment options and conditional logic. 6M+ installs with Abilities API integration.",
+      "url": "https://wpforms.com/",
+      "category": "forms",
+      "tags": [
+        "forms",
+        "conditional-logic",
+        "payments",
+        "drag-and-drop"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "Fluent Forms",
+      "description": "AI-powered form creation allowing forms to be built using natural language prompts.",
+      "url": "https://fluentforms.com/",
+      "category": "forms",
+      "tags": [
+        "forms",
+        "natural-language",
+        "ecosystem"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Uncanny Automator",
+      "description": "Automation tool connecting WordPress to AI tools, marketing platforms, and email services.",
+      "url": "https://wordpress.org/plugins/uncanny-automator/",
+      "category": "forms",
+      "tags": [
+        "automation",
+        "no-code",
+        "integrations",
+        "crm"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Bit Flows",
+      "description": "Self-hosted visual workflow builder (n8n/Zapier-style) with an in-dashboard AI Agent that makes contextual decisions inside a flow; 307+ integrations, human-in-the-loop approval steps, and OpenAI/Gemini/Claude/DeepSeek support.",
+      "url": "https://wordpress.org/plugins/bit-pi/",
+      "category": "forms",
+      "tags": [
+        "automation",
+        "workflow",
+        "ai-agent",
+        "integrations"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Ninja Forms",
+      "description": "32 abilities across 7 capability areas; full AI form builder (\"Dashboard Parity\"). 100% free Abilities API implementation.",
+      "url": "https://wordpress.org/plugins/ninja-forms/",
+      "links": [
+        {
+          "label": "Docs",
+          "url": "https://ninjaforms.com/docs/abilities-api/"
+        }
+      ],
+      "category": "forms",
+      "tags": []
+    },
+    {
+      "name": "WS Form",
+      "description": "Full Abilities API + built-in MCP server + \"Create from AI\" template. Aligned with WP AI Client SDK.",
+      "url": "https://wsform.com/completing-the-stack-ws-form-and-the-wordpress-ai-client-sdk/",
+      "category": "forms",
+      "tags": []
+    },
+    {
+      "name": "Weglot",
+      "description": "AI translation using OpenAI and Gemini with context-aware language models; supports WooCommerce emails.",
+      "url": "https://wordpress.org/plugins/weglot/",
+      "category": "translation",
+      "tags": [
+        "translation",
+        "multilingual",
+        "openai",
+        "woocommerce"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "AI Translate",
+      "description": "Auto-translates entire websites in real-time, supports 35+ languages.",
+      "url": "https://wordpress.org/plugins/ai-translate/",
+      "category": "translation",
+      "tags": [
+        "translation",
+        "real-time",
+        "automatic"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "GPTranslate",
+      "description": "AI-powered multilingual translation supporting ChatGPT, Gemini, DeepSeek, Claude, and DeepL.",
+      "url": "https://wordpress.com/plugins/gptranslate",
+      "category": "translation",
+      "tags": [
+        "translation",
+        "multi-model",
+        "claude",
+        "deepl"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "ConveyThis Translate",
+      "description": "Works with all themes and plugins including WooCommerce, supports 200+ languages.",
+      "url": "https://www.conveythis.com/",
+      "category": "translation",
+      "tags": [
+        "translation",
+        "200-languages",
+        "visual-editor"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Linguise",
+      "description": "Cloud AI translation with dynamic checkout and customer email support for WooCommerce.",
+      "url": "https://www.linguise.com/integrations/wordpress-automatic-translation-plugin/",
+      "category": "translation",
+      "tags": [
+        "translation",
+        "woocommerce",
+        "cloud",
+        "automatic"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "TranslatePress",
+      "description": "Visual front-end translation plugin (400K+ installs) whose TranslatePress AI combines LLMs (GPT, Gemini) with DeepL and Google Translate for automatic site translation.",
+      "url": "https://wordpress.org/plugins/translatepress-multilingual/",
+      "category": "translation",
+      "tags": [
+        "translation",
+        "visual-editor",
+        "deepl",
+        "llm"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "VidSEO",
+      "description": "Embeds video transcripts for accessibility and SEO, retrieves YouTube subtitles automatically.",
+      "url": "https://wordpress.org/plugins/vidseo/",
+      "category": "video",
+      "tags": [
+        "transcription",
+        "youtube",
+        "seo",
+        "accessibility"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Wubtitle",
+      "description": "All-in-one video-to-text plugin with auto-subtitling and transcript conversion from YouTube/Vimeo.",
+      "url": "https://wordpress.com/plugins/wubtitle",
+      "category": "video",
+      "tags": [
+        "subtitles",
+        "transcription",
+        "youtube",
+        "vimeo"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Hyperaudio",
+      "description": "Interactive transcript display plugin for improved accessibility and searchability.",
+      "url": "https://github.com/hyperaudio/wordpress-hyperaudio",
+      "github": "https://github.com/hyperaudio/wordpress-hyperaudio",
+      "category": "video",
+      "tags": [
+        "transcription",
+        "interactive",
+        "accessibility"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Elementor AI",
+      "description": "AI-powered content and layout suggestions inside Elementor builder with code snippet generation.",
+      "url": "https://elementor.com/",
+      "category": "page-builders",
+      "tags": [
+        "page-builder",
+        "elementor",
+        "layout",
+        "code-gen"
+      ],
+      "pricing": "Freemium",
+      "featured": true
+    },
+    {
+      "name": "Divi AI",
+      "description": "Content, image, and layout generation inside the Divi ecosystem.",
+      "url": "https://www.divi.com/",
+      "category": "page-builders",
+      "tags": [
+        "page-builder",
+        "divi",
+        "layout",
+        "image-gen"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "Greenshift Page Builder",
+      "description": "70K+ installs with Abilities API integration.",
+      "url": "https://wordpress.org/plugins/greenshift-animation-and-page-builder-blocks/",
+      "category": "page-builders",
+      "tags": []
+    },
+    {
+      "name": "Kadence AI",
+      "description": "AI starter templates and AI-powered blocks that generate on-brand pages, text, and imagery from a short business questionnaire.",
+      "url": "https://www.kadencewp.com/wordpress-solutions/kadence-ai/",
+      "links": [
+        {
+          "label": "Plugin",
+          "url": "https://wordpress.org/plugins/kadence-starter-templates/"
+        }
+      ],
+      "category": "page-builders",
+      "tags": [
+        "starter-templates",
+        "blocks",
+        "gutenberg",
+        "kadence"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "AI Block Editor",
+      "description": "Chat assistant inside the block editor that places, arranges, and edits Gutenberg blocks from natural language, matching your theme.json colors, typography, and spacing.",
+      "url": "https://wordpress.org/plugins/ai-editor/",
+      "category": "page-builders",
+      "tags": [
+        "gutenberg",
+        "blocks",
+        "theme-json",
+        "openai"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "AI Builder",
+      "description": "Generates custom Gutenberg pages, sections, images, and translations from prompts directly in the editor, with no proprietary builder lock-in.",
+      "url": "https://wordpress.org/plugins/ai-builder/",
+      "category": "page-builders",
+      "tags": [
+        "gutenberg",
+        "page-generation",
+        "images",
+        "translation"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Blockenberg",
+      "description": "600+ Gutenberg blocks plus an in-editor AI Agent that builds and edits pages through chat via OpenRouter (free models included), Codex, Claude, or Cursor.",
+      "url": "https://wordpress.org/plugins/blockenberg/",
+      "category": "page-builders",
+      "tags": [
+        "gutenberg",
+        "blocks",
+        "ai-agent",
+        "openrouter"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Nexter Blocks",
+      "description": "Gutenberg site builder (90+ blocks, 10K+ installs) with built-in ChatGPT and Gemini content and image generation.",
+      "url": "https://wordpress.org/plugins/the-plus-addons-for-block-editor/",
+      "category": "page-builders",
+      "tags": [
+        "gutenberg",
+        "site-builder",
+        "chatgpt",
+        "gemini"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Mindware",
+      "description": "Modern AI startup/SaaS theme with clean layouts and CTA-focused sections.",
+      "url": "https://themeforest.net/",
+      "category": "themes",
+      "tags": [
+        "saas",
+        "startup",
+        "landing-page"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "Elementra",
+      "description": "Elementor-based theme with AI chatbot layout for SaaS and automation platforms.",
+      "url": "https://themeforest.net/",
+      "category": "themes",
+      "tags": [
+        "elementor",
+        "saas",
+        "chatbot-layout"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "Hub",
+      "description": "Multipurpose theme with 80+ pre-built websites, 700+ templates, and AI-driven customization.",
+      "url": "https://themeforest.net/",
+      "category": "themes",
+      "tags": [
+        "multipurpose",
+        "templates",
+        "customization"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "CodeWP",
+      "description": "AI code generator trained specifically for WordPress, WooCommerce, and popular plugins, producing PHP, JS, and SQL snippets and exportable plugins from natural-language prompts.",
+      "url": "https://codewp.ai/",
+      "category": "developer-tools",
+      "tags": [
+        "code-generation",
+        "woocommerce",
+        "php",
+        "snippets"
+      ],
+      "pricing": "Freemium",
+      "featured": true
+    },
+    {
+      "name": "PHP MCP Client",
+      "description": "Automattic PHP implementation of a Model Context Protocol client, supporting stdio and HTTP transports for connecting WordPress to external MCP servers.",
+      "url": "https://github.com/Automattic/php-mcp-client",
+      "github": "https://github.com/Automattic/php-mcp-client",
+      "category": "developer-tools",
+      "tags": [
+        "mcp",
+        "php",
+        "client",
+        "automattic"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Agent Builder",
+      "description": "Free plugin with 8 built-in AI assistants, an Assistant Trainer for unlimited custom agents, 261 tools, 26 skill packs, and free daily credits via its built-in AI provider — no API key required.",
+      "url": "https://agentic-plugin.com/",
+      "category": "ai-agents",
+      "tags": [
+        "agent",
+        "no-code",
+        "free",
+        "assistants"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "AgentWP",
+      "description": "Site-aware AI assistant (from the makers of CodeWP) that indexes your WordPress site to answer questions, generate content, and produce tailored code snippets.",
+      "url": "https://agentwp.com/",
+      "github": "https://github.com/wpai-inc/agentwp",
+      "category": "ai-agents",
+      "tags": [
+        "agent",
+        "assistant",
+        "code-gen",
+        "content"
+      ],
+      "pricing": "Freemium",
+      "featured": true
+    },
+    {
+      "name": "Angie",
+      "description": "Elementor's free conversational AI agent built into the WordPress dashboard; understands site architecture, installed plugins, and data via MCP, and takes real action across WooCommerce, Gutenberg, ACF, WS Form, GiveWP, LearnDash, and more.",
+      "url": "https://wordpress.org/plugins/angie/",
+      "github": "https://github.com/elementor/angie-sdk",
+      "category": "ai-agents",
+      "tags": [
+        "agent",
+        "elementor",
+        "mcp",
+        "dashboard"
+      ],
+      "pricing": "Free",
+      "featured": true
+    },
+    {
+      "name": "SD AI Agent for WordPress",
+      "description": "Universal open-source AI agent that connects to any plugin through the WordPress Abilities API, with agentic tool-calling, RAG, memory, and bring-your-own-key model support.",
+      "url": "https://github.com/Ultimate-Multisite/superdav-ai-agent",
+      "github": "https://github.com/Ultimate-Multisite/superdav-ai-agent",
+      "category": "ai-agents",
+      "tags": [
+        "agent",
+        "abilities-api",
+        "rag",
+        "byok"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "WP AI Agent",
+      "description": "Automattic research plugin exposing a WP-CLI AI agent that runs a ReAct loop over WordPress Abilities, MCP servers, and file-system tools.",
+      "url": "https://github.com/Automattic/wp-ai-agent",
+      "github": "https://github.com/Automattic/wp-ai-agent",
+      "category": "ai-agents",
+      "tags": [
+        "agent",
+        "wp-cli",
+        "react-loop",
+        "automattic"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "ZipWP",
+      "description": "AI website builder generating complete WordPress sites from a business description with included managed hosting.",
+      "url": "https://zipwp.com/",
+      "category": "hosting",
+      "tags": [
+        "site-builder",
+        "managed-hosting",
+        "ai-generated"
+      ],
+      "pricing": "Freemium",
+      "featured": true
+    },
+    {
+      "name": "10Web AI Builder",
+      "description": "Build WordPress sites with an AI Co-Pilot on managed Google Cloud hosting.",
+      "url": "https://10web.io/wordpress-ai-builder/",
+      "category": "hosting",
+      "tags": [
+        "site-builder",
+        "google-cloud",
+        "managed-hosting"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "Hostinger AI Website Builder",
+      "description": "AI-powered WordPress site builder with Kodee AI chatbot for instant support.",
+      "url": "https://www.hostinger.com/ai-website-builder-for-wordpress",
+      "category": "hosting",
+      "tags": [
+        "site-builder",
+        "chatbot",
+        "managed-hosting"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "Elementor Hosting",
+      "description": "Managed WordPress hosting with an AI assistant and Google Cloud infrastructure.",
+      "url": "https://elementor.com/hosting/",
+      "category": "hosting",
+      "tags": [
+        "managed-hosting",
+        "google-cloud",
+        "elementor"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "WordPress.com",
+      "description": "Built-in MCP server on all paid plans with per-tool toggle controls. Ships the official Claude Connector and WordPress AI Assistant.",
+      "url": "https://developer.wordpress.com/docs/mcp/",
+      "category": "hosting",
+      "tags": [
+        "mcp",
+        "managed-hosting",
+        "claude",
+        "automattic"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "Pressable",
+      "description": "Pre-installs MCP Adapter on managed WordPress sites.",
+      "url": "https://pressable.com/knowledgebase/get-started-with-wordpress-mcp-on-pressable/",
+      "category": "hosting",
+      "tags": [
+        "mcp",
+        "managed-hosting",
+        "agencies"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "WP Engine",
+      "description": "AI Toolkit includes Smart Search AI MCP Server.",
+      "url": "https://wpengine.com/support/ai-toolkit/",
+      "category": "hosting",
+      "tags": [
+        "mcp",
+        "managed-hosting",
+        "smart-search",
+        "enterprise"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "Kinsta",
+      "description": "Guide and tooling for building AI integrations against the Kinsta API via MCP.",
+      "url": "https://kinsta.com/blog/mcp-server-kinsta-api/",
+      "category": "hosting",
+      "tags": []
+    },
+    {
+      "name": "Pantheon",
+      "description": "Content Publisher with MCP server and native WordPress plugin integration.",
+      "url": "https://pantheon.io/resources/content-publisher",
+      "category": "hosting",
+      "tags": []
+    },
+    {
+      "name": "InstaWP",
+      "description": "Every InstaWP site includes a built-in WordPress MCP server.",
+      "url": "https://instawp.com",
+      "category": "hosting",
+      "tags": [
+        "mcp",
+        "sandbox",
+        "instant-sites",
+        "developer-tools"
+      ],
+      "pricing": "Freemium"
+    },
+    {
+      "name": "WordPress VIP",
+      "description": "Enterprise platform explicitly framed as AI/agent-ready through open APIs and MCP standards.",
+      "url": "https://wpvip.com",
+      "category": "hosting",
+      "tags": []
+    },
+    {
+      "name": "AI Engine",
+      "description": "Source code for the popular AI Engine plugin.",
+      "url": "https://github.com/jordymeow/ai-engine",
+      "github": "https://github.com/jordymeow/ai-engine",
+      "category": "open-source",
+      "tags": [
+        "plugin",
+        "chatbot",
+        "content",
+        "community"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "ai-services",
+      "description": "Unified AI services layer for WordPress core and plugins.",
+      "url": "https://github.com/felixarntz/ai-services",
+      "github": "https://github.com/felixarntz/ai-services",
+      "category": "open-source",
+      "tags": [
+        "sdk",
+        "core",
+        "multi-provider",
+        "php"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "GravityMCP",
+      "description": "Open-source MCP server for Gravity Forms by GravityKit.",
+      "url": "https://github.com/GravityKit/GravityMCP",
+      "github": "https://github.com/GravityKit/GravityMCP",
+      "category": "open-source",
+      "tags": [
+        "mcp",
+        "gravity-forms",
+        "open-source"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "WP AI Assistant",
+      "description": "Open-source GPT ChatBot WordPress plugin.",
+      "url": "https://github.com/federicopepedev/wp-ai-assistant",
+      "github": "https://github.com/federicopepedev/wp-ai-assistant",
+      "category": "open-source",
+      "tags": [
+        "chatbot",
+        "gpt",
+        "beginner-friendly"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Innovator AI",
+      "description": "AI assistant for WordPress content writing using OpenAI and ChatGPT.",
+      "url": "https://github.com/wp-innovator/innovator-ai",
+      "github": "https://github.com/wp-innovator/innovator-ai",
+      "category": "open-source",
+      "tags": [
+        "content",
+        "chatgpt",
+        "lightweight"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Human Made AI Plugin",
+      "description": "AI integration layer providing deep WordPress integration with ML capabilities.",
+      "url": "https://github.com/humanmade/ai-plugin",
+      "github": "https://github.com/humanmade/ai-plugin",
+      "category": "open-source",
+      "tags": [
+        "enterprise",
+        "ml",
+        "integration",
+        "human-made"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Automattic AI Experiments",
+      "description": "Prototypes and proof-of-concept AI projects for WordPress and WooCommerce from Automattic.",
+      "url": "https://github.com/Automattic/ai-experiments",
+      "github": "https://github.com/Automattic/ai-experiments",
+      "category": "open-source",
+      "tags": [
+        "experiments",
+        "woocommerce",
+        "automattic",
+        "research"
+      ],
+      "pricing": "Open Source"
+    },
+    {
+      "name": "Make WordPress – AI Initiative",
+      "description": "Official WordPress contributor hub for AI features and RFC discussions.",
+      "url": "https://make.wordpress.org/ai/",
+      "category": "learning",
+      "tags": [
+        "official",
+        "community",
+        "roadmap",
+        "rfc"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "WordPress Developer News – AI",
+      "description": "Developer blog covering new AI APIs, SDK releases, and integration guides.",
+      "url": "https://developer.wordpress.org/news/",
+      "category": "learning",
+      "tags": [
+        "official",
+        "tutorials",
+        "api-updates"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "The WordPress Abilities API",
+      "description": "Foundational explainer by Jonathan Bossenger.",
+      "url": "https://jonathanbossenger.com/the-wordpress-abilities-api/",
+      "category": "learning",
+      "tags": [
+        "abilities-api",
+        "tutorial",
+        "beginner",
+        "explainer"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "WS Form MCP Server Tutorial",
+      "description": "Step-by-step guide to building an MCP server using the Abilities API and MCP Adapter.",
+      "url": "https://wsform.com/how-to-create-an-mcp-server-in-wordpress-with-the-abilities-api-and-mcp-adapter/",
+      "category": "learning",
+      "tags": [
+        "abilities-api",
+        "mcp",
+        "tutorial",
+        "step-by-step"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Adding MCP to the WordPress Core Dev Environment",
+      "description": "By Weston Ruter.",
+      "url": "https://weston.ruter.net/2026/04/08/adding-an-mcp-server-to-the-wordpress-core-development-environment/",
+      "category": "learning",
+      "tags": []
+    },
+    {
+      "name": "Custom Abilities in WordPress 7.0",
+      "description": "Guide by Summix.",
+      "url": "https://summix.io/blog/wordpress-abilities-api-custom-abilities-7-0/",
+      "category": "learning",
+      "tags": []
+    },
+    {
+      "name": "Custom WooCommerce Abilities for MCP Adapter",
+      "description": "By WPRobo.",
+      "url": "https://wprobo.com/how-to-register-custom-woocommerce-abilities-for-the-wordpress-mcp-adapter/",
+      "category": "learning",
+      "tags": []
+    },
+    {
+      "name": "Fluent Forms: WordPress Abilities API for Automation",
+      "description": "Plain-language guide.",
+      "url": "https://fluentforms.com/wordpress-abilities-api-for-automation/",
+      "category": "learning",
+      "tags": []
+    },
+    {
+      "name": "WordCamp US 2025: Turn Your Local WordPress Install into Your AI Coding Assistant",
+      "description": "MCP + Abilities API workshop by Jonathan Bossenger.",
+      "url": "https://us.wordcamp.org/2025/session/turn-your-local-wordpress-install-into-your-ai-coding-assistant/",
+      "category": "learning",
+      "tags": [
+        "abilities-api",
+        "mcp",
+        "wordcamp",
+        "workshop"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "WordPress AI Workshop",
+      "description": "Official WordPress Training Team hands-on workshop for building AI-powered admin tools with the WordPress 7.0 AI building blocks (PHP AI Client, Abilities API, and MCP).",
+      "url": "https://github.com/wptrainingteam/wp-ai-workshop",
+      "github": "https://github.com/wptrainingteam/wp-ai-workshop",
+      "category": "learning",
+      "tags": [
+        "workshop",
+        "official",
+        "tutorial",
+        "building-blocks"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "Build and Sell AI Tools on WordPress",
+      "description": "Udemy course on creating and selling AI tools using WordPress.",
+      "url": "https://www.udemy.com/course/build-ai-tools-on-wordpress/",
+      "category": "learning",
+      "tags": [
+        "udemy",
+        "course",
+        "monetization",
+        "plugin-dev"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "Complete AI WordPress Creation Course",
+      "description": "Fast-track course on building WordPress sites with AI on Udemy.",
+      "url": "https://www.udemy.com/course/complete-ai-wordpress-creation-course/",
+      "category": "learning",
+      "tags": [
+        "udemy",
+        "course",
+        "site-building"
+      ],
+      "pricing": "Paid"
+    },
+    {
+      "name": "WordPress.com AI Learning Path",
+      "description": "Free self-guided courses on building WordPress sites with AI from WordPress.com.",
+      "url": "https://wordpress.com/learn/courses/unlocking-the-power-of-ai/",
+      "category": "learning",
+      "tags": [
+        "free",
+        "official",
+        "self-paced",
+        "beginner"
+      ],
+      "pricing": "Free"
+    },
+    {
+      "name": "ai-wordpress awesome list",
+      "description": "Complementary community-maintained list of AI in WordPress resources.",
+      "url": "https://github.com/wpdevup/ai-wordpress",
+      "github": "https://github.com/wpdevup/ai-wordpress",
+      "category": "learning",
+      "tags": []
+    }
+  ]
+}

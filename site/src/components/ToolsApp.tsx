@@ -81,7 +81,7 @@ function ToolCard({
 }) {
   const gradient = getGradient(tool.name);
   const delay = Math.min(index * 40, 480);
-  const pricing = pricingConfig[tool.pricing];
+  const pricing = tool.pricing ? pricingConfig[tool.pricing] : undefined;
 
   return (
     // gridKey in the React key forces remount → re-triggers animation on category switch
@@ -401,7 +401,8 @@ export default function ToolsApp({ tools, categories }: Props) {
     if (sortBy === 'z-a')     r = [...r].sort((a, b) => b.name.localeCompare(a.name));
     if (sortBy === 'pricing') {
       const order = ['Free', 'Open Source', 'Freemium', 'Paid'];
-      r = [...r].sort((a, b) => order.indexOf(a.pricing) - order.indexOf(b.pricing));
+      const rank = (t: Tool) => (t.pricing ? order.indexOf(t.pricing) : order.length);
+      r = [...r].sort((a, b) => rank(a) - rank(b));
     }
     return r;
   }, [tools, activeCategory, search, sortBy]);
