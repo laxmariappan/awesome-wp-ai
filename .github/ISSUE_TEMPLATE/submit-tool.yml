@@ -1,0 +1,85 @@
+name: Submit a tool
+description: Suggest an AI plugin, tool or resource for WordPress.
+title: "Add: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for suggesting a tool. Please check it is not already on the list first.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: WordPress.org page, GitHub repo or product site.
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Official WordPress AI Infrastructure
+        - Community AI Providers
+        - Abilities API
+        - Plugins with Abilities API
+        - MCP Integration
+        - Agent Skills
+        - Multi-Purpose AI Plugins
+        - Content Generation
+        - SEO & Metadata
+        - Image Generation
+        - Chatbots & Conversational AI
+        - WooCommerce & E-Commerce
+        - Agentic Commerce (Emerging)
+        - Forms & Automation
+        - Translation & Multilingual
+        - Video & Transcription
+        - Page Builders with AI
+        - Themes
+        - Developer Tools
+        - AI Agents
+        - Hosting & Site Builders
+        - Open Source Projects
+        - Learning Resources
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-sentence description
+      description: What it does, in plain words. No marketing copy.
+    validations:
+      required: true
+  - type: dropdown
+    id: pricing
+    attributes:
+      label: Pricing
+      options:
+        - Free
+        - Freemium
+        - Paid
+        - Open Source
+        - Not sure
+  - type: input
+    id: github
+    attributes:
+      label: GitHub repo (optional)
+      placeholder: https://github.com/owner/repo
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: It is directly about both WordPress and AI.
+          required: true
+        - label: It is actively maintained and has a public, usable release.
+          required: true
+        - label: I am the author or work on this tool.

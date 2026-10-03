@@ -345,7 +345,7 @@ function MobileBottomNav({ activeCategory, hasSearch, drawerOpen, onBrowse, onSe
 
         {/* Submit */}
         <NavTab label="Submit" active={false}>
-          <a href="https://github.com/laxmariappan/awesome-wp-ai/blob/main/CONTRIBUTING.md"
+          <a href="https://github.com/laxmariappan/awesome-wp-ai/issues/new?template=submit-tool.yml"
              target="_blank" rel="noopener noreferrer"
              className="flex items-center justify-center w-full h-full"
              aria-label="Submit a tool">
@@ -485,7 +485,7 @@ export default function ToolsApp({ tools, categories }: Props) {
             <div className="mt-5 p-3 rounded-xl border border-dashed border-white/[0.1]
                             bg-white/[0.02] text-center group">
               <p className="text-[11px] text-slate-500 mb-1.5">Know a great tool?</p>
-              <a href="https://github.com/laxmariappan/awesome-wp-ai/blob/main/CONTRIBUTING.md"
+              <a href="https://github.com/laxmariappan/awesome-wp-ai/issues/new?template=submit-tool.yml"
                  target="_blank" rel="noopener noreferrer"
                  className="inline-flex items-center gap-1 text-[11px] font-semibold
                             text-brand-500 dark:text-brand-400 hover:text-brand-400 dark:hover:text-brand-300
@@ -611,7 +611,7 @@ export default function ToolsApp({ tools, categories }: Props) {
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">Nothing found</h3>
               <p className="text-sm text-gray-500 dark:text-slate-400 max-w-xs">
                 Try different keywords or{' '}
-                <a href="https://github.com/laxmariappan/awesome-wp-ai/blob/main/CONTRIBUTING.md"
+                <a href="https://github.com/laxmariappan/awesome-wp-ai/issues/new?template=submit-tool.yml"
                    className="text-brand-500 hover:text-brand-400 hover:underline transition-colors"
                    target="_blank" rel="noopener noreferrer">
                   submit a new tool
