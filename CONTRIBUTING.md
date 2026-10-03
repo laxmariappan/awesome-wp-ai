@@ -4,6 +4,8 @@ Thank you for considering contributing to **awesome-wordpress-ai**!
 
 ## How to add an item
 
+**Quickest way:** [fill in the Submit a tool form](https://github.com/laxmariappan/awesome-wp-ai/issues/new?template=submit-tool.yml) and a maintainer will add it for you. To add it yourself, open a pull request as follows.
+
 All tools live in one file: [`site/src/data/tools.json`](site/src/data/tools.json). Both the website and the list in `README.md` are generated from it, so **do not edit the tool list in `README.md` by hand**.
 
 1. Fork this repository.
